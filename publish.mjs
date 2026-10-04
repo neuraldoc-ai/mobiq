@@ -54,9 +54,9 @@ const current = (() => { try { return git(targets.code, ['show', 'HEAD:.github/R
 if (current !== overlay.trim()) {
   fs.mkdirSync(path.join(targets.code, '.github'), { recursive: true })
   fs.writeFileSync(path.join(targets.code, '.github/README.md'), overlay)
-  const stamp = '2026-10-04T00:00:00+00:00', who = { NAME: 'neuraldoc', EMAIL: 'neuraldoc@users.noreply.github.com' }
+  const stamp = '2026-10-04T00:00:00+00:00', who = { NAME: 'Delschad Jankir', EMAIL: '273245025+djankir@users.noreply.github.com' }
   const env = { ...process.env, GIT_AUTHOR_NAME: who.NAME, GIT_AUTHOR_EMAIL: who.EMAIL, GIT_COMMITTER_NAME: who.NAME, GIT_COMMITTER_EMAIL: who.EMAIL, GIT_AUTHOR_DATE: stamp, GIT_COMMITTER_DATE: stamp }
   execFileSync('git', ['-C', targets.code, 'add', '.github/README.md'], { env })
-  execFileSync('git', ['-C', targets.code, '-c', 'commit.gpgsign=false', 'commit', '-q', '-m', 'Add English repository description (not part of the dataset)', '-m', 'Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>'], { env })
+  execFileSync('git', ['-C', targets.code, '-c', 'commit.gpgsign=false', 'commit', '-q', '-m', 'docs: add English readme'], { env })
 }
 console.log(`Published: data/, ${targets.code}, ${targets.docs}, ${targets.db}`)

@@ -2,23 +2,23 @@
   {
     "name": "v26.3.2",
     "message": "Release 26.3.2",
-    "target": "5340654b06f6f01b96f4d1266c61b62ff05c89c3",
+    "target": "faaa805fbc5f67f4fc3054c770156fc912c2cb0c",
     "commit": {
-      "id": "495e311682cf5838c0ec51a450d975be36e287dd",
-      "short_id": "495e311682c",
+      "id": "98b1fb7a7984afadaa9aef8d57c2996715b9e5c5",
+      "short_id": "98b1fb7a798",
       "created_at": "2026-07-20T16:42:00.000+02:00",
       "parent_ids": [],
       "title": "Release 26.3.2",
       "message": "Release 26.3.2\n\nStand der ausgelieferten Version 26.3.2.\n",
-      "author_name": "Kai Brenner",
-      "author_email": "kai.brenner@musterhaus-software.de",
+      "author_name": "Delschad Jankir",
+      "author_email": "273245025+djankir@users.noreply.github.com",
       "authored_date": "2026-07-20T16:42:00.000+02:00",
-      "committer_name": "Kai Brenner",
-      "committer_email": "kai.brenner@musterhaus-software.de",
+      "committer_name": "Delschad Jankir",
+      "committer_email": "273245025+djankir@users.noreply.github.com",
       "committed_date": "2026-07-20T16:42:00.000+02:00",
       "trailers": {},
       "extended_trailers": {},
-      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/495e311682cf5838c0ec51a450d975be36e287dd"
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/98b1fb7a7984afadaa9aef8d57c2996715b9e5c5"
     }
   }
 ]

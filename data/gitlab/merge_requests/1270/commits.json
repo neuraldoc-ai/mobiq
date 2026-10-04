@@ -1,135 +1,135 @@
 [
   {
-    "id": "2e588beb8daaf29f6dfc296c566dbe154ec82e98",
-    "short_id": "2e588beb8da",
+    "id": "3c1018f05b1a7a2af170ddbd20fb5e56bf215f5f",
+    "short_id": "3c1018f05b1",
     "created_at": "2026-09-16T08:47:00.000+02:00",
     "parent_ids": [
-      "0b5afd0b5eb176a8014960fbc5664ce0619d0a81"
+      "a55cab311842ba2ae9901c66fb6d2e6c948b3b5c"
     ],
     "title": "MOB-4760 Tests Druckausgabe",
     "message": "MOB-4760 Tests Druckausgabe\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-16T08:47:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-16T08:47:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2e588beb8daaf29f6dfc296c566dbe154ec82e98"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3c1018f05b1a7a2af170ddbd20fb5e56bf215f5f"
   },
   {
-    "id": "0b5afd0b5eb176a8014960fbc5664ce0619d0a81",
-    "short_id": "0b5afd0b5eb",
+    "id": "a55cab311842ba2ae9901c66fb6d2e6c948b3b5c",
+    "short_id": "a55cab31184",
     "created_at": "2026-09-15T16:20:00.000+02:00",
     "parent_ids": [
-      "6016fc7f1cab617b826963652a7537d31827f1e6"
+      "d110a7f8f8358e94456c78fd703d2896c8fd2b24"
     ],
     "title": "MOB-4760 Alte Druck-Engine entfernt",
     "message": "MOB-4760 Alte Druck-Engine entfernt\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-15T16:20:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-15T16:20:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/0b5afd0b5eb176a8014960fbc5664ce0619d0a81"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a55cab311842ba2ae9901c66fb6d2e6c948b3b5c"
   },
   {
-    "id": "6016fc7f1cab617b826963652a7537d31827f1e6",
-    "short_id": "6016fc7f1ca",
+    "id": "d110a7f8f8358e94456c78fd703d2896c8fd2b24",
+    "short_id": "d110a7f8f83",
     "created_at": "2026-09-11T11:33:00.000+02:00",
     "parent_ids": [
-      "ce1994cf2be3f6c569391484f5c19b3a9bbb6752"
+      "a18215f2a00ef64d1c7f247341a60c331223acca"
     ],
     "title": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen",
     "message": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen\n\nKundeneigene FreeMarker-Vorlagen (Ordner vorlagen/kunde) werden nach dem Update\nnicht automatisch umgestellt. Der Admin startet den Job unter\nAdministration > Vorlagen konvertieren. Nicht konvertierte Vorlagen fallen auf\ndas Standardlayout zurück.\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-11T11:33:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-11T11:33:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6016fc7f1cab617b826963652a7537d31827f1e6"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d110a7f8f8358e94456c78fd703d2896c8fd2b24"
   },
   {
-    "id": "ce1994cf2be3f6c569391484f5c19b3a9bbb6752",
-    "short_id": "ce1994cf2be",
+    "id": "a18215f2a00ef64d1c7f247341a60c331223acca",
+    "short_id": "a18215f2a00",
     "created_at": "2026-09-09T14:40:00.000+02:00",
     "parent_ids": [
-      "99fae0cf02cb9e7c07217dadac0e05a2a418363a"
+      "156356078e5927b4c1f53ac0e52b94bab036f66a"
     ],
     "title": "MOB-4760 Kaufvertragsvorlage umgestellt",
     "message": "MOB-4760 Kaufvertragsvorlage umgestellt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-09T14:40:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-09T14:40:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/ce1994cf2be3f6c569391484f5c19b3a9bbb6752"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a18215f2a00ef64d1c7f247341a60c331223acca"
   },
   {
-    "id": "99fae0cf02cb9e7c07217dadac0e05a2a418363a",
-    "short_id": "99fae0cf02c",
+    "id": "156356078e5927b4c1f53ac0e52b94bab036f66a",
+    "short_id": "156356078e5",
     "created_at": "2026-09-08T09:02:00.000+02:00",
     "parent_ids": [
-      "62750fa586b121b41c2a02be21ac396e2ac9091b"
+      "5d07ca73f806e25943f83b76e4870358d09ed14f"
     ],
     "title": "MOB-4760 Lieferscheinvorlage umgestellt",
     "message": "MOB-4760 Lieferscheinvorlage umgestellt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-08T09:02:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-08T09:02:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/99fae0cf02cb9e7c07217dadac0e05a2a418363a"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/156356078e5927b4c1f53ac0e52b94bab036f66a"
   },
   {
-    "id": "62750fa586b121b41c2a02be21ac396e2ac9091b",
-    "short_id": "62750fa586b",
+    "id": "5d07ca73f806e25943f83b76e4870358d09ed14f",
+    "short_id": "5d07ca73f80",
     "created_at": "2026-09-07T10:15:00.000+02:00",
     "parent_ids": [
-      "a65d284e6a0c904f771bec7bd66685c5365495f8"
+      "13200b0455dfccaba08792db020a22148a32df6d"
     ],
     "title": "MOB-4760 Rechnungsvorlage umgestellt",
     "message": "MOB-4760 Rechnungsvorlage umgestellt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-07T10:15:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-07T10:15:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/62750fa586b121b41c2a02be21ac396e2ac9091b"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/5d07ca73f806e25943f83b76e4870358d09ed14f"
   },
   {
-    "id": "a65d284e6a0c904f771bec7bd66685c5365495f8",
-    "short_id": "a65d284e6a0",
+    "id": "13200b0455dfccaba08792db020a22148a32df6d",
+    "short_id": "13200b0455d",
     "created_at": "2026-09-03T08:55:00.000+02:00",
     "parent_ids": [
-      "f0efd8d70dc21680f020dd9afe3be31f86616a11"
+      "a65e5e0b5b4ff694d3b8fbc75d3f41d9ef82869d"
     ],
     "title": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht",
     "message": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-03T08:55:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-03T08:55:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a65d284e6a0c904f771bec7bd66685c5365495f8"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/13200b0455dfccaba08792db020a22148a32df6d"
   }
 ]

@@ -55,12 +55,14 @@ const writeJson = (rel, data) => {
 /* ------------------------------------------------------------------ */
 
 const git = (args, env = {}) => execFileSync('git', args, { cwd: REPO, env: { ...process.env, ...env }, encoding: 'utf8' }).trim()
-const who = (key, date) => ({
-  GIT_AUTHOR_NAME: people[key].name,
-  GIT_AUTHOR_EMAIL: people[key].email,
+// Every dataset commit is authored by the maintainer; the fictional team only appears in Jira, GitLab MRs and documents.
+const AUTHOR = { name: 'Delschad Jankir', email: '273245025+djankir@users.noreply.github.com' }
+const who = (_key, date) => ({
+  GIT_AUTHOR_NAME: AUTHOR.name,
+  GIT_AUTHOR_EMAIL: AUTHOR.email,
   GIT_AUTHOR_DATE: date,
-  GIT_COMMITTER_NAME: people[key].name,
-  GIT_COMMITTER_EMAIL: people[key].email,
+  GIT_COMMITTER_NAME: AUTHOR.name,
+  GIT_COMMITTER_EMAIL: AUTHOR.email,
   GIT_COMMITTER_DATE: date,
 })
 

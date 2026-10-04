@@ -1,97 +1,97 @@
 [
   {
-    "id": "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd",
-    "short_id": "8b55cef67c9",
+    "id": "3938d39a05bc35f55fefd352ad17372c4b5dea2e",
+    "short_id": "3938d39a05b",
     "created_at": "2026-09-19T08:20:00.000+02:00",
     "parent_ids": [
-      "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf"
+      "b22e52232eaf4305af23dafa7e72d52359047de0"
     ],
     "title": "MOB-4815 Testlauf Kasse in der Pipeline",
     "message": "MOB-4815 Testlauf Kasse in der Pipeline\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-19T08:20:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-19T08:20:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/8b55cef67c9ab04bbe198c49d32d9af4665fc1dd"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3938d39a05bc35f55fefd352ad17372c4b5dea2e"
   },
   {
-    "id": "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf",
-    "short_id": "81e2f37c95e",
+    "id": "b22e52232eaf4305af23dafa7e72d52359047de0",
+    "short_id": "b22e52232ea",
     "created_at": "2026-09-18T16:44:00.000+02:00",
     "parent_ids": [
-      "d4bee0eef0181169b21e271a3c67ca1872a15c3b"
+      "3b401b501bcdac8e3491806c269bfa2076ea317e"
     ],
     "title": "MOB-4815 Testdaten aufgeräumt",
     "message": "MOB-4815 Testdaten aufgeräumt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-18T16:44:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-18T16:44:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b22e52232eaf4305af23dafa7e72d52359047de0"
   },
   {
-    "id": "d4bee0eef0181169b21e271a3c67ca1872a15c3b",
-    "short_id": "d4bee0eef01",
+    "id": "3b401b501bcdac8e3491806c269bfa2076ea317e",
+    "short_id": "3b401b501bc",
     "created_at": "2026-09-18T10:05:00.000+02:00",
     "parent_ids": [
-      "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3"
+      "2cb688523481cc8fbcabcafbc4d8a54455f5ec26"
     ],
     "title": "MOB-4815 Tests Kartenzahlung",
     "message": "MOB-4815 Tests Kartenzahlung\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-18T10:05:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-18T10:05:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d4bee0eef0181169b21e271a3c67ca1872a15c3b"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3b401b501bcdac8e3491806c269bfa2076ea317e"
   },
   {
-    "id": "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3",
-    "short_id": "bce9e86dd5d",
+    "id": "2cb688523481cc8fbcabcafbc4d8a54455f5ec26",
+    "short_id": "2cb68852348",
     "created_at": "2026-09-17T15:30:00.000+02:00",
     "parent_ids": [
-      "08c95fd5e53eec4ae0d5fb00da976423dd0014e7"
+      "4ea1f0ecf8ad4b6a7b706f850cfaa5fdc5482d5d"
     ],
     "title": "MOB-4815 Tests Storno",
     "message": "MOB-4815 Tests Storno\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-17T15:30:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-17T15:30:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2cb688523481cc8fbcabcafbc4d8a54455f5ec26"
   },
   {
-    "id": "08c95fd5e53eec4ae0d5fb00da976423dd0014e7",
-    "short_id": "08c95fd5e53",
+    "id": "4ea1f0ecf8ad4b6a7b706f850cfaa5fdc5482d5d",
+    "short_id": "4ea1f0ecf8a",
     "created_at": "2026-09-17T09:12:00.000+02:00",
     "parent_ids": [
-      "5692e31ffc34711e92bf13e69ff73c2c41beda69"
+      "36e2d259cfd79bc89fd4e7f96bf1568af4a75bc2"
     ],
     "title": "MOB-4815 Tests Tagesabschluss",
     "message": "MOB-4815 Tests Tagesabschluss\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-17T09:12:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-17T09:12:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/08c95fd5e53eec4ae0d5fb00da976423dd0014e7"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4ea1f0ecf8ad4b6a7b706f850cfaa5fdc5482d5d"
   }
 ]

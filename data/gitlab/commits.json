@@ -1,23 +1,23 @@
 [
   {
-    "id": "df9f4148183618a3a6eb0de3e202cb7f25ba1663",
-    "short_id": "df9f4148183",
+    "id": "ad176b2707eff26a43cdb5f2e466dc659a4593b6",
+    "short_id": "ad176b2707e",
     "created_at": "2026-09-29T15:48:00.000+02:00",
     "parent_ids": [
-      "f012d1c349c88cded41356780e52db0df7f29936",
-      "6977c6cd54f01797f41b0a24e407517d2a402d6d"
+      "39af644386eab83e817ad2e20dd7e854abb03d81",
+      "ccbc28e3799931c623c8ebaf310a90a9ba61f1a5"
     ],
     "title": "Merge branch 'feature/MOB-4812-teillieferung' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4812-teillieferung' into 'release/26.4'\n\nMOB-4812 Teillieferung im Kaufvertrag\n\nCloses MOB-4812, MOB-4829\n\nSee merge request mobiq/erp!1287\n",
-    "author_name": "Markus Engel",
-    "author_email": "markus.engel@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-29T15:48:00.000+02:00",
-    "committer_name": "Markus Engel",
-    "committer_email": "markus.engel@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-29T15:48:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/df9f4148183618a3a6eb0de3e202cb7f25ba1663",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/ad176b2707eff26a43cdb5f2e466dc659a4593b6",
     "stats": {
       "additions": 193,
       "deletions": 14,
@@ -25,23 +25,23 @@
     }
   },
   {
-    "id": "6977c6cd54f01797f41b0a24e407517d2a402d6d",
-    "short_id": "6977c6cd54f",
+    "id": "ccbc28e3799931c623c8ebaf310a90a9ba61f1a5",
+    "short_id": "ccbc28e3799",
     "created_at": "2026-09-26T11:30:00.000+02:00",
     "parent_ids": [
-      "bce67ee918b392058d8c0fcc3db772596e699bd4"
+      "4073737ff604d69589eeddf024efc77a4ac7ea77"
     ],
     "title": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog",
     "message": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog\n",
-    "author_name": "Merve Yilmaz",
-    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-26T11:30:00.000+02:00",
-    "committer_name": "Merve Yilmaz",
-    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-26T11:30:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6977c6cd54f01797f41b0a24e407517d2a402d6d",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/ccbc28e3799931c623c8ebaf310a90a9ba61f1a5",
     "stats": {
       "additions": 1,
       "deletions": 1,
@@ -49,24 +49,24 @@
     }
   },
   {
-    "id": "f012d1c349c88cded41356780e52db0df7f29936",
-    "short_id": "f012d1c349c",
+    "id": "39af644386eab83e817ad2e20dd7e854abb03d81",
+    "short_id": "39af644386e",
     "created_at": "2026-09-26T09:02:00.000+02:00",
     "parent_ids": [
-      "133cb1afb53bc214e818012d24d1d2224e0b2f69",
-      "72303fdfe9aaeed5a268f7b845040bf02185040d"
+      "3beb30b98f52d40aa94539492a9ea372e80fa9cf",
+      "e9b45e0c184b578e0538d888261f43b420b1619f"
     ],
     "title": "Merge branch 'hotfix/MOB-4841-npe-tagesabschluss' into 'release/26.4'",
     "message": "Merge branch 'hotfix/MOB-4841-npe-tagesabschluss' into 'release/26.4'\n\nMOB-4841 NPE im Tagesabschluss bei Filiale ohne Belege\n\nCloses MOB-4841\n\nSee merge request mobiq/erp!1293\n",
-    "author_name": "Tim Wagner",
-    "author_email": "tim.wagner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-26T09:02:00.000+02:00",
-    "committer_name": "Tim Wagner",
-    "committer_email": "tim.wagner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-26T09:02:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/f012d1c349c88cded41356780e52db0df7f29936",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/39af644386eab83e817ad2e20dd7e854abb03d81",
     "stats": {
       "additions": 3,
       "deletions": 0,
@@ -74,23 +74,23 @@
     }
   },
   {
-    "id": "72303fdfe9aaeed5a268f7b845040bf02185040d",
-    "short_id": "72303fdfe9a",
+    "id": "e9b45e0c184b578e0538d888261f43b420b1619f",
+    "short_id": "e9b45e0c184",
     "created_at": "2026-09-26T08:05:00.000+02:00",
     "parent_ids": [
-      "133cb1afb53bc214e818012d24d1d2224e0b2f69"
+      "3beb30b98f52d40aa94539492a9ea372e80fa9cf"
     ],
     "title": "MOB-4841 Tagesabschluss: Filiale ohne Belege nicht mehr abbrechen",
     "message": "MOB-4841 Tagesabschluss: Filiale ohne Belege nicht mehr abbrechen\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-26T08:05:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-26T08:05:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/72303fdfe9aaeed5a268f7b845040bf02185040d",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e9b45e0c184b578e0538d888261f43b420b1619f",
     "stats": {
       "additions": 3,
       "deletions": 0,
@@ -98,24 +98,24 @@
     }
   },
   {
-    "id": "133cb1afb53bc214e818012d24d1d2224e0b2f69",
-    "short_id": "133cb1afb53",
+    "id": "3beb30b98f52d40aa94539492a9ea372e80fa9cf",
+    "short_id": "3beb30b98f5",
     "created_at": "2026-09-25T09:15:00.000+02:00",
     "parent_ids": [
-      "2e689cff7eda1603bbf73f75524adbb65802910c",
-      "5dd627cc6475f97e974fcb17193475162d616415"
+      "c5e1165656e0c9e19f7b94ceaa5da49545f3d759",
+      "2af909963056f4d10775b3293731191d8cad2ee7"
     ],
     "title": "Merge branch 'feature/MOB-4835-lieferstopp' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4835-lieferstopp' into 'release/26.4'\n\nMOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“\n\nCloses MOB-4835\n\nSee merge request mobiq/erp!1290\n",
-    "author_name": "Markus Engel",
-    "author_email": "markus.engel@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-25T09:15:00.000+02:00",
-    "committer_name": "Markus Engel",
-    "committer_email": "markus.engel@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-25T09:15:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/133cb1afb53bc214e818012d24d1d2224e0b2f69",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3beb30b98f52d40aa94539492a9ea372e80fa9cf",
     "stats": {
       "additions": 4,
       "deletions": 4,
@@ -123,23 +123,23 @@
     }
   },
   {
-    "id": "bce67ee918b392058d8c0fcc3db772596e699bd4",
-    "short_id": "bce67ee918b",
+    "id": "4073737ff604d69589eeddf024efc77a4ac7ea77",
+    "short_id": "4073737ff60",
     "created_at": "2026-09-24T15:12:00.000+02:00",
     "parent_ids": [
-      "b1a3aeebcfd1ee3847949f44ca6b4027d923ae19"
+      "e49c7d627e708474472639b8c6b7c070546b678f"
     ],
     "title": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen",
     "message": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen\n\nBei 3 Teilen à 33,33 % blieb 1 Cent Anzahlung offen. Der letzte Teil\nverrechnet jetzt den Rest der Anzahlung.\n",
-    "author_name": "Lena Hoffmann",
-    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-24T15:12:00.000+02:00",
-    "committer_name": "Lena Hoffmann",
-    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-24T15:12:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bce67ee918b392058d8c0fcc3db772596e699bd4",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4073737ff604d69589eeddf024efc77a4ac7ea77",
     "stats": {
       "additions": 8,
       "deletions": 1,
@@ -147,23 +147,23 @@
     }
   },
   {
-    "id": "5dd627cc6475f97e974fcb17193475162d616415",
-    "short_id": "5dd627cc647",
+    "id": "2af909963056f4d10775b3293731191d8cad2ee7",
+    "short_id": "2af90996305",
     "created_at": "2026-09-24T10:58:00.000+02:00",
     "parent_ids": [
-      "34db438813c69e897384f77f9553171c49aec447"
+      "3757ad3270fefb8a6abd7dbf558737d32d986e3f"
     ],
     "title": "MOB-4835 Übersetzungen nachgezogen (nl, fr)",
     "message": "MOB-4835 Übersetzungen nachgezogen (nl, fr)\n",
-    "author_name": "Merve Yilmaz",
-    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-24T10:58:00.000+02:00",
-    "committer_name": "Merve Yilmaz",
-    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-24T10:58:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/5dd627cc6475f97e974fcb17193475162d616415",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2af909963056f4d10775b3293731191d8cad2ee7",
     "stats": {
       "additions": 2,
       "deletions": 2,
@@ -171,23 +171,23 @@
     }
   },
   {
-    "id": "34db438813c69e897384f77f9553171c49aec447",
-    "short_id": "34db438813c",
+    "id": "3757ad3270fefb8a6abd7dbf558737d32d986e3f",
+    "short_id": "3757ad3270f",
     "created_at": "2026-09-24T10:41:00.000+02:00",
     "parent_ids": [
-      "2e689cff7eda1603bbf73f75524adbb65802910c"
+      "c5e1165656e0c9e19f7b94ceaa5da49545f3d759"
     ],
     "title": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“ (Web und Desktop)",
     "message": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“ (Web und Desktop)\n",
-    "author_name": "Merve Yilmaz",
-    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-24T10:41:00.000+02:00",
-    "committer_name": "Merve Yilmaz",
-    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-24T10:41:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/34db438813c69e897384f77f9553171c49aec447",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3757ad3270fefb8a6abd7dbf558737d32d986e3f",
     "stats": {
       "additions": 2,
       "deletions": 2,
@@ -195,23 +195,23 @@
     }
   },
   {
-    "id": "b1a3aeebcfd1ee3847949f44ca6b4027d923ae19",
-    "short_id": "b1a3aeebcfd",
+    "id": "e49c7d627e708474472639b8c6b7c070546b678f",
+    "short_id": "e49c7d627e7",
     "created_at": "2026-09-23T10:21:00.000+02:00",
     "parent_ids": [
-      "e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae"
+      "575c52ff754e118a2a24bd37e68d1aa47a84552b"
     ],
     "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet",
     "message": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet\n",
-    "author_name": "Lena Hoffmann",
-    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-23T10:21:00.000+02:00",
-    "committer_name": "Lena Hoffmann",
-    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-23T10:21:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b1a3aeebcfd1ee3847949f44ca6b4027d923ae19",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e49c7d627e708474472639b8c6b7c070546b678f",
     "stats": {
       "additions": 10,
       "deletions": 3,
@@ -219,23 +219,23 @@
     }
   },
   {
-    "id": "e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae",
-    "short_id": "e8910c219cf",
+    "id": "575c52ff754e118a2a24bd37e68d1aa47a84552b",
+    "short_id": "575c52ff754",
     "created_at": "2026-09-22T13:57:00.000+02:00",
     "parent_ids": [
-      "d633e6756cbab3a4760745cbcd8dd69972ca243c"
+      "3e9515d849a53661887a97d72402bbbab90ad5db"
     ],
     "title": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig",
     "message": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig\n",
-    "author_name": "Lena Hoffmann",
-    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-22T13:57:00.000+02:00",
-    "committer_name": "Lena Hoffmann",
-    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-22T13:57:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/575c52ff754e118a2a24bd37e68d1aa47a84552b",
     "stats": {
       "additions": 32,
       "deletions": 3,
@@ -243,24 +243,24 @@
     }
   },
   {
-    "id": "2e689cff7eda1603bbf73f75524adbb65802910c",
-    "short_id": "2e689cff7ed",
+    "id": "c5e1165656e0c9e19f7b94ceaa5da49545f3d759",
+    "short_id": "c5e1165656e",
     "created_at": "2026-09-21T09:40:00.000+02:00",
     "parent_ids": [
-      "5692e31ffc34711e92bf13e69ff73c2c41beda69",
-      "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd"
+      "36e2d259cfd79bc89fd4e7f96bf1568af4a75bc2",
+      "3938d39a05bc35f55fefd352ad17372c4b5dea2e"
     ],
     "title": "Merge branch 'feature/MOB-4815-tests-kasse' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4815-tests-kasse' into 'release/26.4'\n\nMOB-4815 Testabdeckung Kasse erhöht\n\nCloses MOB-4815\n\nSee merge request mobiq/erp!1275\n",
-    "author_name": "Tim Wagner",
-    "author_email": "tim.wagner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-21T09:40:00.000+02:00",
-    "committer_name": "Tim Wagner",
-    "committer_email": "tim.wagner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-21T09:40:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2e689cff7eda1603bbf73f75524adbb65802910c",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/c5e1165656e0c9e19f7b94ceaa5da49545f3d759",
     "stats": {
       "additions": 22,
       "deletions": 0,
@@ -268,23 +268,23 @@
     }
   },
   {
-    "id": "5692e31ffc34711e92bf13e69ff73c2c41beda69",
-    "short_id": "5692e31ffc3",
+    "id": "36e2d259cfd79bc89fd4e7f96bf1568af4a75bc2",
+    "short_id": "36e2d259cfd",
     "created_at": "2026-09-19T17:58:00.000+02:00",
     "parent_ids": [
-      "57ebcbc50d6bf64354fed4b76bd7ab2098c40b41"
+      "30281475965dc56a5ac1b839f80e7b5e6fb0a75d"
     ],
     "title": "Avis-Vorlauf Standard 48h -> 24h",
     "message": "Avis-Vorlauf Standard 48h -> 24h\n\nWunsch Möbel Kessler, siehe Mail von Hr. Kessler an den Support.\n",
-    "author_name": "Kai Brenner",
-    "author_email": "kai.brenner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-19T17:58:00.000+02:00",
-    "committer_name": "Kai Brenner",
-    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-19T17:58:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/5692e31ffc34711e92bf13e69ff73c2c41beda69",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/36e2d259cfd79bc89fd4e7f96bf1568af4a75bc2",
     "stats": {
       "additions": 1,
       "deletions": 1,
@@ -292,23 +292,23 @@
     }
   },
   {
-    "id": "d633e6756cbab3a4760745cbcd8dd69972ca243c",
-    "short_id": "d633e6756cb",
+    "id": "3e9515d849a53661887a97d72402bbbab90ad5db",
+    "short_id": "3e9515d849a",
     "created_at": "2026-09-19T09:44:00.000+02:00",
     "parent_ids": [
-      "4e4f64a2c551825aae123ab8432ba36fce61ae23"
+      "be0611b7ab02f399d0639d17bf09198bf1208454"
     ],
     "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)",
     "message": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-19T09:44:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-19T09:44:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d633e6756cbab3a4760745cbcd8dd69972ca243c",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3e9515d849a53661887a97d72402bbbab90ad5db",
     "stats": {
       "additions": 22,
       "deletions": 8,
@@ -316,23 +316,23 @@
     }
   },
   {
-    "id": "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd",
-    "short_id": "8b55cef67c9",
+    "id": "3938d39a05bc35f55fefd352ad17372c4b5dea2e",
+    "short_id": "3938d39a05b",
     "created_at": "2026-09-19T08:20:00.000+02:00",
     "parent_ids": [
-      "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf"
+      "b22e52232eaf4305af23dafa7e72d52359047de0"
     ],
     "title": "MOB-4815 Testlauf Kasse in der Pipeline",
     "message": "MOB-4815 Testlauf Kasse in der Pipeline\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-19T08:20:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-19T08:20:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/8b55cef67c9ab04bbe198c49d32d9af4665fc1dd",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3938d39a05bc35f55fefd352ad17372c4b5dea2e",
     "stats": {
       "additions": 4,
       "deletions": 0,
@@ -340,23 +340,23 @@
     }
   },
   {
-    "id": "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf",
-    "short_id": "81e2f37c95e",
+    "id": "b22e52232eaf4305af23dafa7e72d52359047de0",
+    "short_id": "b22e52232ea",
     "created_at": "2026-09-18T16:44:00.000+02:00",
     "parent_ids": [
-      "d4bee0eef0181169b21e271a3c67ca1872a15c3b"
+      "3b401b501bcdac8e3491806c269bfa2076ea317e"
     ],
     "title": "MOB-4815 Testdaten aufgeräumt",
     "message": "MOB-4815 Testdaten aufgeräumt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-18T16:44:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-18T16:44:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b22e52232eaf4305af23dafa7e72d52359047de0",
     "stats": {
       "additions": 3,
       "deletions": 0,
@@ -364,24 +364,24 @@
     }
   },
   {
-    "id": "57ebcbc50d6bf64354fed4b76bd7ab2098c40b41",
-    "short_id": "57ebcbc50d6",
+    "id": "30281475965dc56a5ac1b839f80e7b5e6fb0a75d",
+    "short_id": "30281475965",
     "created_at": "2026-09-18T16:12:00.000+02:00",
     "parent_ids": [
-      "f0efd8d70dc21680f020dd9afe3be31f86616a11",
-      "2e588beb8daaf29f6dfc296c566dbe154ec82e98"
+      "a65e5e0b5b4ff694d3b8fbc75d3f41d9ef82869d",
+      "3c1018f05b1a7a2af170ddbd20fb5e56bf215f5f"
     ],
     "title": "Merge branch 'feature/MOB-4760-vorlagen-engine' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4760-vorlagen-engine' into 'release/26.4'\n\nMOB-4760 Neue Vorlagen-Engine im Druckmanagement\n\nCloses MOB-4760\n\nSee merge request mobiq/erp!1270\n",
-    "author_name": "Tobias Reuter",
-    "author_email": "tobias.reuter@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-18T16:12:00.000+02:00",
-    "committer_name": "Tobias Reuter",
-    "committer_email": "tobias.reuter@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-18T16:12:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/57ebcbc50d6bf64354fed4b76bd7ab2098c40b41",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/30281475965dc56a5ac1b839f80e7b5e6fb0a75d",
     "stats": {
       "additions": 64,
       "deletions": 22,
@@ -389,23 +389,23 @@
     }
   },
   {
-    "id": "d4bee0eef0181169b21e271a3c67ca1872a15c3b",
-    "short_id": "d4bee0eef01",
+    "id": "3b401b501bcdac8e3491806c269bfa2076ea317e",
+    "short_id": "3b401b501bc",
     "created_at": "2026-09-18T10:05:00.000+02:00",
     "parent_ids": [
-      "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3"
+      "2cb688523481cc8fbcabcafbc4d8a54455f5ec26"
     ],
     "title": "MOB-4815 Tests Kartenzahlung",
     "message": "MOB-4815 Tests Kartenzahlung\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-18T10:05:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-18T10:05:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d4bee0eef0181169b21e271a3c67ca1872a15c3b",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3b401b501bcdac8e3491806c269bfa2076ea317e",
     "stats": {
       "additions": 5,
       "deletions": 0,
@@ -413,23 +413,23 @@
     }
   },
   {
-    "id": "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3",
-    "short_id": "bce9e86dd5d",
+    "id": "2cb688523481cc8fbcabcafbc4d8a54455f5ec26",
+    "short_id": "2cb68852348",
     "created_at": "2026-09-17T15:30:00.000+02:00",
     "parent_ids": [
-      "08c95fd5e53eec4ae0d5fb00da976423dd0014e7"
+      "4ea1f0ecf8ad4b6a7b706f850cfaa5fdc5482d5d"
     ],
     "title": "MOB-4815 Tests Storno",
     "message": "MOB-4815 Tests Storno\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-17T15:30:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-17T15:30:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2cb688523481cc8fbcabcafbc4d8a54455f5ec26",
     "stats": {
       "additions": 5,
       "deletions": 0,
@@ -437,23 +437,23 @@
     }
   },
   {
-    "id": "4e4f64a2c551825aae123ab8432ba36fce61ae23",
-    "short_id": "4e4f64a2c55",
+    "id": "be0611b7ab02f399d0639d17bf09198bf1208454",
+    "short_id": "be0611b7ab0",
     "created_at": "2026-09-17T11:09:00.000+02:00",
     "parent_ids": [
-      "9222fc79b258f306967bd5d27f2696757aacfe4f"
+      "1cd1ff6534b3994065cf7f0abfcbdcf5813bf914"
     ],
     "title": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3",
     "message": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3\n\nNach Abstimmung mit Markus: mehr als 5 Teile will kein Kunde, 1 Teil ist keine Teillieferung.\n",
-    "author_name": "Jonas Albrecht",
-    "author_email": "jonas.albrecht@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-17T11:09:00.000+02:00",
-    "committer_name": "Jonas Albrecht",
-    "committer_email": "jonas.albrecht@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-17T11:09:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4e4f64a2c551825aae123ab8432ba36fce61ae23",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/be0611b7ab02f399d0639d17bf09198bf1208454",
     "stats": {
       "additions": 18,
       "deletions": 3,
@@ -461,23 +461,23 @@
     }
   },
   {
-    "id": "08c95fd5e53eec4ae0d5fb00da976423dd0014e7",
-    "short_id": "08c95fd5e53",
+    "id": "4ea1f0ecf8ad4b6a7b706f850cfaa5fdc5482d5d",
+    "short_id": "4ea1f0ecf8a",
     "created_at": "2026-09-17T09:12:00.000+02:00",
     "parent_ids": [
-      "5692e31ffc34711e92bf13e69ff73c2c41beda69"
+      "36e2d259cfd79bc89fd4e7f96bf1568af4a75bc2"
     ],
     "title": "MOB-4815 Tests Tagesabschluss",
     "message": "MOB-4815 Tests Tagesabschluss\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-17T09:12:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-17T09:12:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/08c95fd5e53eec4ae0d5fb00da976423dd0014e7",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4ea1f0ecf8ad4b6a7b706f850cfaa5fdc5482d5d",
     "stats": {
       "additions": 5,
       "deletions": 0,
@@ -485,24 +485,24 @@
     }
   },
   {
-    "id": "f0efd8d70dc21680f020dd9afe3be31f86616a11",
-    "short_id": "f0efd8d70dc",
+    "id": "a65e5e0b5b4ff694d3b8fbc75d3f41d9ef82869d",
+    "short_id": "a65e5e0b5b4",
     "created_at": "2026-09-16T11:05:00.000+02:00",
     "parent_ids": [
-      "6480445821353feb8e057aa6e8e4140eb4331cac",
-      "b681f37f47ce42aaa389cc0a7756ac2d71386bc7"
+      "94504cca3beb67f90fb05c308df42d9dec50d537",
+      "145bdd254e9f45134872123637eaacb600e598de"
     ],
     "title": "Merge branch 'feature/MOB-4790-kassenbeleg-partition' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4790-kassenbeleg-partition' into 'release/26.4'\n\nMOB-4790 Kassenbelege nach Jahr partitionieren\n\nCloses MOB-4790\n\nSee merge request mobiq/erp!1262\n",
-    "author_name": "Tobias Reuter",
-    "author_email": "tobias.reuter@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-16T11:05:00.000+02:00",
-    "committer_name": "Tobias Reuter",
-    "committer_email": "tobias.reuter@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-16T11:05:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/f0efd8d70dc21680f020dd9afe3be31f86616a11",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a65e5e0b5b4ff694d3b8fbc75d3f41d9ef82869d",
     "stats": {
       "additions": 23,
       "deletions": 0,
@@ -510,23 +510,23 @@
     }
   },
   {
-    "id": "2e588beb8daaf29f6dfc296c566dbe154ec82e98",
-    "short_id": "2e588beb8da",
+    "id": "3c1018f05b1a7a2af170ddbd20fb5e56bf215f5f",
+    "short_id": "3c1018f05b1",
     "created_at": "2026-09-16T08:47:00.000+02:00",
     "parent_ids": [
-      "0b5afd0b5eb176a8014960fbc5664ce0619d0a81"
+      "a55cab311842ba2ae9901c66fb6d2e6c948b3b5c"
     ],
     "title": "MOB-4760 Tests Druckausgabe",
     "message": "MOB-4760 Tests Druckausgabe\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-16T08:47:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-16T08:47:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2e588beb8daaf29f6dfc296c566dbe154ec82e98",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/3c1018f05b1a7a2af170ddbd20fb5e56bf215f5f",
     "stats": {
       "additions": 15,
       "deletions": 0,
@@ -534,23 +534,23 @@
     }
   },
   {
-    "id": "9222fc79b258f306967bd5d27f2696757aacfe4f",
-    "short_id": "9222fc79b25",
+    "id": "1cd1ff6534b3994065cf7f0abfcbdcf5813bf914",
+    "short_id": "1cd1ff6534b",
     "created_at": "2026-09-15T17:36:00.000+02:00",
     "parent_ids": [
-      "bd9c5601f0a31ccfca24fa00e2f865a84d844dac"
+      "cf643095f52fa0c5a09786528834761fd8bfda1b"
     ],
     "title": "MOB-4812 Dialog „Lieferung aufteilen“, gesperrt bei Finanzkauf",
     "message": "MOB-4812 Dialog „Lieferung aufteilen“, gesperrt bei Finanzkauf\n",
-    "author_name": "Merve Yilmaz",
-    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-15T17:36:00.000+02:00",
-    "committer_name": "Merve Yilmaz",
-    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-15T17:36:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/9222fc79b258f306967bd5d27f2696757aacfe4f",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/1cd1ff6534b3994065cf7f0abfcbdcf5813bf914",
     "stats": {
       "additions": 51,
       "deletions": 4,
@@ -558,23 +558,23 @@
     }
   },
   {
-    "id": "0b5afd0b5eb176a8014960fbc5664ce0619d0a81",
-    "short_id": "0b5afd0b5eb",
+    "id": "a55cab311842ba2ae9901c66fb6d2e6c948b3b5c",
+    "short_id": "a55cab31184",
     "created_at": "2026-09-15T16:20:00.000+02:00",
     "parent_ids": [
-      "6016fc7f1cab617b826963652a7537d31827f1e6"
+      "d110a7f8f8358e94456c78fd703d2896c8fd2b24"
     ],
     "title": "MOB-4760 Alte Druck-Engine entfernt",
     "message": "MOB-4760 Alte Druck-Engine entfernt\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-15T16:20:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-15T16:20:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/0b5afd0b5eb176a8014960fbc5664ce0619d0a81",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a55cab311842ba2ae9901c66fb6d2e6c948b3b5c",
     "stats": {
       "additions": 0,
       "deletions": 11,
@@ -582,23 +582,23 @@
     }
   },
   {
-    "id": "b681f37f47ce42aaa389cc0a7756ac2d71386bc7",
-    "short_id": "b681f37f47c",
+    "id": "145bdd254e9f45134872123637eaacb600e598de",
+    "short_id": "145bdd254e9",
     "created_at": "2026-09-14T19:02:00.000+02:00",
     "parent_ids": [
-      "b37b560a99d45ead81d643172524682ee4c84bf1"
+      "2c131df270e27ffc952450b716c556b2e8a34fef"
     ],
     "title": "MOB-4790 Lasttest Tagesabschluss",
     "message": "MOB-4790 Lasttest Tagesabschluss\n",
-    "author_name": "Kai Brenner",
-    "author_email": "kai.brenner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-14T19:02:00.000+02:00",
-    "committer_name": "Kai Brenner",
-    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-14T19:02:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b681f37f47ce42aaa389cc0a7756ac2d71386bc7",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/145bdd254e9f45134872123637eaacb600e598de",
     "stats": {
       "additions": 4,
       "deletions": 0,
@@ -606,23 +606,23 @@
     }
   },
   {
-    "id": "bd9c5601f0a31ccfca24fa00e2f865a84d844dac",
-    "short_id": "bd9c5601f0a",
+    "id": "cf643095f52fa0c5a09786528834761fd8bfda1b",
+    "short_id": "cf643095f52",
     "created_at": "2026-09-12T18:03:00.000+02:00",
     "parent_ids": [
-      "22474846ee9ca3b1a634a44090001c79e6259a5a"
+      "0516bb8b0bde9185b18c073c65d1d0737baca223"
     ],
     "title": "MOB-4812 WIP Dialog Lieferung aufteilen",
     "message": "MOB-4812 WIP Dialog Lieferung aufteilen\n",
-    "author_name": "Merve Yilmaz",
-    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-12T18:03:00.000+02:00",
-    "committer_name": "Merve Yilmaz",
-    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-12T18:03:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bd9c5601f0a31ccfca24fa00e2f865a84d844dac",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/cf643095f52fa0c5a09786528834761fd8bfda1b",
     "stats": {
       "additions": 11,
       "deletions": 0,
@@ -630,23 +630,23 @@
     }
   },
   {
-    "id": "b37b560a99d45ead81d643172524682ee4c84bf1",
-    "short_id": "b37b560a99d",
+    "id": "2c131df270e27ffc952450b716c556b2e8a34fef",
+    "short_id": "2c131df270e",
     "created_at": "2026-09-12T15:47:00.000+02:00",
     "parent_ids": [
-      "33e60afb111bab563c0237251879c6ff3e990a64"
+      "1ff724033d195eeb4b333ff8bbac23d26f220c15"
     ],
     "title": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen",
     "message": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen\n",
-    "author_name": "Kai Brenner",
-    "author_email": "kai.brenner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-12T15:47:00.000+02:00",
-    "committer_name": "Kai Brenner",
-    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-12T15:47:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b37b560a99d45ead81d643172524682ee4c84bf1",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/2c131df270e27ffc952450b716c556b2e8a34fef",
     "stats": {
       "additions": 3,
       "deletions": 0,
@@ -654,23 +654,23 @@
     }
   },
   {
-    "id": "22474846ee9ca3b1a634a44090001c79e6259a5a",
-    "short_id": "22474846ee9",
+    "id": "0516bb8b0bde9185b18c073c65d1d0737baca223",
+    "short_id": "0516bb8b0bd",
     "created_at": "2026-09-11T16:18:00.000+02:00",
     "parent_ids": [
-      "b104402c270a95c4cd1642246c9975b8c16613db"
+      "f163a154fcc0d9019d26dc9a41caec8e2894566d"
     ],
     "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
     "message": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“\n",
-    "author_name": "Merve Yilmaz",
-    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-11T16:18:00.000+02:00",
-    "committer_name": "Merve Yilmaz",
-    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-11T16:18:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/22474846ee9ca3b1a634a44090001c79e6259a5a",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/0516bb8b0bde9185b18c073c65d1d0737baca223",
     "stats": {
       "additions": 16,
       "deletions": 1,
@@ -678,23 +678,23 @@
     }
   },
   {
-    "id": "6016fc7f1cab617b826963652a7537d31827f1e6",
-    "short_id": "6016fc7f1ca",
+    "id": "d110a7f8f8358e94456c78fd703d2896c8fd2b24",
+    "short_id": "d110a7f8f83",
     "created_at": "2026-09-11T11:33:00.000+02:00",
     "parent_ids": [
-      "ce1994cf2be3f6c569391484f5c19b3a9bbb6752"
+      "a18215f2a00ef64d1c7f247341a60c331223acca"
     ],
     "title": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen",
     "message": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen\n\nKundeneigene FreeMarker-Vorlagen (Ordner vorlagen/kunde) werden nach dem Update\nnicht automatisch umgestellt. Der Admin startet den Job unter\nAdministration > Vorlagen konvertieren. Nicht konvertierte Vorlagen fallen auf\ndas Standardlayout zurück.\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-11T11:33:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-11T11:33:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6016fc7f1cab617b826963652a7537d31827f1e6",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d110a7f8f8358e94456c78fd703d2896c8fd2b24",
     "stats": {
       "additions": 24,
       "deletions": 0,
@@ -702,24 +702,24 @@
     }
   },
   {
-    "id": "6480445821353feb8e057aa6e8e4140eb4331cac",
-    "short_id": "64804458213",
+    "id": "94504cca3beb67f90fb05c308df42d9dec50d537",
+    "short_id": "94504cca3be",
     "created_at": "2026-09-10T14:31:00.000+02:00",
     "parent_ids": [
-      "93acf5425388f27dccecbccffff73268388591dd",
-      "c4380f3555d8896e98e38971b2199f4a4a30bb41"
+      "dbbb3a08f576d4ee905821b01f4c9ccfcd5f463f",
+      "09de4694b5fa85ee4b394509fa6368f654af34ca"
     ],
     "title": "Merge branch 'feature/MOB-4801-ladevolumen' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4801-ladevolumen' into 'release/26.4'\n\nMOB-4801 Ladevolumen je Fahrzeug prüfen\n\nCloses MOB-4801\n\nSee merge request mobiq/erp!1251\n",
-    "author_name": "Markus Engel",
-    "author_email": "markus.engel@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-10T14:31:00.000+02:00",
-    "committer_name": "Markus Engel",
-    "committer_email": "markus.engel@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-10T14:31:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6480445821353feb8e057aa6e8e4140eb4331cac",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/94504cca3beb67f90fb05c308df42d9dec50d537",
     "stats": {
       "additions": 41,
       "deletions": 1,
@@ -727,23 +727,23 @@
     }
   },
   {
-    "id": "33e60afb111bab563c0237251879c6ff3e990a64",
-    "short_id": "33e60afb111",
+    "id": "1ff724033d195eeb4b333ff8bbac23d26f220c15",
+    "short_id": "1ff724033d1",
     "created_at": "2026-09-10T08:24:00.000+02:00",
     "parent_ids": [
-      "6480445821353feb8e057aa6e8e4140eb4331cac"
+      "94504cca3beb67f90fb05c308df42d9dec50d537"
     ],
     "title": "MOB-4790 kassenbeleg nach Belegjahr partitionieren",
     "message": "MOB-4790 kassenbeleg nach Belegjahr partitionieren\n",
-    "author_name": "Kai Brenner",
-    "author_email": "kai.brenner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-10T08:24:00.000+02:00",
-    "committer_name": "Kai Brenner",
-    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-10T08:24:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/33e60afb111bab563c0237251879c6ff3e990a64",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/1ff724033d195eeb4b333ff8bbac23d26f220c15",
     "stats": {
       "additions": 16,
       "deletions": 0,
@@ -751,23 +751,23 @@
     }
   },
   {
-    "id": "ce1994cf2be3f6c569391484f5c19b3a9bbb6752",
-    "short_id": "ce1994cf2be",
+    "id": "a18215f2a00ef64d1c7f247341a60c331223acca",
+    "short_id": "a18215f2a00",
     "created_at": "2026-09-09T14:40:00.000+02:00",
     "parent_ids": [
-      "99fae0cf02cb9e7c07217dadac0e05a2a418363a"
+      "156356078e5927b4c1f53ac0e52b94bab036f66a"
     ],
     "title": "MOB-4760 Kaufvertragsvorlage umgestellt",
     "message": "MOB-4760 Kaufvertragsvorlage umgestellt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-09T14:40:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-09T14:40:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/ce1994cf2be3f6c569391484f5c19b3a9bbb6752",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a18215f2a00ef64d1c7f247341a60c331223acca",
     "stats": {
       "additions": 2,
       "deletions": 3,
@@ -775,23 +775,23 @@
     }
   },
   {
-    "id": "b104402c270a95c4cd1642246c9975b8c16613db",
-    "short_id": "b104402c270",
+    "id": "f163a154fcc0d9019d26dc9a41caec8e2894566d",
+    "short_id": "f163a154fcc",
     "created_at": "2026-09-09T14:26:00.000+02:00",
     "parent_ids": [
-      "724a0a7769f973a5384c5173964fc819fdd5afc6"
+      "6dfdc58a03f8d86093bccb832b25eb093d3cee5a"
     ],
     "title": "MOB-4812 Parameter TEILLIEF_ERLAUBT und TEILLIEF_MAX_ANZAHL (1 bis 10)",
     "message": "MOB-4812 Parameter TEILLIEF_ERLAUBT und TEILLIEF_MAX_ANZAHL (1 bis 10)\n",
-    "author_name": "Jonas Albrecht",
-    "author_email": "jonas.albrecht@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-09T14:26:00.000+02:00",
-    "committer_name": "Jonas Albrecht",
-    "committer_email": "jonas.albrecht@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-09T14:26:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b104402c270a95c4cd1642246c9975b8c16613db",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/f163a154fcc0d9019d26dc9a41caec8e2894566d",
     "stats": {
       "additions": 11,
       "deletions": 0,
@@ -799,23 +799,23 @@
     }
   },
   {
-    "id": "c4380f3555d8896e98e38971b2199f4a4a30bb41",
-    "short_id": "c4380f3555d",
+    "id": "09de4694b5fa85ee4b394509fa6368f654af34ca",
+    "short_id": "09de4694b5f",
     "created_at": "2026-09-09T10:30:00.000+02:00",
     "parent_ids": [
-      "4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d"
+      "e975ee9dac8ba6988f95eed3e41f11f2275c4bfb"
     ],
     "title": "MOB-4801 Tests Volumenberechnung",
     "message": "MOB-4801 Tests Volumenberechnung\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-09T10:30:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-09T10:30:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/c4380f3555d8896e98e38971b2199f4a4a30bb41",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/09de4694b5fa85ee4b394509fa6368f654af34ca",
     "stats": {
       "additions": 14,
       "deletions": 0,
@@ -823,23 +823,23 @@
     }
   },
   {
-    "id": "4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d",
-    "short_id": "4d1c9754fa5",
+    "id": "e975ee9dac8ba6988f95eed3e41f11f2275c4bfb",
+    "short_id": "e975ee9dac8",
     "created_at": "2026-09-08T17:03:00.000+02:00",
     "parent_ids": [
-      "33716b04d51afb1679557446987243d8a4c88e25"
+      "df21e6128dbc70c25c80d7f8781e3a9c2149b03b"
     ],
     "title": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung",
     "message": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-08T17:03:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-08T17:03:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e975ee9dac8ba6988f95eed3e41f11f2275c4bfb",
     "stats": {
       "additions": 10,
       "deletions": 1,
@@ -847,23 +847,23 @@
     }
   },
   {
-    "id": "724a0a7769f973a5384c5173964fc819fdd5afc6",
-    "short_id": "724a0a7769f",
+    "id": "6dfdc58a03f8d86093bccb832b25eb093d3cee5a",
+    "short_id": "6dfdc58a03f",
     "created_at": "2026-09-08T10:52:00.000+02:00",
     "parent_ids": [
-      "f012d1c349c88cded41356780e52db0df7f29936"
+      "39af644386eab83e817ad2e20dd7e854abb03d81"
     ],
     "title": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id",
     "message": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id\n",
-    "author_name": "Jonas Albrecht",
-    "author_email": "jonas.albrecht@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-08T10:52:00.000+02:00",
-    "committer_name": "Jonas Albrecht",
-    "committer_email": "jonas.albrecht@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-08T10:52:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/724a0a7769f973a5384c5173964fc819fdd5afc6",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6dfdc58a03f8d86093bccb832b25eb093d3cee5a",
     "stats": {
       "additions": 23,
       "deletions": 0,
@@ -871,23 +871,23 @@
     }
   },
   {
-    "id": "99fae0cf02cb9e7c07217dadac0e05a2a418363a",
-    "short_id": "99fae0cf02c",
+    "id": "156356078e5927b4c1f53ac0e52b94bab036f66a",
+    "short_id": "156356078e5",
     "created_at": "2026-09-08T09:02:00.000+02:00",
     "parent_ids": [
-      "62750fa586b121b41c2a02be21ac396e2ac9091b"
+      "5d07ca73f806e25943f83b76e4870358d09ed14f"
     ],
     "title": "MOB-4760 Lieferscheinvorlage umgestellt",
     "message": "MOB-4760 Lieferscheinvorlage umgestellt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-08T09:02:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-08T09:02:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/99fae0cf02cb9e7c07217dadac0e05a2a418363a",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/156356078e5927b4c1f53ac0e52b94bab036f66a",
     "stats": {
       "additions": 2,
       "deletions": 3,
@@ -895,23 +895,23 @@
     }
   },
   {
-    "id": "62750fa586b121b41c2a02be21ac396e2ac9091b",
-    "short_id": "62750fa586b",
+    "id": "5d07ca73f806e25943f83b76e4870358d09ed14f",
+    "short_id": "5d07ca73f80",
     "created_at": "2026-09-07T10:15:00.000+02:00",
     "parent_ids": [
-      "a65d284e6a0c904f771bec7bd66685c5365495f8"
+      "13200b0455dfccaba08792db020a22148a32df6d"
     ],
     "title": "MOB-4760 Rechnungsvorlage umgestellt",
     "message": "MOB-4760 Rechnungsvorlage umgestellt\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-07T10:15:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-07T10:15:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/62750fa586b121b41c2a02be21ac396e2ac9091b",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/5d07ca73f806e25943f83b76e4870358d09ed14f",
     "stats": {
       "additions": 4,
       "deletions": 5,
@@ -919,23 +919,23 @@
     }
   },
   {
-    "id": "33716b04d51afb1679557446987243d8a4c88e25",
-    "short_id": "33716b04d51",
+    "id": "df21e6128dbc70c25c80d7f8781e3a9c2149b03b",
+    "short_id": "df21e6128db",
     "created_at": "2026-09-04T13:12:00.000+02:00",
     "parent_ids": [
-      "8394bba1d33a9bdf43719f5bd191a5f961c2a364"
+      "fbff56a759ff0da8d9d8a33d66e50ae33a548e8b"
     ],
     "title": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT",
     "message": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-04T13:12:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-04T13:12:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/33716b04d51afb1679557446987243d8a4c88e25",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/df21e6128dbc70c25c80d7f8781e3a9c2149b03b",
     "stats": {
       "additions": 11,
       "deletions": 0,
@@ -943,24 +943,24 @@
     }
   },
   {
-    "id": "93acf5425388f27dccecbccffff73268388591dd",
-    "short_id": "93acf542538",
+    "id": "dbbb3a08f576d4ee905821b01f4c9ccfcd5f463f",
+    "short_id": "dbbb3a08f57",
     "created_at": "2026-09-03T10:22:00.000+02:00",
     "parent_ids": [
-      "6b1f8c8e029cd07647f5bdc3d7c19d6758c1b359",
-      "1dfc37d10ed03698d6252a91c29b096a1437760f"
+      "6386f3219b68ae4fbf2ca014f467d6cd688d3352",
+      "0bb1417832601cdb32ed916d23f18bfa467e0518"
     ],
     "title": "Merge branch 'feature/MOB-4777-gutschein-teileinloesung' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4777-gutschein-teileinloesung' into 'release/26.4'\n\nMOB-4777 Gutschein teilweise einlösen\n\nCloses MOB-4777\n\nSee merge request mobiq/erp!1244\n",
-    "author_name": "Markus Engel",
-    "author_email": "markus.engel@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-03T10:22:00.000+02:00",
-    "committer_name": "Markus Engel",
-    "committer_email": "markus.engel@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-03T10:22:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/93acf5425388f27dccecbccffff73268388591dd",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/dbbb3a08f576d4ee905821b01f4c9ccfcd5f463f",
     "stats": {
       "additions": 30,
       "deletions": 12,
@@ -968,23 +968,23 @@
     }
   },
   {
-    "id": "a65d284e6a0c904f771bec7bd66685c5365495f8",
-    "short_id": "a65d284e6a0",
+    "id": "13200b0455dfccaba08792db020a22148a32df6d",
+    "short_id": "13200b0455d",
     "created_at": "2026-09-03T08:55:00.000+02:00",
     "parent_ids": [
-      "f0efd8d70dc21680f020dd9afe3be31f86616a11"
+      "a65e5e0b5b4ff694d3b8fbc75d3f41d9ef82869d"
     ],
     "title": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht",
     "message": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-03T08:55:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-03T08:55:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/a65d284e6a0c904f771bec7bd66685c5365495f8",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/13200b0455dfccaba08792db020a22148a32df6d",
     "stats": {
       "additions": 17,
       "deletions": 0,
@@ -992,23 +992,23 @@
     }
   },
   {
-    "id": "8394bba1d33a9bdf43719f5bd191a5f961c2a364",
-    "short_id": "8394bba1d33",
+    "id": "fbff56a759ff0da8d9d8a33d66e50ae33a548e8b",
+    "short_id": "fbff56a759f",
     "created_at": "2026-09-02T09:58:00.000+02:00",
     "parent_ids": [
-      "93acf5425388f27dccecbccffff73268388591dd"
+      "dbbb3a08f576d4ee905821b01f4c9ccfcd5f463f"
     ],
     "title": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)",
     "message": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)\n",
-    "author_name": "Paul Schuster",
-    "author_email": "paul.schuster@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-02T09:58:00.000+02:00",
-    "committer_name": "Paul Schuster",
-    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-02T09:58:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/8394bba1d33a9bdf43719f5bd191a5f961c2a364",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/fbff56a759ff0da8d9d8a33d66e50ae33a548e8b",
     "stats": {
       "additions": 6,
       "deletions": 0,
@@ -1016,23 +1016,23 @@
     }
   },
   {
-    "id": "1dfc37d10ed03698d6252a91c29b096a1437760f",
-    "short_id": "1dfc37d10ed",
+    "id": "0bb1417832601cdb32ed916d23f18bfa467e0518",
+    "short_id": "0bb14178326",
     "created_at": "2026-09-02T09:40:00.000+02:00",
     "parent_ids": [
-      "e4d777213683d3ae6606d293d42b2a2a7af0194d"
+      "c1aa5e9ab50d4946cef07b36606ee6f9e94f8042"
     ],
     "title": "MOB-4777 Tests Teileinlösung",
     "message": "MOB-4777 Tests Teileinlösung\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-02T09:40:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-02T09:40:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/1dfc37d10ed03698d6252a91c29b096a1437760f",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/0bb1417832601cdb32ed916d23f18bfa467e0518",
     "stats": {
       "additions": 17,
       "deletions": 0,
@@ -1040,23 +1040,23 @@
     }
   },
   {
-    "id": "e4d777213683d3ae6606d293d42b2a2a7af0194d",
-    "short_id": "e4d77721368",
+    "id": "c1aa5e9ab50d4946cef07b36606ee6f9e94f8042",
+    "short_id": "c1aa5e9ab50",
     "created_at": "2026-09-01T16:05:00.000+02:00",
     "parent_ids": [
-      "adb4a4413c692c6e5c17411543d7398d015bc971"
+      "c5f452345b3ffcbddb43e0076bd79825586c2b45"
     ],
     "title": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen",
     "message": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen\n\nBisher wurde bei Einlösung immer der volle Gutscheinwert aufgelöst.\nMit Teileinlösung bleibt der Rest als Verbindlichkeit stehen.\n",
-    "author_name": "Lena Hoffmann",
-    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-01T16:05:00.000+02:00",
-    "committer_name": "Lena Hoffmann",
-    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-01T16:05:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e4d777213683d3ae6606d293d42b2a2a7af0194d",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/c1aa5e9ab50d4946cef07b36606ee6f9e94f8042",
     "stats": {
       "additions": 4,
       "deletions": 3,
@@ -1064,23 +1064,23 @@
     }
   },
   {
-    "id": "adb4a4413c692c6e5c17411543d7398d015bc971",
-    "short_id": "adb4a4413c6",
+    "id": "c5f452345b3ffcbddb43e0076bd79825586c2b45",
+    "short_id": "c5f452345b3",
     "created_at": "2026-08-29T11:20:00.000+02:00",
     "parent_ids": [
-      "72a4797f0d7ab3b38812bd896cb4fe63126e496c"
+      "0ddf54f56c691d1b0a9ed6d850110c1693d47a87"
     ],
     "title": "MOB-4777 Bon: Restguthaben drucken",
     "message": "MOB-4777 Bon: Restguthaben drucken\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-08-29T11:20:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-08-29T11:20:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/adb4a4413c692c6e5c17411543d7398d015bc971",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/c5f452345b3ffcbddb43e0076bd79825586c2b45",
     "stats": {
       "additions": 1,
       "deletions": 0,
@@ -1088,23 +1088,23 @@
     }
   },
   {
-    "id": "72a4797f0d7ab3b38812bd896cb4fe63126e496c",
-    "short_id": "72a4797f0d7",
+    "id": "0ddf54f56c691d1b0a9ed6d850110c1693d47a87",
+    "short_id": "0ddf54f56c6",
     "created_at": "2026-08-27T14:51:00.000+02:00",
     "parent_ids": [
-      "6b1f8c8e029cd07647f5bdc3d7c19d6758c1b359"
+      "6386f3219b68ae4fbf2ca014f467d6cd688d3352"
     ],
     "title": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern",
     "message": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern\n",
-    "author_name": "Anna Becker",
-    "author_email": "anna.becker@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-08-27T14:51:00.000+02:00",
-    "committer_name": "Anna Becker",
-    "committer_email": "anna.becker@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-08-27T14:51:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/72a4797f0d7ab3b38812bd896cb4fe63126e496c",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/0ddf54f56c691d1b0a9ed6d850110c1693d47a87",
     "stats": {
       "additions": 8,
       "deletions": 9,
@@ -1112,23 +1112,23 @@
     }
   },
   {
-    "id": "6b1f8c8e029cd07647f5bdc3d7c19d6758c1b359",
-    "short_id": "6b1f8c8e029",
+    "id": "6386f3219b68ae4fbf2ca014f467d6cd688d3352",
+    "short_id": "6386f3219b6",
     "created_at": "2026-08-25T09:05:00.000+02:00",
     "parent_ids": [
-      "495e311682cf5838c0ec51a450d975be36e287dd"
+      "98b1fb7a7984afadaa9aef8d57c2996715b9e5c5"
     ],
     "title": "Version auf 26.4.0-SNAPSHOT gesetzt",
     "message": "Version auf 26.4.0-SNAPSHOT gesetzt\n",
-    "author_name": "Kai Brenner",
-    "author_email": "kai.brenner@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-08-25T09:05:00.000+02:00",
-    "committer_name": "Kai Brenner",
-    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-08-25T09:05:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6b1f8c8e029cd07647f5bdc3d7c19d6758c1b359",
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6386f3219b68ae4fbf2ca014f467d6cd688d3352",
     "stats": {
       "additions": 1,
       "deletions": 1,

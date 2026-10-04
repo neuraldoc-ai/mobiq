@@ -2,24 +2,24 @@
   "project": "mobiq/erp",
   "ref": "release/26.4",
   "head": {
-    "id": "df9f4148183618a3a6eb0de3e202cb7f25ba1663",
-    "short_id": "df9f4148183",
+    "id": "ad176b2707eff26a43cdb5f2e466dc659a4593b6",
+    "short_id": "ad176b2707e",
     "created_at": "2026-09-29T15:48:00.000+02:00",
     "parent_ids": [
-      "f012d1c349c88cded41356780e52db0df7f29936",
-      "6977c6cd54f01797f41b0a24e407517d2a402d6d"
+      "39af644386eab83e817ad2e20dd7e854abb03d81",
+      "ccbc28e3799931c623c8ebaf310a90a9ba61f1a5"
     ],
     "title": "Merge branch 'feature/MOB-4812-teillieferung' into 'release/26.4'",
     "message": "Merge branch 'feature/MOB-4812-teillieferung' into 'release/26.4'\n\nMOB-4812 Teillieferung im Kaufvertrag\n\nCloses MOB-4812, MOB-4829\n\nSee merge request mobiq/erp!1287\n",
-    "author_name": "Markus Engel",
-    "author_email": "markus.engel@musterhaus-software.de",
+    "author_name": "Delschad Jankir",
+    "author_email": "273245025+djankir@users.noreply.github.com",
     "authored_date": "2026-09-29T15:48:00.000+02:00",
-    "committer_name": "Markus Engel",
-    "committer_email": "markus.engel@musterhaus-software.de",
+    "committer_name": "Delschad Jankir",
+    "committer_email": "273245025+djankir@users.noreply.github.com",
     "committed_date": "2026-09-29T15:48:00.000+02:00",
     "trailers": {},
     "extended_trailers": {},
-    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/df9f4148183618a3a6eb0de3e202cb7f25ba1663"
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/ad176b2707eff26a43cdb5f2e466dc659a4593b6"
   },
   "tree": [
     {
@@ -776,486 +776,486 @@
     ".gitlab-ci.yml": {
       "content": "stages: [build, test, package]\n\nbuild:\n  stage: build\n  script: ./gradlew assemble && npm --prefix web ci && npm --prefix web run build\n\ntest:\n  stage: test\n  script: ./gradlew test\n\ntest-kasse:\n  stage: test\n  script: ./gradlew :server:test --tests 'de.musterhaus.mobiq.kasse.*'\n",
       "lastCommit": {
-        "short_id": "8b55cef",
+        "short_id": "3938d39",
         "title": "MOB-4815 Testlauf Kasse in der Pipeline",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-19T08:20:00+02:00"
       }
     },
     "README.md": {
       "content": "# MOBIQ ERP\n\nERP und Warenwirtschaft für den Möbel- und Küchenhandel.\n\n- `server/` Anwendungsserver (Java 21)\n- `web/` Web-Client (React, TypeScript)\n- `desktop/` Desktop-Client (Delphi)\n- `app/fahrer/` Fahrer-App (Kotlin)\n- `db/migration/` Datenbankmigrationen (Flyway)\n- `config/parameter/` Parameter je Mandant\n- `druck/vorlagen/` Belegvorlagen\n\nTickets: MOB-xxxx in Jira. Commit-Nachrichten beginnen mit dem Ticket-Schlüssel.\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "VERSION": {
       "content": "26.4.0-SNAPSHOT\n",
       "lastCommit": {
-        "short_id": "6b1f8c8",
+        "short_id": "6386f32",
         "title": "Version auf 26.4.0-SNAPSHOT gesetzt",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-08-25T09:05:00+02:00"
       }
     },
     "app/fahrer/src/main/kotlin/de/musterhaus/mobiq/fahrer/Restzahlung.kt": {
       "content": "package de.musterhaus.mobiq.fahrer\n\nimport java.math.BigDecimal\n\n/** Zeigt dem Fahrer die offene Restzahlung beim Kunden. */\nclass Restzahlung(private val api: FahrerApi) {\n\n    /** Offener Betrag: bei Teillieferung nur für den gelieferten Teil, sonst Warenwert minus Anzahlung. */\n    fun offenerBetrag(stopp: Stopp): BigDecimal {\n        val kv = api.kaufvertrag(stopp.kvNr)\n        val teil = stopp.teilNr ?: return kv.warenwert - kv.anzahlung\n        return api.teilrechnung(stopp.kvNr, teil).offen\n    }\n}\n",
       "lastCommit": {
-        "short_id": "e8910c2",
+        "short_id": "575c52f",
         "title": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-22T13:57:00+02:00"
       }
     },
     "config/parameter/auftrag.yaml": {
       "content": "# Parameter Auftrag und Lieferung. Je Mandant unter Administration > Parameter überschreibbar.\nLIEF_VORLAUF_TAGE:\n  typ: int\n  standard: 3\n  min: 0\n  max: 14\n  einheit: Tage\n  beschreibung: Vorlauf zwischen Wareneingang und frühestem Liefertermin\nLIEF_AVIS_STUNDEN:\n  typ: int\n  standard: 24\n  min: 12\n  max: 96\n  einheit: Stunden\n  beschreibung: Avisierung an den Kunden vor der Lieferung\nANZ_MIN_PROZ:\n  typ: int\n  standard: 20\n  min: 0\n  max: 100\n  einheit: Prozent\n  beschreibung: Mindestanzahlung bei Vertragsabschluss\nMONT_ZEIT_PUFFER:\n  typ: int\n  standard: 30\n  min: 0\n  max: 120\n  einheit: Minuten\n  beschreibung: Zeitpuffer je Montage\nTEILLIEF_ERLAUBT:\n  typ: bool\n  standard: false\n  beschreibung: Teillieferungen im Mandanten erlauben\nTEILLIEF_MAX_ANZAHL:\n  typ: int\n  standard: 3\n  min: 2\n  max: 5\n  einheit: Teile\n  beschreibung: Höchstzahl Lieferteile je Kaufvertrag\nTEILLIEF_MIN_WARENWERT_PROZ:\n  typ: int\n  standard: 20\n  min: 10\n  max: 90\n  einheit: Prozent\n  beschreibung: Mindestanteil am Warenwert je Lieferteil\n",
       "lastCommit": {
-        "short_id": "4e4f64a",
+        "short_id": "be0611b",
         "title": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3",
-        "author_name": "Jonas Albrecht",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-17T11:09:00+02:00"
       }
     },
     "config/parameter/fibu.yaml": {
       "content": "# Parameter Übergabe an die Finanzbuchhaltung\nFIBU_KONTO_ANZAHLUNG:\n  typ: konto\n  standard: \"1718\"\n  beschreibung: Konto für erhaltene Anzahlungen (SKR03)\nFIBU_EXPORT_ZEIT:\n  typ: zeit\n  standard: \"02:00\"\n  min: \"00:00\"\n  max: \"05:00\"\n  beschreibung: Uhrzeit der nächtlichen Übergabe\nFIBU_BELEGART_TEILRECHNUNG:\n  typ: text\n  standard: \"TR\"\n  beschreibung: Belegart für Teilrechnungen im Export\n",
       "lastCommit": {
-        "short_id": "b1a3aee",
+        "short_id": "e49c7d6",
         "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-23T10:21:00+02:00"
       }
     },
     "config/parameter/tour.yaml": {
       "content": "# Parameter Tourenplanung\nTOUR_MAX_STOPPS:\n  typ: int\n  standard: 12\n  min: 1\n  max: 30\n  einheit: Stopps\n  beschreibung: Höchstzahl Stopps je Tour\nTOUR_START_ZEIT:\n  typ: zeit\n  standard: \"07:00\"\n  min: \"05:00\"\n  max: \"10:00\"\n  beschreibung: Frühester Tourstart\nTOUR_MAX_LADEVOLUMEN_M3:\n  typ: int\n  standard: 38\n  min: 5\n  max: 60\n  einheit: m³\n  beschreibung: Ladevolumen für neu angelegte Fahrzeuge\nTOUR_UEBERLADUNG_ERLAUBT:\n  typ: bool\n  standard: true\n  beschreibung: Tour trotz Überladung speichern (mit Bestätigung)\n",
       "lastCommit": {
-        "short_id": "33716b0",
+        "short_id": "df21e61",
         "title": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-04T13:12:00+02:00"
       }
     },
     "db/migration/V26_3_004__idx_kvp_artikel.sql": {
       "content": "-- Schnellere Suche nach Artikelnummer in Kaufvertragspositionen\nCREATE INDEX idx_kvp_artikel ON kv_position (artikel_nr);\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "db/migration/V26_3_009__kv_finanzkauf.sql": {
       "content": "-- Kennzeichen Finanzkauf (Ratenkredit über Partnerbank)\nALTER TABLE kaufvertrag ADD COLUMN finanzkauf boolean NOT NULL DEFAULT false;\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "db/migration/V26_4_012__lieferteil.sql": {
       "content": "-- Teillieferung (MOB-4812)\nCREATE TABLE lieferteil (\n  lt_id        bigserial PRIMARY KEY,\n  kv_id        bigint    NOT NULL REFERENCES kaufvertrag (kv_id),\n  teil_nr      smallint  NOT NULL,\n  wunsch_kw    char(7),\n  status       varchar(20) NOT NULL DEFAULT 'ERFASST',\n  UNIQUE (kv_id, teil_nr)\n);\n\nALTER TABLE kv_position ADD COLUMN lt_id bigint REFERENCES lieferteil (lt_id);\nALTER TABLE tour_stopp  ADD COLUMN lt_id bigint REFERENCES lieferteil (lt_id);\n",
       "lastCommit": {
-        "short_id": "724a0a7",
+        "short_id": "6dfdc58",
         "title": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id",
-        "author_name": "Jonas Albrecht",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-08T10:52:00+02:00"
       }
     },
     "db/migration/V26_4_015__kassenbeleg_partition.sql": {
       "content": "-- Kassenbelege nach Belegjahr partitionieren (MOB-4790)\nALTER TABLE kassenbeleg RENAME TO kassenbeleg_alt;\n\nCREATE TABLE kassenbeleg (LIKE kassenbeleg_alt INCLUDING ALL) PARTITION BY RANGE (belegdatum);\n\nDO $$\nDECLARE jahr int;\nBEGIN\n  FOR jahr IN 2014..2027 LOOP\n    EXECUTE format('CREATE TABLE kassenbeleg_%s PARTITION OF kassenbeleg FOR VALUES FROM (%L) TO (%L)',\n                   jahr, make_date(jahr, 1, 1), make_date(jahr + 1, 1, 1));\n  END LOOP;\nEND $$;\n\nINSERT INTO kassenbeleg SELECT * FROM kassenbeleg_alt;\nDROP TABLE kassenbeleg_alt;\n",
       "lastCommit": {
-        "short_id": "33e60af",
+        "short_id": "1ff7240",
         "title": "MOB-4790 kassenbeleg nach Belegjahr partitionieren",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-10T08:24:00+02:00"
       }
     },
     "db/migration/V26_4_016__kassenbeleg_alle.sql": {
       "content": "-- Sicht für Auswertungen über mehrere Jahre (MOB-4790)\nCREATE VIEW kassenbeleg_alle AS\nSELECT * FROM kassenbeleg;\n",
       "lastCommit": {
-        "short_id": "b37b560",
+        "short_id": "2c131df",
         "title": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-12T15:47:00+02:00"
       }
     },
     "desktop/kaufvertrag/FrmLieferung.pas": {
       "content": "unit FrmLieferung;\n\ninterface\n\nuses\n  Vcl.Forms, Vcl.StdCtrls, Vcl.Controls, MobiqKaufvertrag, MobiqTexte;\n\ntype\n  TFrmLieferung = class(TForm)\n    cbxWunschtermin: TComboBox;\n    edtLieferadresse: TEdit;\n    cbxEtage: TComboBox;\n    chkLiefersperre: TCheckBox;\n    chkMontage: TCheckBox;\n    chkTeillieferung: TCheckBox;\n    btnAufteilen: TButton;\n    procedure FormShow(Sender: TObject);\n  private\n    FKv: TKaufvertrag;\n  end;\n\nimplementation\n\n{$R *.dfm}\n\nprocedure TFrmLieferung.FormShow(Sender: TObject);\nbegin\n  chkLiefersperre.Caption := Texte.Get(1203);\n  chkLiefersperre.Checked := FKv.Liefersperre;\n  chkMontage.Checked := FKv.HatMontage;\nend;\n\nend.\n",
       "lastCommit": {
-        "short_id": "2247484",
+        "short_id": "0516bb8",
         "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-11T16:18:00+02:00"
       }
     },
     "desktop/res/texte_de.rc": {
       "content": "STRINGTABLE\nBEGIN\n  1201, \"Wunschtermin\"\n  1202, \"Lieferadresse\"\n  1203, \"Lieferstopp\"\n  1204, \"Montage\"\n  1205, \"Teillieferung erlaubt\"\n  1206, \"Lieferung aufteilen\"\n  1301, \"Kennzeichen\"\n  1302, \"Zuladung (kg)\"\n  1303, \"Filiale\"\n  1304, \"Ladevolumen (m³)\"\nEND\n",
       "lastCommit": {
-        "short_id": "2247484",
+        "short_id": "0516bb8",
         "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-11T16:18:00+02:00"
       }
     },
     "desktop/stamm/FrmFahrzeug.pas": {
       "content": "unit FrmFahrzeug;\n\ninterface\n\nuses\n  Vcl.Forms, Vcl.StdCtrls, Vcl.Controls, MobiqStamm;\n\ntype\n  TFrmFahrzeug = class(TForm)\n    edtKennzeichen: TEdit;\n    edtLadevolumen: TEdit;\n    edtZuladung: TEdit;\n    cbxFiliale: TComboBox;\n  end;\n\nimplementation\n\n{$R *.dfm}\n\nend.\n",
       "lastCommit": {
-        "short_id": "8394bba",
+        "short_id": "fbff56a",
         "title": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-02T09:58:00+02:00"
       }
     },
     "druck/vorlagen/bon.xml": {
       "content": "<bon>\n  <kopf filiale=\"{filiale}\" kasse=\"{kasse}\" datum=\"{datum}\"/>\n  <positionen/>\n  <zahlungen/>\n  <gutschein wenn=\"{gutschein.restwert} > 0\" text=\"Restguthaben Gutschein {gutschein.nr}: {gutschein.restwert}\"/>\n  <fuss text=\"Vielen Dank für Ihren Einkauf\"/>\n</bon>\n",
       "lastCommit": {
-        "short_id": "adb4a44",
+        "short_id": "c5f4523",
         "title": "MOB-4777 Bon: Restguthaben drucken",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-08-29T11:20:00+02:00"
       }
     },
     "druck/vorlagen/kaufvertrag.html": {
       "content": "<h1>Kaufvertrag {{kv.nr}}</h1>\n<p>Anzahlung: {{kv.anzahlung}}</p>\n",
       "lastCommit": {
-        "short_id": "ce1994c",
+        "short_id": "a18215f",
         "title": "MOB-4760 Kaufvertragsvorlage umgestellt",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-09T14:40:00+02:00"
       }
     },
     "druck/vorlagen/lieferschein.html": {
       "content": "<h1>Lieferschein {{kv.nr}}</h1>\n{{#positionen}}<tr><td>{{menge}}</td><td>{{text}}</td></tr>{{/positionen}}\n",
       "lastCommit": {
-        "short_id": "99fae0c",
+        "short_id": "1563560",
         "title": "MOB-4760 Lieferscheinvorlage umgestellt",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-08T09:02:00+02:00"
       }
     },
     "druck/vorlagen/rechnung.html": {
       "content": "<h1>Rechnung {{beleg.nr}}</h1>\n<p>Kaufvertrag {{kv.nr}} vom {{kv.datum}}</p>\n{{#positionen}}<tr><td>{{text}}</td><td>{{betrag}}</td></tr>{{/positionen}}\n<p>Abzüglich Anzahlung: {{beleg.anzahlungVerrechnet}}</p>\n",
       "lastCommit": {
-        "short_id": "62750fa",
+        "short_id": "5d07ca7",
         "title": "MOB-4760 Rechnungsvorlage umgestellt",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-07T10:15:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/admin/VorlagenKonvertieren.java": {
       "content": "package de.musterhaus.mobiq.admin;\n\nimport de.musterhaus.mobiq.druck.VorlagenQuelle;\n\n/** Admin-Job: konvertiert kundeneigene FreeMarker-Vorlagen in das neue HTML-Format. */\n@AdminJob(name = \"Vorlagen konvertieren\", bereich = \"Administration\")\npublic class VorlagenKonvertieren implements Job {\n\n    private final VorlagenQuelle quelle;\n\n    public VorlagenKonvertieren(VorlagenQuelle quelle) {\n        this.quelle = quelle;\n    }\n\n    @Override\n    public JobErgebnis ausfuehren() {\n        int n = 0;\n        for (String datei : quelle.kundeneigeneFtl()) {\n            quelle.speichere(datei.replace(\".ftl\", \".html\"), FtlNachHtml.konvertiere(quelle.lade(datei)));\n            n++;\n        }\n        return JobErgebnis.ok(n + \" Vorlagen konvertiert\");\n    }\n}\n",
       "lastCommit": {
-        "short_id": "6016fc7",
+        "short_id": "d110a7f",
         "title": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-11T11:33:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/auftrag/Kaufvertrag.java": {
       "content": "package de.musterhaus.mobiq.auftrag;\n\nimport java.math.BigDecimal;\nimport java.util.ArrayList;\nimport java.util.List;\n\n/** Kopf eines Kaufvertrags. Ein Kaufvertrag wird in einer Lieferung ausgeliefert. */\npublic class Kaufvertrag {\n\n    private final String kvNr;\n    private final String kundeNr;\n    private final List<KvPosition> positionen = new ArrayList<>();\n    private BigDecimal anzahlung = BigDecimal.ZERO;\n    private boolean finanzkauf;\n    private boolean liefersperre;\n    private KvStatus status = KvStatus.ERFASST;\n\n    public Kaufvertrag(String kvNr, String kundeNr) {\n        this.kvNr = kvNr;\n        this.kundeNr = kundeNr;\n    }\n\n    /** Lieferbereit, wenn alle Positionen im Lager sind und keine Liefersperre gesetzt ist. */\n    public boolean istLieferbereit() {\n        return !liefersperre && positionen.stream().allMatch(KvPosition::imLager);\n    }\n\n    public BigDecimal warenwert() {\n        return positionen.stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add);\n    }\n\n    public String kvNr() { return kvNr; }\n    public String kundeNr() { return kundeNr; }\n    public List<KvPosition> positionen() { return positionen; }\n    public BigDecimal anzahlung() { return anzahlung; }\n    public void setAnzahlung(BigDecimal anzahlung) { this.anzahlung = anzahlung; }\n    public boolean finanzkauf() { return finanzkauf; }\n    public boolean liefersperre() { return liefersperre; }\n    public void setLiefersperre(boolean liefersperre) { this.liefersperre = liefersperre; }\n    public KvStatus status() { return status; }\n    public void setStatus(KvStatus status) { this.status = status; }\n}\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/auftrag/KvPosition.java": {
       "content": "package de.musterhaus.mobiq.auftrag;\n\nimport java.math.BigDecimal;\n\n/** Position eines Kaufvertrags. */\npublic record KvPosition(\n        String artikelNr,\n        String text,\n        int menge,\n        BigDecimal betrag,\n        boolean montage,\n        boolean imLager,\n        BigDecimal volumenM3) {\n}\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/auftrag/KvStatus.java": {
       "content": "package de.musterhaus.mobiq.auftrag;\n\npublic enum KvStatus { ERFASST, LIEFERBEREIT, DISPONIERT, AUSGELIEFERT, ABGERECHNET, STORNIERT }\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/auftrag/Lieferteil.java": {
       "content": "package de.musterhaus.mobiq.auftrag;\n\nimport java.util.List;\n\n/** Ein Teil einer Teillieferung: eigene Positionen, eigener Wunschtermin, eigene Tour. */\npublic record Lieferteil(long ltId, String kvNr, int teilNr, String wunschKw, List<KvPosition> positionen) {\n\n    public boolean istLieferbereit() {\n        return positionen.stream().allMatch(KvPosition::imLager);\n    }\n}\n",
       "lastCommit": {
-        "short_id": "724a0a7",
+        "short_id": "6dfdc58",
         "title": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id",
-        "author_name": "Jonas Albrecht",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-08T10:52:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/auftrag/TeillieferungService.java": {
       "content": "package de.musterhaus.mobiq.auftrag;\n\nimport de.musterhaus.mobiq.param.Parameter;\nimport java.math.BigDecimal;\nimport java.util.List;\n\n/** Teilt einen Kaufvertrag in Lieferteile auf. */\npublic class TeillieferungService {\n\n    private final Parameter param;\n\n    public TeillieferungService(Parameter param) {\n        this.param = param;\n    }\n\n    public List<Lieferteil> aufteilen(Kaufvertrag kv, List<List<KvPosition>> teile) {\n        if (!param.getBool(\"TEILLIEF_ERLAUBT\")) {\n            throw new FachlicherFehler(\"Teillieferung ist im Mandanten nicht erlaubt\");\n        }\n        if (kv.finanzkauf()) {\n            // Mit der Partnerbank noch nicht geklärt, siehe MOB-4808\n            throw new FachlicherFehler(\"Teillieferung ist bei Finanzkauf nicht möglich\");\n        }\n        if (teile.size() > param.getInt(\"TEILLIEF_MAX_ANZAHL\")) {\n            throw new FachlicherFehler(\"Zu viele Lieferteile\");\n        }\n        BigDecimal min = kv.warenwert().multiply(BigDecimal.valueOf(param.getInt(\"TEILLIEF_MIN_WARENWERT_PROZ\"))).movePointLeft(2);\n        for (List<KvPosition> teil : teile) {\n            BigDecimal wert = teil.stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add);\n            if (wert.compareTo(min) < 0) {\n                throw new FachlicherFehler(\"Ein Lieferteil unterschreitet den Mindestwarenwert\");\n            }\n        }\n        return Lieferteile.aus(kv, teile);\n    }\n}\n",
       "lastCommit": {
-        "short_id": "4e4f64a",
+        "short_id": "be0611b",
         "title": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3",
-        "author_name": "Jonas Albrecht",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-17T11:09:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/druck/VorlagenEngine.java": {
       "content": "package de.musterhaus.mobiq.druck;\n\nimport java.util.Map;\n\n/** Druckausgabe über HTML-Vorlagen mit Platzhaltern {{feld}}. Ersetzt LegacyDruck. */\npublic class VorlagenEngine {\n\n    private final VorlagenQuelle quelle;\n\n    public VorlagenEngine(VorlagenQuelle quelle) {\n        this.quelle = quelle;\n    }\n\n    public byte[] drucke(String vorlage, Map<String, Object> daten) {\n        return PdfRenderer.render(quelle.lade(vorlage + \".html\"), daten);\n    }\n}\n",
       "lastCommit": {
-        "short_id": "a65d284",
+        "short_id": "13200b0",
         "title": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-03T08:55:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/faktura/AnzahlungVerrechnung.java": {
       "content": "package de.musterhaus.mobiq.faktura;\n\nimport de.musterhaus.mobiq.auftrag.Kaufvertrag;\nimport de.musterhaus.mobiq.auftrag.KvPosition;\nimport de.musterhaus.mobiq.auftrag.Lieferteil;\nimport java.math.BigDecimal;\nimport java.math.RoundingMode;\n\n/** Verrechnet die Anzahlung eines Kaufvertrags mit Rechnungen. */\npublic class AnzahlungVerrechnung {\n\n    /** Ohne Teillieferung: die gesamte Anzahlung wird mit der Schlussrechnung verrechnet. */\n    public BigDecimal voll(Kaufvertrag kv) {\n        return kv.anzahlung();\n    }\n\n    /** Teillieferung, letzter Teil: verrechnet den Rest der Anzahlung, damit keine Rundungsdifferenz bleibt. */\n    public BigDecimal rest(Kaufvertrag kv, BigDecimal bereitsVerrechnet) {\n        return kv.anzahlung().subtract(bereitsVerrechnet);\n    }\n\n    /** Teillieferung: Anzahlung anteilig nach Warenwert des Lieferteils. */\n    public BigDecimal anteilig(Kaufvertrag kv, Lieferteil teil) {\n        BigDecimal anteil = teil.positionen().stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add)\n                .divide(kv.warenwert(), 6, RoundingMode.HALF_UP);\n        return kv.anzahlung().multiply(anteil).setScale(2, RoundingMode.HALF_UP);\n    }\n}\n",
       "lastCommit": {
-        "short_id": "bce67ee",
+        "short_id": "4073737",
         "title": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-24T15:12:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/faktura/Belegart.java": {
       "content": "package de.musterhaus.mobiq.faktura;\n\n/** Belegarten, wie sie an die Finanzbuchhaltung übergeben werden. */\npublic enum Belegart {\n    RE(\"Rechnung\"),\n    GS(\"Gutschrift\"),\n    AZ(\"Anzahlung\"),\n    TR(\"Teilrechnung\");\n\n    private final String text;\n\n    Belegart(String text) { this.text = text; }\n\n    public String text() { return text; }\n}\n",
       "lastCommit": {
-        "short_id": "b1a3aee",
+        "short_id": "e49c7d6",
         "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-23T10:21:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/faktura/RechnungService.java": {
       "content": "package de.musterhaus.mobiq.faktura;\n\nimport de.musterhaus.mobiq.auftrag.Kaufvertrag;\nimport de.musterhaus.mobiq.auftrag.KvStatus;\n\n/** Erstellt Rechnungen zum Kaufvertrag. */\npublic class RechnungService {\n\n    private final AnzahlungVerrechnung verrechnung = new AnzahlungVerrechnung();\n\n    /** Schlussrechnung, sobald der Kaufvertrag vollständig ausgeliefert ist. */\n    public Rechnung schlussrechnung(Kaufvertrag kv) {\n        if (kv.status() != KvStatus.AUSGELIEFERT) {\n            throw new IllegalStateException(\"Kaufvertrag \" + kv.kvNr() + \" ist noch nicht vollständig ausgeliefert\");\n        }\n        Rechnung r = Rechnung.neu(Belegart.RE, kv);\n        r.setAnzahlungVerrechnet(verrechnung.voll(kv));\n        return r;\n    }\n}\n",
       "lastCommit": {
-        "short_id": "495e311",
+        "short_id": "98b1fb7",
         "title": "Release 26.3.2",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-07-20T16:42:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java": {
       "content": "package de.musterhaus.mobiq.faktura;\n\nimport de.musterhaus.mobiq.auftrag.Kaufvertrag;\nimport de.musterhaus.mobiq.auftrag.Lieferteil;\n\n/** Erstellt je ausgeliefertem Lieferteil eine Teilrechnung. */\npublic class TeilrechnungService {\n\n    private final AnzahlungVerrechnung verrechnung = new AnzahlungVerrechnung();\n\n    public Rechnung teilrechnung(Kaufvertrag kv, Lieferteil teil, boolean letzterTeil) {\n        Rechnung r = Rechnung.neu(Belegart.TR, kv);\n        r.setPositionen(teil.positionen());\n        r.setTeilNr(teil.teilNr());\n        r.setAnzahlungVerrechnet(letzterTeil\n                ? verrechnung.rest(kv, Rechnungen.verrechneteAnzahlung(kv))\n                : verrechnung.anteilig(kv, teil));\n        return r;\n    }\n}\n",
       "lastCommit": {
-        "short_id": "bce67ee",
+        "short_id": "4073737",
         "title": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-24T15:12:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/fibu/export/Buchungssatz.java": {
       "content": "package de.musterhaus.mobiq.fibu.export;\n\nimport de.musterhaus.mobiq.faktura.Belegart;\nimport java.math.BigDecimal;\n\n/** Ein Satz in fibu_export. Der Dienst fibu-import liest die Tabelle nachts. */\npublic record Buchungssatz(\n        Belegart belegart,\n        String belegnr,\n        String kvNr,\n        BigDecimal betragBrutto,\n        short steuerschluessel,\n        Short teillieferungNr,\n        BigDecimal azVerrechnet) {\n}\n",
       "lastCommit": {
-        "short_id": "b1a3aee",
+        "short_id": "e49c7d6",
         "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-23T10:21:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/fibu/export/GutscheinBuchung.java": {
       "content": "package de.musterhaus.mobiq.fibu.export;\n\nimport de.musterhaus.mobiq.kasse.Gutschein;\nimport java.math.BigDecimal;\n\n/** Buchungen zu Gutscheinen für die Finanzbuchhaltung. */\npublic class GutscheinBuchung {\n\n    /** Verkauf: Gutscheinwert als Verbindlichkeit. */\n    public Buchung verkauf(Gutschein g) {\n        return Buchung.verbindlichkeit(Konten.GUTSCHEIN, g.wert());\n    }\n\n    /** Einlösung: die Verbindlichkeit wird in Höhe des eingelösten Betrags aufgelöst, der Rest bleibt stehen. */\n    public Buchung einloesung(Gutschein g, BigDecimal eingeloest) {\n        return Buchung.aufloesen(Konten.GUTSCHEIN, eingeloest);\n    }\n}\n",
       "lastCommit": {
-        "short_id": "e4d7772",
+        "short_id": "c1aa5e9",
         "title": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen",
-        "author_name": "Lena Hoffmann",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-01T16:05:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/kasse/GutscheinService.java": {
       "content": "package de.musterhaus.mobiq.kasse;\n\nimport java.math.BigDecimal;\n\n/** Gutscheine an der Kasse. */\npublic class GutscheinService {\n\n    /**\n     * Löst einen Gutschein ganz oder teilweise ein. Ein Restguthaben bleibt auf demselben\n     * Gutschein und kann später eingelöst werden.\n     */\n    public Einloesung einloesen(Gutschein g, BigDecimal bonBetrag) {\n        BigDecimal eingeloest = g.restwert().min(bonBetrag);\n        g.belasten(eingeloest);\n        return Einloesung.teilweise(eingeloest, g.restwert());\n    }\n}\n",
       "lastCommit": {
-        "short_id": "72a4797",
+        "short_id": "0ddf54f",
         "title": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-08-27T14:51:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/kasse/Tagesabschluss.java": {
       "content": "package de.musterhaus.mobiq.kasse;\n\nimport java.time.LocalDate;\nimport java.util.List;\n\n/** Tagesabschluss je Filiale: liest alle Kassenbelege des Tages. */\npublic class Tagesabschluss {\n\n    private final KassenbelegRepository belege;\n\n    public Tagesabschluss(KassenbelegRepository belege) {\n        this.belege = belege;\n    }\n\n    public Abschluss erstelle(String filiale, LocalDate tag) {\n        List<Kassenbeleg> liste = belege.findeTag(filiale, tag);\n        if (liste.isEmpty()) {\n            return Abschluss.leer(filiale, tag);\n        }\n        return Abschluss.aus(filiale, tag, liste.get(0).kassenNr(), liste);\n    }\n}\n",
       "lastCommit": {
-        "short_id": "72303fd",
+        "short_id": "e9b45e0",
         "title": "MOB-4841 Tagesabschluss: Filiale ohne Belege nicht mehr abbrechen",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-26T08:05:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/tour/StoppBuilder.java": {
       "content": "package de.musterhaus.mobiq.tour;\n\nimport de.musterhaus.mobiq.auftrag.Kaufvertrag;\nimport de.musterhaus.mobiq.auftrag.KvPosition;\nimport de.musterhaus.mobiq.auftrag.Lieferteil;\nimport java.util.List;\n\n/** Baut die Stopps einer Tour aus lieferbereiten Kaufverträgen. */\npublic class StoppBuilder {\n\n    /** Ein Kaufvertrag ergibt einen Stopp, bei Teillieferung einen Stopp je lieferbereitem Teil. */\n    public List<TourStopp> baue(Kaufvertrag kv, List<Lieferteil> teile) {\n        if (teile.isEmpty()) {\n            boolean montage = kv.positionen().stream().anyMatch(p -> p.montage());\n            return List.of(new TourStopp(kv.kvNr(), null, montage, volumen(kv.positionen())));\n        }\n        return teile.stream()\n                .filter(Lieferteil::istLieferbereit)\n                // Montage nur für den Teil, der die Montageposition enthält\n                .map(t -> new TourStopp(kv.kvNr(), t.teilNr(), t.positionen().stream().anyMatch(p -> p.montage()), volumen(t.positionen())))\n                .toList();\n    }\n\n    private double volumen(List<KvPosition> positionen) {\n        return positionen.stream().mapToDouble(p -> p.volumenM3().doubleValue()).sum();\n    }\n}\n",
       "lastCommit": {
-        "short_id": "d633e67",
+        "short_id": "3e9515d",
         "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-19T09:44:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/tour/TourPruefung.java": {
       "content": "package de.musterhaus.mobiq.tour;\n\nimport de.musterhaus.mobiq.param.Parameter;\n\n/** Prüft eine Tour vor dem Speichern. */\npublic class TourPruefung {\n\n    private final Parameter param;\n\n    public TourPruefung(Parameter param) {\n        this.param = param;\n    }\n\n    public PruefErgebnis pruefe(Tour tour) {\n        if (tour.stopps().size() > param.getInt(\"TOUR_MAX_STOPPS\")) {\n            return PruefErgebnis.fehler(\"Zu viele Stopps auf der Tour\");\n        }\n        double volumen = tour.stopps().stream().mapToDouble(TourStopp::volumenM3).sum();\n        if (volumen > tour.fahrzeug().ladevolumenM3()) {\n            if (!param.getBool(\"TOUR_UEBERLADUNG_ERLAUBT\")) {\n                return PruefErgebnis.fehler(\"Ladevolumen des Fahrzeugs überschritten\");\n            }\n            return PruefErgebnis.bestaetigen(\"Ladevolumen überschritten. Trotzdem speichern?\");\n        }\n        return PruefErgebnis.ok();\n    }\n}\n",
       "lastCommit": {
-        "short_id": "4d1c975",
+        "short_id": "e975ee9",
         "title": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-08T17:03:00+02:00"
       }
     },
     "server/src/main/java/de/musterhaus/mobiq/tour/TourStopp.java": {
       "content": "package de.musterhaus.mobiq.tour;\n\n/** Ein Stopp auf einer Tour. */\npublic record TourStopp(String kvNr, Integer teilNr, boolean montage, double volumenM3) {\n\n    /** Anzeige auf Karte und Lieferschein: KV-Nummer, bei Teillieferung mit T1, T2 … */\n    public String bezeichnung() {\n        return teilNr == null ? kvNr : kvNr + \" T\" + teilNr;\n    }\n}\n",
       "lastCommit": {
-        "short_id": "d633e67",
+        "short_id": "3e9515d",
         "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-19T09:44:00+02:00"
       }
     },
     "server/src/test/java/de/musterhaus/mobiq/druck/VorlagenEngineTest.java": {
       "content": "package de.musterhaus.mobiq.druck;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\nimport java.util.Map;\nimport org.junit.jupiter.api.Test;\n\nclass VorlagenEngineTest {\n\n    @Test\n    void rechnungWirdGedruckt() {\n        byte[] pdf = new VorlagenEngine(Testdaten.vorlagen()).drucke(\"rechnung\", Map.of(\"beleg\", Testdaten.rechnung()));\n        assertThat(pdf).isNotEmpty();\n    }\n}\n",
       "lastCommit": {
-        "short_id": "2e588be",
+        "short_id": "3c1018f",
         "title": "MOB-4760 Tests Druckausgabe",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-16T08:47:00+02:00"
       }
     },
     "server/src/test/java/de/musterhaus/mobiq/kasse/GutscheinServiceTest.java": {
       "content": "package de.musterhaus.mobiq.kasse;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\nimport java.math.BigDecimal;\nimport org.junit.jupiter.api.Test;\n\nclass GutscheinServiceTest {\n\n    @Test\n    void teileinloesungLaesstRestAufDemGutschein() {\n        Gutschein g = Gutschein.neu(new BigDecimal(\"100.00\"));\n        Einloesung e = new GutscheinService().einloesen(g, new BigDecimal(\"30.00\"));\n        assertThat(e.eingeloest()).isEqualByComparingTo(\"30.00\");\n        assertThat(g.restwert()).isEqualByComparingTo(\"70.00\");\n    }\n}\n",
       "lastCommit": {
-        "short_id": "1dfc37d",
+        "short_id": "0bb1417",
         "title": "MOB-4777 Tests Teileinlösung",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-02T09:40:00+02:00"
       }
     },
     "server/src/test/java/de/musterhaus/mobiq/kasse/KartenzahlungTest.java": {
       "content": "package de.musterhaus.mobiq.kasse;\n\nclass KartenzahlungTest {\n    // Abbruch am Terminal, doppelte Buchung\n}\n",
       "lastCommit": {
-        "short_id": "d4bee0e",
+        "short_id": "3b401b5",
         "title": "MOB-4815 Tests Kartenzahlung",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-18T10:05:00+02:00"
       }
     },
     "server/src/test/java/de/musterhaus/mobiq/kasse/StornoTest.java": {
       "content": "package de.musterhaus.mobiq.kasse;\n\nclass StornoTest {\n    // Teilstorno, Storno nach Tagesabschluss\n}\n",
       "lastCommit": {
-        "short_id": "bce9e86",
+        "short_id": "2cb6885",
         "title": "MOB-4815 Tests Storno",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-17T15:30:00+02:00"
       }
     },
     "server/src/test/java/de/musterhaus/mobiq/kasse/TagesabschlussTest.java": {
       "content": "package de.musterhaus.mobiq.kasse;\n\nclass TagesabschlussTest {\n    // Summen je Zahlart, Storno am selben Tag, Filiale mit mehreren Kassen\n}\n",
       "lastCommit": {
-        "short_id": "08c95fd",
+        "short_id": "4ea1f0e",
         "title": "MOB-4815 Tests Tagesabschluss",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-17T09:12:00+02:00"
       }
     },
     "server/src/test/java/de/musterhaus/mobiq/tour/TourPruefungTest.java": {
       "content": "package de.musterhaus.mobiq.tour;\n\nimport static org.assertj.core.api.Assertions.assertThat;\n\nimport org.junit.jupiter.api.Test;\n\nclass TourPruefungTest {\n\n    @Test\n    void ueberladeneTourBrauchtBestaetigung() {\n        Tour tour = Testdaten.tourMitVolumen(41.5, 38);\n        assertThat(new TourPruefung(Testdaten.parameter()).pruefe(tour).brauchtBestaetigung()).isTrue();\n    }\n}\n",
       "lastCommit": {
-        "short_id": "c4380f3",
+        "short_id": "09de469",
         "title": "MOB-4801 Tests Volumenberechnung",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-09T10:30:00+02:00"
       }
     },
     "server/src/test/resources/kasse/belege.csv": {
       "content": "bon;filiale;kasse;datum;betrag\n100001;F01;1;2026-09-01;249.90\n100002;F01;1;2026-09-01;1299.00\n",
       "lastCommit": {
-        "short_id": "81e2f37",
+        "short_id": "b22e522",
         "title": "MOB-4815 Testdaten aufgeräumt",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-18T16:44:00+02:00"
       }
     },
     "test/last/Tagesabschluss.jmx": {
       "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<jmeterTestPlan version=\"1.2\">\n  <hashTree><!-- 500 Bons je Filiale, 30 Filialen --></hashTree>\n</jmeterTestPlan>\n",
       "lastCommit": {
-        "short_id": "b681f37",
+        "short_id": "145bdd2",
         "title": "MOB-4790 Lasttest Tagesabschluss",
-        "author_name": "Kai Brenner",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-14T19:02:00+02:00"
       }
     },
     "web/src/i18n/de.json": {
       "content": "{\n  \"kv.lieferung.titel\": \"Lieferung\",\n  \"kv.lieferung.wunschtermin\": \"Wunschtermin\",\n  \"kv.lieferung.adresse\": \"Lieferadresse\",\n  \"kv.lieferung.etage\": \"Etage / Aufzug\",\n  \"kv.lieferung.liefersperre\": \"Lieferstopp\",\n  \"kv.lieferung.montage\": \"Montage\",\n  \"kv.lieferung.teillieferung\": \"Teillieferung erlaubt\",\n  \"kv.lieferung.aufteilen\": \"Lieferung aufteilen\",\n  \"tour.offen\": \"Offene Lieferungen\",\n  \"tour.volumen\": \"Volumen\",\n  \"kasse.gutschein\": \"Gutschein\",\n  \"kasse.restguthaben\": \"Restguthaben\",\n  \"stamm.fahrzeug.kennzeichen\": \"Kennzeichen\",\n  \"stamm.fahrzeug.ladevolumen\": \"Ladevolumen (m³)\",\n  \"stamm.fahrzeug.zuladung\": \"Zuladung (kg)\",\n  \"stamm.fahrzeug.filiale\": \"Filiale\"\n}\n",
       "lastCommit": {
-        "short_id": "2247484",
+        "short_id": "0516bb8",
         "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-11T16:18:00+02:00"
       }
     },
     "web/src/i18n/fr.json": {
       "content": "{\n  \"kv.lieferung.titel\": \"Livraison\",\n  \"kv.lieferung.liefersperre\": \"Arrêt de livraison\",\n  \"kv.lieferung.montage\": \"Montage\"\n}\n",
       "lastCommit": {
-        "short_id": "5dd627c",
+        "short_id": "2af9099",
         "title": "MOB-4835 Übersetzungen nachgezogen (nl, fr)",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-24T10:58:00+02:00"
       }
     },
     "web/src/i18n/nl.json": {
       "content": "{\n  \"kv.lieferung.titel\": \"Levering\",\n  \"kv.lieferung.liefersperre\": \"Leverstop\",\n  \"kv.lieferung.montage\": \"Montage\"\n}\n",
       "lastCommit": {
-        "short_id": "5dd627c",
+        "short_id": "2af9099",
         "title": "MOB-4835 Übersetzungen nachgezogen (nl, fr)",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-24T10:58:00+02:00"
       }
     },
     "web/src/kasse/Zahlung.tsx": {
       "content": "import { Betrag, Field, Scanner } from '@mobiq/ui'\nimport { gutscheinEinloesen } from '../api/kasse'\nimport { t } from '../i18n'\n\nexport function GutscheinZahlung({ bon }: { bon: { id: string; offen: number; restguthaben?: number } }) {\n  return (\n    <Field label={t('kasse.gutschein')}>\n      <Scanner onScan={(code) => gutscheinEinloesen(bon.id, code)} />\n      <Betrag value={bon.offen} readOnly />\n      <Betrag label={t('kasse.restguthaben')} value={bon.restguthaben} readOnly />\n    </Field>\n  )\n}\n",
       "lastCommit": {
-        "short_id": "72a4797",
+        "short_id": "0ddf54f",
         "title": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern",
-        "author_name": "Anna Becker",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-08-27T14:51:00+02:00"
       }
     },
     "web/src/kaufvertrag/LieferungAufteilen.tsx": {
       "content": "import { Dialog, DragListe, Field, KwAuswahl, Warnung } from '@mobiq/ui'\nimport { useParameter } from '../api/parameter'\nimport type { Kaufvertrag, KvPosition } from '../api/types'\nimport { t } from '../i18n'\nimport { useAufteilung } from './useAufteilung'\n\nexport function LieferungAufteilen({ kv }: { kv: Kaufvertrag }) {\n  const param = useParameter()\n  const a = useAufteilung(kv, param.TEILLIEF_MAX_ANZAHL)\n  return (\n    <Dialog titel={t('kv.aufteilen.titel')} speichernErlaubt={a.gueltig} onSpeichern={a.speichern}>\n      {a.teile.map((teil) => (\n        <fieldset key={teil.nr}>\n          <legend>{t('kv.aufteilen.teil')} {teil.nr}</legend>\n          <DragListe<KvPosition> items={teil.positionen} gruppe='positionen' onDrop={(p) => a.verschiebe(p, teil.nr)} />\n          <Field label={t('kv.aufteilen.warenwert')} hinweis={t('kv.aufteilen.warenwert.hinweis')}>{teil.anteilProzent} %</Field>\n          <Field label={t('kv.lieferung.wunschtermin')} required>\n            <KwAuswahl value={teil.wunschKw} onChange={(kw) => a.setzeTermin(teil.nr, kw)} />\n          </Field>\n        </fieldset>\n      ))}\n      {a.warnung && <Warnung>{a.warnung}</Warnung>}\n    </Dialog>\n  )\n}\n\nexport function oeffneAufteilen(kv: Kaufvertrag) {\n  if (kv.finanzkauf) return // Teillieferung bei Finanzkauf gesperrt, siehe MOB-4812\n  Dialog.oeffne(<LieferungAufteilen kv={kv} />)\n}\n",
       "lastCommit": {
-        "short_id": "6977c6c",
+        "short_id": "ccbc28e",
         "title": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-26T11:30:00+02:00"
       }
     },
     "web/src/kaufvertrag/RegisterLieferung.tsx": {
       "content": "import { AdressFeld, Auswahl, Button, Checkbox, Field, KwAuswahl } from '@mobiq/ui'\nimport { useParameter } from '../api/parameter'\nimport { oeffneAufteilen } from './LieferungAufteilen'\nimport type { Kaufvertrag } from '../api/types'\nimport { t } from '../i18n'\n\nexport function RegisterLieferung({ kv, onChange }: { kv: Kaufvertrag; onChange: (kv: Kaufvertrag) => void }) {\n  const param = useParameter()\n  return (\n    <section aria-label={t('kv.lieferung.titel')}>\n      <Field label={t('kv.lieferung.wunschtermin')} required>\n        <KwAuswahl value={kv.wunschtermin} onChange={(wunschtermin) => onChange({ ...kv, wunschtermin })} />\n      </Field>\n      <Field label={t('kv.lieferung.adresse')} required>\n        <AdressFeld value={kv.lieferadresse} onChange={(lieferadresse) => onChange({ ...kv, lieferadresse })} />\n      </Field>\n      <Field label={t('kv.lieferung.etage')}>\n        <Auswahl value={kv.etage} optionen={['EG', '1. OG', '2. OG', '3. OG+', 'mit Aufzug']} onChange={(etage) => onChange({ ...kv, etage })} />\n      </Field>\n      <Checkbox label={t('kv.lieferung.liefersperre')} checked={kv.liefersperre} onChange={(liefersperre) => onChange({ ...kv, liefersperre })} />\n      <Checkbox label={t('kv.lieferung.montage')} checked={kv.montage} onChange={(montage) => onChange({ ...kv, montage })} />\n      {param.TEILLIEF_ERLAUBT && !kv.finanzkauf && (\n        <>\n          <Checkbox label={t('kv.lieferung.teillieferung')} checked={kv.teillieferungErlaubt} onChange={(teillieferungErlaubt) => onChange({ ...kv, teillieferungErlaubt })} />\n          <Button disabled={!kv.teillieferungErlaubt} onClick={() => oeffneAufteilen(kv)}>{t('kv.lieferung.aufteilen')}</Button>\n        </>\n      )}\n    </section>\n  )\n}\n",
       "lastCommit": {
-        "short_id": "2247484",
+        "short_id": "0516bb8",
         "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
-        "author_name": "Merve Yilmaz",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-11T16:18:00+02:00"
       }
     },
     "web/src/stamm/Fahrzeug.tsx": {
       "content": "import { Auswahl, Field, Zahl, Text } from '@mobiq/ui'\nimport type { Fahrzeug } from '../api/types'\nimport { t } from '../i18n'\n\nexport function FahrzeugMaske({ fz, onChange }: { fz: Fahrzeug; onChange: (fz: Fahrzeug) => void }) {\n  return (\n    <form>\n      <Field label={t('stamm.fahrzeug.kennzeichen')} required>\n        <Text value={fz.kennzeichen} onChange={(kennzeichen) => onChange({ ...fz, kennzeichen })} />\n      </Field>\n      <Field label={t('stamm.fahrzeug.ladevolumen')} required>\n        <Zahl value={fz.ladevolumenM3} einheit='m³' onChange={(ladevolumenM3) => onChange({ ...fz, ladevolumenM3 })} />\n      </Field>\n      <Field label={t('stamm.fahrzeug.zuladung')}>\n        <Zahl value={fz.zuladungKg} onChange={(zuladungKg) => onChange({ ...fz, zuladungKg })} />\n      </Field>\n      <Field label={t('stamm.fahrzeug.filiale')} required>\n        <Auswahl value={fz.filiale} optionen={fz.filialen} onChange={(filiale) => onChange({ ...fz, filiale })} />\n      </Field>\n    </form>\n  )\n}\n",
       "lastCommit": {
-        "short_id": "8394bba",
+        "short_id": "fbff56a",
         "title": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-02T09:58:00+02:00"
       }
     },
     "web/src/tour/StoppKarte.tsx": {
       "content": "import { Karte, Pin } from '@mobiq/karte'\nimport type { TourStopp } from '../api/types'\n\nexport function StoppKarte({ stopps }: { stopps: TourStopp[] }) {\n  return (\n    <Karte>\n      {stopps.map((s, i) => (\n        <Pin key={s.kvNr + (s.teilNr ?? '')} nummer={i + 1} titel={s.teilNr ? s.kvNr + ' T' + s.teilNr : s.kvNr} montage={s.montage} />\n      ))}\n    </Karte>\n  )\n}\n",
       "lastCommit": {
-        "short_id": "d633e67",
+        "short_id": "3e9515d",
         "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-19T09:44:00+02:00"
       }
     },
     "web/src/tour/TourKopf.tsx": {
       "content": "import type { Tour } from '../api/types'\nimport { t } from '../i18n'\n\nexport function TourKopf({ tour }: { tour: Tour }) {\n  const volumen = tour.stopps.reduce((n, s) => n + s.volumenM3, 0)\n  return (\n    <header className='tour-kopf'>\n      <h2>{tour.name}</h2>\n      <span className={volumen > tour.fahrzeug.ladevolumenM3 ? 'ueberladen' : undefined}>\n        {t('tour.volumen')}: {volumen.toFixed(1)} / {tour.fahrzeug.ladevolumenM3} m³\n      </span>\n    </header>\n  )\n}\n",
       "lastCommit": {
-        "short_id": "4d1c975",
+        "short_id": "e975ee9",
         "title": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung",
-        "author_name": "Paul Schuster",
+        "author_name": "Delschad Jankir",
         "authored_date": "2026-09-08T17:03:00+02:00"
       }
     }

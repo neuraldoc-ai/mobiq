@@ -24,7 +24,7 @@ node publish.mjs         # distributes ./out to data/, ../mobiq-code, ../mobiq-d
 
 `publish.mjs` replaces only the data folders. The code repository is updated from the bundle (same commits), and only if it has no local changes. Other target folders: `--code`, `--docs`, `--db`.
 
-The dataset ends at commit `df9f414` on `release/26.4`. On top of it, `publish.mjs` adds one fixed commit with an English description ([`code-readme.md`](code-readme.md) as `.github/README.md`, which GitHub shows instead of the German company README). Fixed author and date keep its hash identical on every run; it is not part of the dataset, and the dashboard stays pinned to `df9f414`.
+The dataset ends at commit `ad176b2` on `release/26.4`. On top of it, `publish.mjs` adds one fixed commit with an English description ([`code-readme.md`](code-readme.md) as `.github/README.md`, which GitHub shows instead of the German company README). Fixed author and date keep its hash identical on every run; it is not part of the dataset, and the dashboard stays pinned to `ad176b2`.
 
 ## Contents of `out/`
 

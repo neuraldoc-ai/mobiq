@@ -26,9 +26,9 @@
       "should": 1,
       "commits": [
         {
-          "sha": "72a4797f",
+          "sha": "0ddf54f5",
           "title": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-08-27T14:51:00.000+02:00",
           "add": 8,
           "del": 9,
@@ -39,9 +39,9 @@
           ]
         },
         {
-          "sha": "adb4a441",
+          "sha": "c5f45234",
           "title": "MOB-4777 Bon: Restguthaben drucken",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-08-29T11:20:00.000+02:00",
           "add": 1,
           "del": 0,
@@ -50,9 +50,9 @@
           ]
         },
         {
-          "sha": "e4d77721",
+          "sha": "c1aa5e9a",
           "title": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen",
-          "author": "Lena Hoffmann",
+          "author": "Delschad Jankir",
           "date": "2026-09-01T16:05:00.000+02:00",
           "add": 4,
           "del": 3,
@@ -61,9 +61,9 @@
           ]
         },
         {
-          "sha": "1dfc37d1",
+          "sha": "0bb14178",
           "title": "MOB-4777 Tests Teileinlösung",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-02T09:40:00.000+02:00",
           "add": 17,
           "del": 0,
@@ -84,9 +84,9 @@
       "should": 1,
       "commits": [
         {
-          "sha": "8394bba1",
+          "sha": "fbff56a7",
           "title": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-02T09:58:00.000+02:00",
           "add": 6,
           "del": 0,
@@ -98,9 +98,9 @@
           ]
         },
         {
-          "sha": "33716b04",
+          "sha": "df21e612",
           "title": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-04T13:12:00.000+02:00",
           "add": 11,
           "del": 0,
@@ -109,9 +109,9 @@
           ]
         },
         {
-          "sha": "4d1c9754",
+          "sha": "e975ee9d",
           "title": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-08T17:03:00.000+02:00",
           "add": 10,
           "del": 1,
@@ -121,9 +121,9 @@
           ]
         },
         {
-          "sha": "c4380f35",
+          "sha": "09de4694",
           "title": "MOB-4801 Tests Volumenberechnung",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-09T10:30:00.000+02:00",
           "add": 14,
           "del": 0,
@@ -144,9 +144,9 @@
       "should": 1,
       "commits": [
         {
-          "sha": "33e60afb",
+          "sha": "1ff72403",
           "title": "MOB-4790 kassenbeleg nach Belegjahr partitionieren",
-          "author": "Kai Brenner",
+          "author": "Delschad Jankir",
           "date": "2026-09-10T08:24:00.000+02:00",
           "add": 16,
           "del": 0,
@@ -155,9 +155,9 @@
           ]
         },
         {
-          "sha": "b37b560a",
+          "sha": "2c131df2",
           "title": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen",
-          "author": "Kai Brenner",
+          "author": "Delschad Jankir",
           "date": "2026-09-12T15:47:00.000+02:00",
           "add": 3,
           "del": 0,
@@ -166,9 +166,9 @@
           ]
         },
         {
-          "sha": "b681f37f",
+          "sha": "145bdd25",
           "title": "MOB-4790 Lasttest Tagesabschluss",
-          "author": "Kai Brenner",
+          "author": "Delschad Jankir",
           "date": "2026-09-14T19:02:00.000+02:00",
           "add": 4,
           "del": 0,
@@ -189,9 +189,9 @@
       "should": 0,
       "commits": [
         {
-          "sha": "a65d284e",
+          "sha": "13200b04",
           "title": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-03T08:55:00.000+02:00",
           "add": 17,
           "del": 0,
@@ -200,9 +200,9 @@
           ]
         },
         {
-          "sha": "62750fa5",
+          "sha": "5d07ca73",
           "title": "MOB-4760 Rechnungsvorlage umgestellt",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-07T10:15:00.000+02:00",
           "add": 4,
           "del": 5,
@@ -212,9 +212,9 @@
           ]
         },
         {
-          "sha": "99fae0cf",
+          "sha": "15635607",
           "title": "MOB-4760 Lieferscheinvorlage umgestellt",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-08T09:02:00.000+02:00",
           "add": 2,
           "del": 3,
@@ -224,9 +224,9 @@
           ]
         },
         {
-          "sha": "ce1994cf",
+          "sha": "a18215f2",
           "title": "MOB-4760 Kaufvertragsvorlage umgestellt",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-09T14:40:00.000+02:00",
           "add": 2,
           "del": 3,
@@ -236,9 +236,9 @@
           ]
         },
         {
-          "sha": "6016fc7f",
+          "sha": "d110a7f8",
           "title": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-11T11:33:00.000+02:00",
           "add": 24,
           "del": 0,
@@ -247,9 +247,9 @@
           ]
         },
         {
-          "sha": "0b5afd0b",
+          "sha": "a55cab31",
           "title": "MOB-4760 Alte Druck-Engine entfernt",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-15T16:20:00.000+02:00",
           "add": 0,
           "del": 11,
@@ -258,9 +258,9 @@
           ]
         },
         {
-          "sha": "2e588beb",
+          "sha": "3c1018f0",
           "title": "MOB-4760 Tests Druckausgabe",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-16T08:47:00.000+02:00",
           "add": 15,
           "del": 0,
@@ -281,9 +281,9 @@
       "should": 0,
       "commits": [
         {
-          "sha": "5692e31f",
+          "sha": "36e2d259",
           "title": "Avis-Vorlauf Standard 48h -> 24h",
-          "author": "Kai Brenner",
+          "author": "Delschad Jankir",
           "date": "2026-09-19T17:58:00.000+02:00",
           "add": 1,
           "del": 1,
@@ -304,9 +304,9 @@
       "should": 0,
       "commits": [
         {
-          "sha": "08c95fd5",
+          "sha": "4ea1f0ec",
           "title": "MOB-4815 Tests Tagesabschluss",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-17T09:12:00.000+02:00",
           "add": 5,
           "del": 0,
@@ -315,9 +315,9 @@
           ]
         },
         {
-          "sha": "bce9e86d",
+          "sha": "2cb68852",
           "title": "MOB-4815 Tests Storno",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-17T15:30:00.000+02:00",
           "add": 5,
           "del": 0,
@@ -326,9 +326,9 @@
           ]
         },
         {
-          "sha": "d4bee0ee",
+          "sha": "3b401b50",
           "title": "MOB-4815 Tests Kartenzahlung",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-18T10:05:00.000+02:00",
           "add": 5,
           "del": 0,
@@ -337,9 +337,9 @@
           ]
         },
         {
-          "sha": "81e2f37c",
+          "sha": "b22e5223",
           "title": "MOB-4815 Testdaten aufgeräumt",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-18T16:44:00.000+02:00",
           "add": 3,
           "del": 0,
@@ -348,9 +348,9 @@
           ]
         },
         {
-          "sha": "8b55cef6",
+          "sha": "3938d39a",
           "title": "MOB-4815 Testlauf Kasse in der Pipeline",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-19T08:20:00.000+02:00",
           "add": 4,
           "del": 0,
@@ -371,9 +371,9 @@
       "should": 1,
       "commits": [
         {
-          "sha": "34db4388",
+          "sha": "3757ad32",
           "title": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“ (Web und Desktop)",
-          "author": "Merve Yilmaz",
+          "author": "Delschad Jankir",
           "date": "2026-09-24T10:41:00.000+02:00",
           "add": 2,
           "del": 2,
@@ -383,9 +383,9 @@
           ]
         },
         {
-          "sha": "5dd627cc",
+          "sha": "2af90996",
           "title": "MOB-4835 Übersetzungen nachgezogen (nl, fr)",
-          "author": "Merve Yilmaz",
+          "author": "Delschad Jankir",
           "date": "2026-09-24T10:58:00.000+02:00",
           "add": 2,
           "del": 2,
@@ -407,9 +407,9 @@
       "should": 0,
       "commits": [
         {
-          "sha": "72303fdf",
+          "sha": "e9b45e0c",
           "title": "MOB-4841 Tagesabschluss: Filiale ohne Belege nicht mehr abbrechen",
-          "author": "Anna Becker",
+          "author": "Delschad Jankir",
           "date": "2026-09-26T08:05:00.000+02:00",
           "add": 3,
           "del": 0,
@@ -430,9 +430,9 @@
       "should": 7,
       "commits": [
         {
-          "sha": "724a0a77",
+          "sha": "6dfdc58a",
           "title": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id",
-          "author": "Jonas Albrecht",
+          "author": "Delschad Jankir",
           "date": "2026-09-08T10:52:00.000+02:00",
           "add": 23,
           "del": 0,
@@ -442,9 +442,9 @@
           ]
         },
         {
-          "sha": "b104402c",
+          "sha": "f163a154",
           "title": "MOB-4812 Parameter TEILLIEF_ERLAUBT und TEILLIEF_MAX_ANZAHL (1 bis 10)",
-          "author": "Jonas Albrecht",
+          "author": "Delschad Jankir",
           "date": "2026-09-09T14:26:00.000+02:00",
           "add": 11,
           "del": 0,
@@ -453,9 +453,9 @@
           ]
         },
         {
-          "sha": "22474846",
+          "sha": "0516bb8b",
           "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
-          "author": "Merve Yilmaz",
+          "author": "Delschad Jankir",
           "date": "2026-09-11T16:18:00.000+02:00",
           "add": 16,
           "del": 1,
@@ -467,9 +467,9 @@
           ]
         },
         {
-          "sha": "bd9c5601",
+          "sha": "cf643095",
           "title": "MOB-4812 WIP Dialog Lieferung aufteilen",
-          "author": "Merve Yilmaz",
+          "author": "Delschad Jankir",
           "date": "2026-09-12T18:03:00.000+02:00",
           "add": 11,
           "del": 0,
@@ -478,9 +478,9 @@
           ]
         },
         {
-          "sha": "9222fc79",
+          "sha": "1cd1ff65",
           "title": "MOB-4812 Dialog „Lieferung aufteilen“, gesperrt bei Finanzkauf",
-          "author": "Merve Yilmaz",
+          "author": "Delschad Jankir",
           "date": "2026-09-15T17:36:00.000+02:00",
           "add": 51,
           "del": 4,
@@ -490,9 +490,9 @@
           ]
         },
         {
-          "sha": "4e4f64a2",
+          "sha": "be0611b7",
           "title": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3",
-          "author": "Jonas Albrecht",
+          "author": "Delschad Jankir",
           "date": "2026-09-17T11:09:00.000+02:00",
           "add": 18,
           "del": 3,
@@ -502,9 +502,9 @@
           ]
         },
         {
-          "sha": "d633e675",
+          "sha": "3e9515d8",
           "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)",
-          "author": "Paul Schuster",
+          "author": "Delschad Jankir",
           "date": "2026-09-19T09:44:00.000+02:00",
           "add": 22,
           "del": 8,
@@ -515,9 +515,9 @@
           ]
         },
         {
-          "sha": "e8910c21",
+          "sha": "575c52ff",
           "title": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig",
-          "author": "Lena Hoffmann",
+          "author": "Delschad Jankir",
           "date": "2026-09-22T13:57:00.000+02:00",
           "add": 32,
           "del": 3,
@@ -528,9 +528,9 @@
           ]
         },
         {
-          "sha": "b1a3aeeb",
+          "sha": "e49c7d62",
           "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet",
-          "author": "Lena Hoffmann",
+          "author": "Delschad Jankir",
           "date": "2026-09-23T10:21:00.000+02:00",
           "add": 10,
           "del": 3,
@@ -542,9 +542,9 @@
           ]
         },
         {
-          "sha": "bce67ee9",
+          "sha": "4073737f",
           "title": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen",
-          "author": "Lena Hoffmann",
+          "author": "Delschad Jankir",
           "date": "2026-09-24T15:12:00.000+02:00",
           "add": 8,
           "del": 1,
@@ -554,9 +554,9 @@
           ]
         },
         {
-          "sha": "6977c6cd",
+          "sha": "ccbc28e3",
           "title": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog",
-          "author": "Merve Yilmaz",
+          "author": "Delschad Jankir",
           "date": "2026-09-26T11:30:00.000+02:00",
           "add": 1,
           "del": 1,

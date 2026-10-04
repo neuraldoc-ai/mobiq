@@ -14,6 +14,6 @@ This is the code repository of **MOBIQ**, a fictional ERP vendor for furniture a
 
 Branches: `main` with tag `v26.3.2`, the release branch `release/26.4` (default) and eight feature and hotfix branches with GitLab-style merge commits. Tickets are referenced as `MOB-xxxx` (Jira).
 
-The dataset ends at commit `df9f414`. The commit on top of it only adds this English description and is not part of the dataset. Documentation lives in [mobiq-docs](https://github.com/neuraldoc-ai/mobiq-docs), the database in [mobiq-db](https://github.com/neuraldoc-ai/mobiq-db).
+The dataset ends at commit `ad176b2`. The commit on top of it only adds this English description and is not part of the dataset. Documentation lives in [mobiq-docs](https://github.com/neuraldoc-ai/mobiq-docs), the database in [mobiq-db](https://github.com/neuraldoc-ai/mobiq-db).
 
 License: MIT, see [neuraldoc-ai/mobiq](https://github.com/neuraldoc-ai/mobiq/blob/main/LICENSE).
