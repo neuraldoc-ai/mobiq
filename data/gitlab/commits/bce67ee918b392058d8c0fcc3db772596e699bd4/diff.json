@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -14,6 +14,11 @@ public class AnzahlungVerrechnung {\n         return kv.anzahlung();\n     }\n \n+    /** Teillieferung, letzter Teil: verrechnet den Rest der Anzahlung, damit keine Rundungsdifferenz bleibt. */\n+    public BigDecimal rest(Kaufvertrag kv, BigDecimal bereitsVerrechnet) {\n+        return kv.anzahlung().subtract(bereitsVerrechnet);\n+    }\n+\n     /** Teillieferung: Anzahlung anteilig nach Warenwert des Lieferteils. */\n     public BigDecimal anteilig(Kaufvertrag kv, Lieferteil teil) {\n         BigDecimal anteil = teil.positionen().stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add)\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/faktura/AnzahlungVerrechnung.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/faktura/AnzahlungVerrechnung.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -12,7 +12,9 @@ public class TeilrechnungService {\n         Rechnung r = Rechnung.neu(Belegart.TR, kv);\n         r.setPositionen(teil.positionen());\n         r.setTeilNr(teil.teilNr());\n-        r.setAnzahlungVerrechnet(verrechnung.anteilig(kv, teil));\n+        r.setAnzahlungVerrechnet(letzterTeil\n+                ? verrechnung.rest(kv, Rechnungen.verrechneteAnzahlung(kv))\n+                : verrechnung.anteilig(kv, teil));\n         return r;\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

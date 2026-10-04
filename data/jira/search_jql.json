@@ -1,0 +1,4687 @@
+{
+  "issues": [
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10850",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10850",
+      "key": "MOB-4850",
+      "fields": {
+        "summary": "Zahlung mit Wero an der Kasse",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Zu erledigen",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "Zu erledigen"
+          }
+        },
+        "statuscategorychangedate": "2026-09-28T14:00:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Niedrig",
+          "id": "4"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": null,
+        "created": "2026-09-28T14:00:00.000+0200",
+        "updated": "2026-09-28T14:00:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [
+          "idee"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          }
+        ],
+        "fixVersions": [],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Prüfen, ob Wero über das Kartenterminal angebunden werden kann."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10850/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null,
+        "parent": {
+          "id": "10701",
+          "key": "MOB-4701",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10701",
+          "fields": {
+            "summary": "Kasse 2026",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Mittel",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10844",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10844",
+      "key": "MOB-4844",
+      "fields": {
+        "summary": "Teillieferung im Kundenportal anzeigen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Zu erledigen",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "Zu erledigen"
+          }
+        },
+        "statuscategorychangedate": "2026-09-25T10:00:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Niedrig",
+          "id": "4"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": null,
+        "created": "2026-09-25T10:00:00.000+0200",
+        "updated": "2026-09-25T10:00:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10252",
+            "id": "10252",
+            "description": "",
+            "name": "26.5",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2027-01-26"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kunde sieht im Portal, welcher Teil wann kommt."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [
+          {
+            "id": "72742",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLink/72742",
+            "type": {
+              "id": "10003",
+              "name": "Relates",
+              "inward": "relates to",
+              "outward": "relates to",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLinkType/10003"
+            },
+            "inwardIssue": {
+              "id": "10812",
+              "key": "MOB-4812",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812",
+              "fields": {
+                "summary": "Teillieferung im Kaufvertrag",
+                "status": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/",
+                  "name": "Fertig",
+                  "id": "10001",
+                  "statusCategory": {
+                    "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Fertig"
+                  }
+                },
+                "priority": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+                  "name": "Hoch",
+                  "id": "2"
+                },
+                "issuetype": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10844/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null,
+        "parent": {
+          "id": "10700",
+          "key": "MOB-4700",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700",
+          "fields": {
+            "summary": "Liefertreue erhöhen",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10841",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10841",
+      "key": "MOB-4841",
+      "fields": {
+        "summary": "Tagesabschluss bricht ab bei Filiale ohne Belege",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10004",
+          "id": "10004",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-26T09:03:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+          "name": "Hoch",
+          "id": "2"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "accountId": "712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/580165d6a6db4ab4a5bce05f90b01cd1?d=mm&s=48"
+          },
+          "displayName": "Anna Becker",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-25T17:45:00.000+0200",
+        "updated": "2026-09-26T09:03:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-26T09:03:00.000+0200",
+        "labels": [
+          "kunde-brandt",
+          "hotfix"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Küchenstudio Brandt: Tagesabschluss für die Filiale Neuwied (Ruhetag, keine Bons) bricht mit Fehler ab. Danach lässt sich der Abschluss der anderen Filialen nicht starten."
+                }
+              ]
+            },
+            {
+              "type": "codeBlock",
+              "attrs": {
+                "language": "java"
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0\n\tat de.musterhaus.mobiq.kasse.Tagesabschluss.erstelle(Tagesabschluss.java:17)"
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10841/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 814,
+            "name": "MOB Sprint 26.4-3",
+            "state": "active",
+            "boardId": 37,
+            "goal": "Teillieferung fertig, Stabilisierung",
+            "startDate": "2026-09-21T07:00:00.000Z",
+            "endDate": "2026-10-02T15:00:00.000Z"
+          }
+        ],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10835",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10835",
+      "key": "MOB-4835",
+      "fields": {
+        "summary": "„Liefersperre“ in „Lieferstopp“ umbenennen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10002",
+          "id": "10002",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Aufgabe",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-25T09:16:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Niedrig",
+          "id": "4"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:4f73fa0d-86a5-4d62-a996-40b22bffebd5",
+          "accountId": "712020:4f73fa0d-86a5-4d62-a996-40b22bffebd5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/93f13dcc49dc4f34a7b406957598a5b5?d=mm&s=48"
+          },
+          "displayName": "Merve Yilmaz",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-19T14:00:00.000+0200",
+        "updated": "2026-09-25T09:16:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-25T09:16:00.000+0200",
+        "labels": [
+          "ui-text"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Support meldet: Kunden verwechseln die Liefersperre mit der Zahlungssperre (z. B. SD-2291). Nur die Beschriftung ändern (de, nl, fr). Der interne Feldname bleibt."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10835/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 814,
+            "name": "MOB Sprint 26.4-3",
+            "state": "active",
+            "boardId": 37,
+            "goal": "Teillieferung fertig, Stabilisierung",
+            "startDate": "2026-09-21T07:00:00.000Z",
+            "endDate": "2026-10-02T15:00:00.000Z"
+          }
+        ],
+        "customfield_10016": 1
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10829",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10829",
+      "key": "MOB-4829",
+      "fields": {
+        "summary": "Rundungsdifferenz 0,01 € bei Teillieferung mit 3 Teilen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10004",
+          "id": "10004",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-29T15:50:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "accountId": "712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/d6ba169c95a847aca971ef1594087445?d=mm&s=48"
+          },
+          "displayName": "Tim Wagner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "accountId": "712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/d6ba169c95a847aca971ef1594087445?d=mm&s=48"
+          },
+          "displayName": "Tim Wagner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:f244f4de-af92-45e4-aa0a-9ae72ce2fa89",
+          "accountId": "712020:f244f4de-af92-45e4-aa0a-9ae72ce2fa89",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5fa3a25f73fe4862ad34d710fc51fdf1?d=mm&s=48"
+          },
+          "displayName": "Lena Hoffmann",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-23T16:40:00.000+0200",
+        "updated": "2026-09-29T15:50:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-29T15:50:00.000+0200",
+        "labels": [],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10113",
+            "id": "10113",
+            "name": "Faktura"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Schritte"
+                }
+              ]
+            },
+            {
+              "type": "orderedList",
+              "attrs": {
+                "order": 1
+              },
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Kaufvertrag 3.000,00 €, Anzahlung 1.000,00 €"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "In 3 gleich große Teile aufteilen"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Alle Teile ausliefern und abrechnen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Ergebnis"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Verrechnete Anzahlung 333,33 € × 3 = 999,99 €. 0,01 € bleibt als offener Posten."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Erwartet"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Anzahlung vollständig verrechnet."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [
+          {
+            "id": "72697",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLink/72697",
+            "type": {
+              "id": "10003",
+              "name": "Relates",
+              "inward": "relates to",
+              "outward": "relates to",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLinkType/10003"
+            },
+            "inwardIssue": {
+              "id": "10812",
+              "key": "MOB-4812",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812",
+              "fields": {
+                "summary": "Teillieferung im Kaufvertrag",
+                "status": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/",
+                  "name": "Fertig",
+                  "id": "10001",
+                  "statusCategory": {
+                    "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Fertig"
+                  }
+                },
+                "priority": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+                  "name": "Hoch",
+                  "id": "2"
+                },
+                "issuetype": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10829/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 814,
+            "name": "MOB Sprint 26.4-3",
+            "state": "active",
+            "boardId": 37,
+            "goal": "Teillieferung fertig, Stabilisierung",
+            "startDate": "2026-09-21T07:00:00.000Z",
+            "endDate": "2026-10-02T15:00:00.000Z"
+          }
+        ],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10826",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10826",
+      "key": "MOB-4826",
+      "fields": {
+        "summary": "Liefertermin-Vorschlag ignoriert Feiertage in Sachsen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10004",
+          "id": "10004",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10005",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "In Review",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Arbeit"
+          }
+        },
+        "statuscategorychangedate": "2026-09-30T16:20:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+          "accountId": "712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/b679a14911d74322a773e5ce0af07045?d=mm&s=48"
+          },
+          "displayName": "Jonas Albrecht",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-17T09:12:00.000+0200",
+        "updated": "2026-09-30T16:20:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Reformationstag (31.10.) wird in Filialen in Sachsen als Liefertag vorgeschlagen."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10826/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 814,
+            "name": "MOB Sprint 26.4-3",
+            "state": "active",
+            "boardId": 37,
+            "goal": "Teillieferung fertig, Stabilisierung",
+            "startDate": "2026-09-21T07:00:00.000Z",
+            "endDate": "2026-10-02T15:00:00.000Z"
+          }
+        ],
+        "customfield_10016": null,
+        "parent": {
+          "id": "10700",
+          "key": "MOB-4700",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700",
+          "fields": {
+            "summary": "Liefertreue erhöhen",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10822",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10822",
+      "key": "MOB-4822",
+      "fields": {
+        "summary": "Kartenkacheln in der Tourenplanung laden langsam",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10004",
+          "id": "10004",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "In Arbeit",
+          "id": "3",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Arbeit"
+          }
+        },
+        "statuscategorychangedate": "2026-09-29T10:00:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Niedrig",
+          "id": "4"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:f7a70e48-e7e4-4504-a083-b1a911bb52f5",
+          "accountId": "712020:f7a70e48-e7e4-4504-a083-b1a911bb52f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/624a17b562f74092a4dde1123e38f825?d=mm&s=48"
+          },
+          "displayName": "Paul Schuster",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-16T08:00:00.000+0200",
+        "updated": "2026-09-29T10:00:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10111",
+            "id": "10111",
+            "name": "Tourenplanung"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10252",
+            "id": "10252",
+            "description": "",
+            "name": "26.5",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2027-01-26"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Bei Zoomstufe > 14 dauert das Laden mehrere Sekunden."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10822/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10819",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10819",
+      "key": "MOB-4819",
+      "fields": {
+        "summary": "Bon: Logo größer drucken (Wohnwelt Sauer)",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10002",
+          "id": "10002",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Aufgabe",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-15T12:00:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Niedrig",
+          "id": "4"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:56be0099-1df7-421a-a9c9-a6c60faeacb5",
+          "accountId": "712020:56be0099-1df7-421a-a9c9-a6c60faeacb5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/eb765c10e9f24e3cac15fc198adaefa5?d=mm&s=48"
+          },
+          "displayName": "Miriam Thelen",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-12T10:00:00.000+0200",
+        "updated": "2026-09-15T12:00:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-15T12:00:00.000+0200",
+        "labels": [
+          "kunde-sauer"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10115",
+            "id": "10115",
+            "name": "Druck"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Logo auf dem Bon ist zu klein."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10819/comment/159190",
+              "id": "159190",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:56be0099-1df7-421a-a9c9-a6c60faeacb5",
+                "accountId": "712020:56be0099-1df7-421a-a9c9-a6c60faeacb5",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/eb765c10e9f24e3cac15fc198adaefa5?d=mm&s=48"
+                },
+                "displayName": "Miriam Thelen",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Über die Kundenvorlage beim Kunden gelöst, keine Änderung im Produkt."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:56be0099-1df7-421a-a9c9-a6c60faeacb5",
+                "accountId": "712020:56be0099-1df7-421a-a9c9-a6c60faeacb5",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/eb765c10e9f24e3cac15fc198adaefa5?d=mm&s=48"
+                },
+                "displayName": "Miriam Thelen",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-09-15T11:58:00.000+0200",
+              "updated": "2026-09-15T11:58:00.000+0200",
+              "jsdPublic": true
+            }
+          ],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10819/comment",
+          "maxResults": 1,
+          "total": 1,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10815",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10815",
+      "key": "MOB-4815",
+      "fields": {
+        "summary": "Testabdeckung Kasse erhöhen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10002",
+          "id": "10002",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Aufgabe",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-21T09:41:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+          "name": "Niedrig",
+          "id": "4"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "accountId": "712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/d6ba169c95a847aca971ef1594087445?d=mm&s=48"
+          },
+          "displayName": "Tim Wagner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "accountId": "712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/d6ba169c95a847aca971ef1594087445?d=mm&s=48"
+          },
+          "displayName": "Tim Wagner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "accountId": "712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/580165d6a6db4ab4a5bce05f90b01cd1?d=mm&s=48"
+          },
+          "displayName": "Anna Becker",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-01T09:00:00.000+0200",
+        "updated": "2026-09-21T09:41:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-21T09:41:00.000+0200",
+        "labels": [
+          "test"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Tagesabschluss, Storno, Kartenzahlung. Ziel > 60 % Abdeckung."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10815/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 813,
+            "name": "MOB Sprint 26.4-2",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Teillieferung Kern, Partitionierung",
+            "startDate": "2026-09-07T07:00:00.000Z",
+            "endDate": "2026-09-18T15:00:00.000Z",
+            "completeDate": "2026-09-18T14:40:00.000Z"
+          }
+        ],
+        "customfield_10016": 3,
+        "parent": {
+          "id": "10701",
+          "key": "MOB-4701",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10701",
+          "fields": {
+            "summary": "Kasse 2026",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Mittel",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10814",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10814",
+      "key": "MOB-4814",
+      "fields": {
+        "summary": "Test: Teillieferung mit Anzahlung und Montage",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10003",
+          "id": "10003",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Unteraufgabe",
+          "subtask": true,
+          "avatarId": 10315,
+          "hierarchyLevel": -1
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-29T11:00:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "accountId": "712020:6e841cfd-b5f8-47e2-a21e-f57ef25cb735",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/d6ba169c95a847aca971ef1594087445?d=mm&s=48"
+          },
+          "displayName": "Tim Wagner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-08-12T09:21:00.000+0200",
+        "updated": "2026-09-29T11:00:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-29T11:00:00.000+0200",
+        "labels": [
+          "test"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10113",
+            "id": "10113",
+            "name": "Faktura"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "3 Teile, Montage im 2. Teil"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Anzahlung 30 %, Restzahlung beim Fahrer"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Finanzkauf: Aufteilen nicht möglich"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10814/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null,
+        "parent": {
+          "id": "10812",
+          "key": "MOB-4812",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812",
+          "fields": {
+            "summary": "Teillieferung im Kaufvertrag",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "Fertig",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Fertig"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+              "id": "10001",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10813",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10813",
+      "key": "MOB-4813",
+      "fields": {
+        "summary": "Doku: Anwenderhandbuch, Dialogbeschreibung und Parameter anpassen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10003",
+          "id": "10003",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Unteraufgabe",
+          "subtask": true,
+          "avatarId": 10315,
+          "hierarchyLevel": -1
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Zu erledigen",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "Zu erledigen"
+          }
+        },
+        "statuscategorychangedate": "2026-09-30T08:53:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:adb52172-41fb-4266-a03e-44a71b447d89",
+          "accountId": "712020:adb52172-41fb-4266-a03e-44a71b447d89",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/8a02f82b1ba24e16a0e9d462632b35d9?d=mm&s=48"
+          },
+          "displayName": "Sabine Kröger",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-08-12T09:20:00.000+0200",
+        "updated": "2026-09-30T08:53:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [
+          "doku"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Handbuch Kaufvertrag, Dialogbeschreibung Register Lieferung, Parametertabelle Auftrag. Fibu-Handbuch prüfen."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10813/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null,
+        "parent": {
+          "id": "10812",
+          "key": "MOB-4812",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812",
+          "fields": {
+            "summary": "Teillieferung im Kaufvertrag",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "Fertig",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Fertig"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+              "id": "10001",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10812",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812",
+      "key": "MOB-4812",
+      "fields": {
+        "summary": "Teillieferung im Kaufvertrag",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-29T15:50:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+          "name": "Hoch",
+          "id": "2"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+          "accountId": "712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/b679a14911d74322a773e5ce0af07045?d=mm&s=48"
+          },
+          "displayName": "Jonas Albrecht",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-08-12T09:14:00.000+0200",
+        "updated": "2026-09-30T08:52:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-29T15:50:00.000+0200",
+        "labels": [
+          "kundenwunsch"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10111",
+            "id": "10111",
+            "name": "Tourenplanung"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10113",
+            "id": "10113",
+            "name": "Faktura"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10114",
+            "id": "10114",
+            "name": "Fibu-Export"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Ausgangslage"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Heute wird ein Kaufvertrag erst ausgeliefert, wenn alle Positionen im Lager sind. Bei Küchen mit 8–12 Wochen Lieferzeit wartet der Kunde auf ein Sofa, das längst da ist. Möbel Kessler und Wohnwelt Sauer fragen seit 25.4 danach."
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Anforderung"
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Kaufvertrag kann in mehrere Lieferteile aufgeteilt werden (je Mandant einschaltbar)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Jeder Teil hat einen eigenen Wunschtermin und wird einzeln disponiert"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Montage nur beim Teil, der die Montageposition enthält"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Je gelieferten Teil eine Teilrechnung, Anzahlung anteilig verrechnen"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Fahrer kassiert nur den Anteil des gelieferten Teils"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Akzeptanzkriterien"
+                }
+              ]
+            },
+            {
+              "type": "orderedList",
+              "attrs": {
+                "order": 1
+              },
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Register Lieferung zeigt „Teillieferung erlaubt“, wenn der Parameter aktiv ist"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Dialog „Lieferung aufteilen“: Positionen per Drag & Drop auf Teile verteilen"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Speichern nur, wenn jeder Teil den Mindestwarenwert erreicht"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Tourenplanung zeigt Teile als eigene Stopps"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Fibu-Export enthält Teilrechnungen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 3
+              },
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Offen"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Finanzkauf: klären, ob die Partnerbank Teillieferungen akzeptiert (MOB-4808)."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [
+          {
+            "id": "72646",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLink/72646",
+            "type": {
+              "id": "10003",
+              "name": "Relates",
+              "inward": "relates to",
+              "outward": "relates to",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLinkType/10003"
+            },
+            "outwardIssue": {
+              "id": "10829",
+              "key": "MOB-4829",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10829",
+              "fields": {
+                "summary": "Rundungsdifferenz 0,01 € bei Teillieferung mit 3 Teilen",
+                "status": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/",
+                  "name": "Fertig",
+                  "id": "10001",
+                  "statusCategory": {
+                    "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Fertig"
+                  }
+                },
+                "priority": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Mittel",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10004",
+                  "id": "10004",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Bug",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "72647",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLink/72647",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "inwardIssue": {
+              "id": "10808",
+              "key": "MOB-4808",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10808",
+              "fields": {
+                "summary": "Klären: Teillieferung bei Finanzkauf mit Partnerbank",
+                "status": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/",
+                  "name": "Zu erledigen",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "Zu erledigen"
+                  }
+                },
+                "priority": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+                  "name": "Mittel",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10002",
+                  "id": "10002",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Aufgabe",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          },
+          {
+            "id": "72648",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLink/72648",
+            "type": {
+              "id": "10003",
+              "name": "Relates",
+              "inward": "relates to",
+              "outward": "relates to",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLinkType/10003"
+            },
+            "outwardIssue": {
+              "id": "10844",
+              "key": "MOB-4844",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10844",
+              "fields": {
+                "summary": "Teillieferung im Kundenportal anzeigen",
+                "status": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/",
+                  "name": "Zu erledigen",
+                  "id": "10000",
+                  "statusCategory": {
+                    "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+                    "id": 2,
+                    "key": "new",
+                    "colorName": "blue-gray",
+                    "name": "Zu erledigen"
+                  }
+                },
+                "priority": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/4",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/low.svg",
+                  "name": "Niedrig",
+                  "id": "4"
+                },
+                "issuetype": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "subtasks": [
+          {
+            "id": "10813",
+            "key": "MOB-4813",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10813",
+            "fields": {
+              "summary": "Doku: Anwenderhandbuch, Dialogbeschreibung und Parameter anpassen",
+              "status": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+                "description": "",
+                "iconUrl": "https://musterhaus-software.atlassian.net/",
+                "name": "Zu erledigen",
+                "id": "10000",
+                "statusCategory": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+                  "id": 2,
+                  "key": "new",
+                  "colorName": "blue-gray",
+                  "name": "Zu erledigen"
+                }
+              },
+              "priority": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+                "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+                "name": "Mittel",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10003",
+                "id": "10003",
+                "description": "",
+                "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                "name": "Unteraufgabe",
+                "subtask": true,
+                "avatarId": 10315,
+                "hierarchyLevel": -1
+              }
+            }
+          },
+          {
+            "id": "10814",
+            "key": "MOB-4814",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10814",
+            "fields": {
+              "summary": "Test: Teillieferung mit Anzahlung und Montage",
+              "status": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+                "description": "",
+                "iconUrl": "https://musterhaus-software.atlassian.net/",
+                "name": "Fertig",
+                "id": "10001",
+                "statusCategory": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                  "id": 3,
+                  "key": "done",
+                  "colorName": "green",
+                  "name": "Fertig"
+                }
+              },
+              "priority": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+                "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+                "name": "Mittel",
+                "id": "3"
+              },
+              "issuetype": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10003",
+                "id": "10003",
+                "description": "",
+                "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                "name": "Unteraufgabe",
+                "subtask": true,
+                "avatarId": 10315,
+                "hierarchyLevel": -1
+              }
+            }
+          }
+        ],
+        "comment": {
+          "comments": [
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812/comment/159120",
+              "id": "159120",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+                "accountId": "712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/b679a14911d74322a773e5ce0af07045?d=mm&s=48"
+                },
+                "displayName": "Jonas Albrecht",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Wie viele Teile maximal? Ich lege erstmal "
+                      },
+                      {
+                        "type": "text",
+                        "text": "TEILLIEF_MAX_ANZAHL",
+                        "marks": [
+                          {
+                            "type": "code"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": " mit 1 bis 10, Standard 2 an."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+                "accountId": "712020:71efc0a4-2ba3-47e8-a039-51b5e097c8cd",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/b679a14911d74322a773e5ce0af07045?d=mm&s=48"
+                },
+                "displayName": "Jonas Albrecht",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-09-09T14:30:00.000+0200",
+              "updated": "2026-09-09T14:30:00.000+0200",
+              "jsdPublic": true
+            },
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812/comment/159121",
+              "id": "159121",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+                },
+                "displayName": "Markus Engel",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Bitte 2 bis 5, Standard 3. Mehr will kein Kunde, und 1 Teil ist keine Teillieferung. Mindestwarenwert je Teil 20 %, sonst lohnt die Fahrt nicht."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+                },
+                "displayName": "Markus Engel",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-09-16T17:22:00.000+0200",
+              "updated": "2026-09-16T17:22:00.000+0200",
+              "jsdPublic": true
+            },
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812/comment/159122",
+              "id": "159122",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "accountId": "712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/758755cf6093432ea3eddea231bef4c9?d=mm&s=48"
+                },
+                "displayName": "Elif Demir",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Fibu: Teilrechnungen bitte als eigene Belegart übergeben (Vorschlag TR). Sonst können die Kunden in der Fibu Teil- und Schlussrechnungen nicht auseinanderhalten. Erlös mit Datum der Teilrechnung, OP-Zuordnung weiter über die KV-Nummer."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "accountId": "712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/758755cf6093432ea3eddea231bef4c9?d=mm&s=48"
+                },
+                "displayName": "Elif Demir",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-09-18T10:05:00.000+0200",
+              "updated": "2026-09-18T10:05:00.000+0200",
+              "jsdPublic": true
+            },
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812/comment/159123",
+              "id": "159123",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+                },
+                "displayName": "Markus Engel",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Finanzkauf: Für 26.4 sperren wir die Teillieferung bei Finanzkauf. Die Partnerbank zahlt erst nach vollständiger Lieferung aus. Ob das so bleibt, klären wir in MOB-4808. Im Handbuch bitte erstmal so beschreiben."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+                },
+                "displayName": "Markus Engel",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-09-22T08:47:00.000+0200",
+              "updated": "2026-09-22T08:47:00.000+0200",
+              "jsdPublic": true
+            },
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812/comment/159124",
+              "id": "159124",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:adb52172-41fb-4266-a03e-44a71b447d89",
+                "accountId": "712020:adb52172-41fb-4266-a03e-44a71b447d89",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/8a02f82b1ba24e16a0e9d462632b35d9?d=mm&s=48"
+                },
+                "displayName": "Sabine Kröger",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Wo finde ich, was sich für den Verkauf genau ändert? Für das Handbuch brauche ich die Schritte im Dialog und die Grenzwerte. Die Unteraufgabe MOB-4813 ist bei mir, Code-Freeze ist am 09.10."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:adb52172-41fb-4266-a03e-44a71b447d89",
+                "accountId": "712020:adb52172-41fb-4266-a03e-44a71b447d89",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/8a02f82b1ba24e16a0e9d462632b35d9?d=mm&s=48"
+                },
+                "displayName": "Sabine Kröger",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-09-30T08:52:00.000+0200",
+              "updated": "2026-09-30T08:52:00.000+0200",
+              "jsdPublic": true
+            }
+          ],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812/comment",
+          "maxResults": 5,
+          "total": 5,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 813,
+            "name": "MOB Sprint 26.4-2",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Teillieferung Kern, Partitionierung",
+            "startDate": "2026-09-07T07:00:00.000Z",
+            "endDate": "2026-09-18T15:00:00.000Z",
+            "completeDate": "2026-09-18T14:40:00.000Z"
+          },
+          {
+            "id": 814,
+            "name": "MOB Sprint 26.4-3",
+            "state": "active",
+            "boardId": 37,
+            "goal": "Teillieferung fertig, Stabilisierung",
+            "startDate": "2026-09-21T07:00:00.000Z",
+            "endDate": "2026-10-02T15:00:00.000Z"
+          }
+        ],
+        "customfield_10016": 13,
+        "parent": {
+          "id": "10700",
+          "key": "MOB-4700",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700",
+          "fields": {
+            "summary": "Liefertreue erhöhen",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10808",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10808",
+      "key": "MOB-4808",
+      "fields": {
+        "summary": "Klären: Teillieferung bei Finanzkauf mit Partnerbank",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10002",
+          "id": "10002",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Aufgabe",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Zu erledigen",
+          "id": "10000",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "Zu erledigen"
+          }
+        },
+        "statuscategorychangedate": "2026-09-22T08:48:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-09-02T13:00:00.000+0200",
+        "updated": "2026-09-22T08:48:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [
+          "klaerung"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          }
+        ],
+        "fixVersions": [],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Zahlt die Bank bei Teillieferung anteilig aus? Termin mit der Partnerbank im Oktober."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [
+          {
+            "id": "72634",
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLink/72634",
+            "type": {
+              "id": "10000",
+              "name": "Blocks",
+              "inward": "is blocked by",
+              "outward": "blocks",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issueLinkType/10000"
+            },
+            "outwardIssue": {
+              "id": "10812",
+              "key": "MOB-4812",
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10812",
+              "fields": {
+                "summary": "Teillieferung im Kaufvertrag",
+                "status": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/",
+                  "name": "Fertig",
+                  "id": "10001",
+                  "statusCategory": {
+                    "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Fertig"
+                  }
+                },
+                "priority": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+                  "name": "Hoch",
+                  "id": "2"
+                },
+                "issuetype": {
+                  "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+                  "id": "10001",
+                  "description": "",
+                  "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+                  "name": "Story",
+                  "subtask": false,
+                  "avatarId": 10315,
+                  "hierarchyLevel": 0
+                }
+              }
+            }
+          }
+        ],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10808/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null,
+        "parent": {
+          "id": "10700",
+          "key": "MOB-4700",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700",
+          "fields": {
+            "summary": "Liefertreue erhöhen",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10801",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10801",
+      "key": "MOB-4801",
+      "fields": {
+        "summary": "Ladevolumen je Fahrzeug prüfen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-10T14:32:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:f7a70e48-e7e4-4504-a083-b1a911bb52f5",
+          "accountId": "712020:f7a70e48-e7e4-4504-a083-b1a911bb52f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/624a17b562f74092a4dde1123e38f825?d=mm&s=48"
+          },
+          "displayName": "Paul Schuster",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-08-05T09:30:00.000+0200",
+        "updated": "2026-09-10T14:32:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-10T14:32:00.000+0200",
+        "labels": [],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10111",
+            "id": "10111",
+            "name": "Tourenplanung"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10117",
+            "id": "10117",
+            "name": "Stammdaten"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Disponenten planen Touren, die nicht in den LKW passen. Das fällt erst an der Rampe auf."
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Fahrzeugstamm: neues Pflichtfeld Ladevolumen (m³)"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Tour wird rot markiert, wenn das Volumen überschritten ist"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Speichern trotz Überladung nur mit Bestätigung (Parameter)"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10801/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 812,
+            "name": "MOB Sprint 26.4-1",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Gutschein, Ladevolumen",
+            "startDate": "2026-08-24T07:00:00.000Z",
+            "endDate": "2026-09-04T15:00:00.000Z",
+            "completeDate": "2026-09-04T14:12:00.000Z"
+          },
+          {
+            "id": 813,
+            "name": "MOB Sprint 26.4-2",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Teillieferung Kern, Partitionierung",
+            "startDate": "2026-09-07T07:00:00.000Z",
+            "endDate": "2026-09-18T15:00:00.000Z",
+            "completeDate": "2026-09-18T14:40:00.000Z"
+          }
+        ],
+        "customfield_10016": 5,
+        "parent": {
+          "id": "10700",
+          "key": "MOB-4700",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700",
+          "fields": {
+            "summary": "Liefertreue erhöhen",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10790",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10790",
+      "key": "MOB-4790",
+      "fields": {
+        "summary": "Kassenbelege nach Jahr partitionieren",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-16T11:06:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+          "name": "Hoch",
+          "id": "2"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "accountId": "712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/924948188fc74af2a1d66065d12980f1?d=mm&s=48"
+          },
+          "displayName": "Kai Brenner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "accountId": "712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/924948188fc74af2a1d66065d12980f1?d=mm&s=48"
+          },
+          "displayName": "Kai Brenner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "accountId": "712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/924948188fc74af2a1d66065d12980f1?d=mm&s=48"
+          },
+          "displayName": "Kai Brenner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-06-10T09:00:00.000+0200",
+        "updated": "2026-09-16T11:06:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-16T11:06:00.000+0200",
+        "labels": [
+          "performance",
+          "datenbank"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10116",
+            "id": "10116",
+            "name": "Plattform"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Tabelle "
+                },
+                {
+                  "type": "text",
+                  "text": "kassenbeleg",
+                  "marks": [
+                    {
+                      "type": "code"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "text": " nach Belegjahr partitionieren. Für Anwender ändert sich nichts."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Migration auf Kopie Möbel Kessler testen (4,1 Mio. Belege)."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10790/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 813,
+            "name": "MOB Sprint 26.4-2",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Teillieferung Kern, Partitionierung",
+            "startDate": "2026-09-07T07:00:00.000Z",
+            "endDate": "2026-09-18T15:00:00.000Z",
+            "completeDate": "2026-09-18T14:40:00.000Z"
+          }
+        ],
+        "customfield_10016": 8,
+        "parent": {
+          "id": "10703",
+          "key": "MOB-4703",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10703",
+          "fields": {
+            "summary": "Performance Tagesabschluss",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "Fertig",
+              "id": "10001",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Fertig"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+              "name": "Hoch",
+              "id": "2"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10777",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10777",
+      "key": "MOB-4777",
+      "fields": {
+        "summary": "Gutschein teilweise einlösen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-03T10:23:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "accountId": "712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/580165d6a6db4ab4a5bce05f90b01cd1?d=mm&s=48"
+          },
+          "displayName": "Anna Becker",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-07-30T11:00:00.000+0200",
+        "updated": "2026-09-03T10:23:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-03T10:23:00.000+0200",
+        "labels": [
+          "kundenwunsch"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10114",
+            "id": "10114",
+            "name": "Fibu-Export"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Heute wird ein Gutschein immer ganz eingelöst; der Rest kommt als neuer Gutschein. Kunden verlieren den Überblick, die Filialen drucken ständig neue Gutscheine."
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Teilbetrag einlösen, Restguthaben bleibt auf demselben Gutschein"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Restguthaben auf dem Bon drucken"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Fibu: Verbindlichkeit nur in Höhe des eingelösten Betrags auflösen"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [
+            {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10777/comment/158770",
+              "id": "158770",
+              "author": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "accountId": "712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/758755cf6093432ea3eddea231bef4c9?d=mm&s=48"
+                },
+                "displayName": "Elif Demir",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "body": {
+                "type": "doc",
+                "version": 1,
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "Mit unserem Steuerberater abgestimmt: Verbindlichkeit nur in Höhe des eingelösten Betrags auflösen, der Rest bleibt stehen. Bitte auch das Fibu-Handbuch anpassen, Kapitel Gutscheine."
+                      }
+                    ]
+                  }
+                ]
+              },
+              "updateAuthor": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "accountId": "712020:78fdddae-7c2a-43ca-a575-a01bc95f5b89",
+                "avatarUrls": {
+                  "48x48": "https://secure.gravatar.com/avatar/758755cf6093432ea3eddea231bef4c9?d=mm&s=48"
+                },
+                "displayName": "Elif Demir",
+                "active": true,
+                "timeZone": "Europe/Berlin",
+                "accountType": "atlassian"
+              },
+              "created": "2026-08-31T15:20:00.000+0200",
+              "updated": "2026-08-31T15:20:00.000+0200",
+              "jsdPublic": true
+            }
+          ],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10777/comment",
+          "maxResults": 1,
+          "total": 1,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 812,
+            "name": "MOB Sprint 26.4-1",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Gutschein, Ladevolumen",
+            "startDate": "2026-08-24T07:00:00.000Z",
+            "endDate": "2026-09-04T15:00:00.000Z",
+            "completeDate": "2026-09-04T14:12:00.000Z"
+          }
+        ],
+        "customfield_10016": 5,
+        "parent": {
+          "id": "10701",
+          "key": "MOB-4701",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10701",
+          "fields": {
+            "summary": "Kasse 2026",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Mittel",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10760",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10760",
+      "key": "MOB-4760",
+      "fields": {
+        "summary": "Neue Vorlagen-Engine im Druckmanagement",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10001",
+          "id": "10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Story",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 0
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-18T16:13:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:700ae56e-db50-406c-a905-d6e328015929",
+          "accountId": "712020:700ae56e-db50-406c-a905-d6e328015929",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/03a7dd8f484044d6af3019bcf66c5589?d=mm&s=48"
+          },
+          "displayName": "Tobias Reuter",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:700ae56e-db50-406c-a905-d6e328015929",
+          "accountId": "712020:700ae56e-db50-406c-a905-d6e328015929",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/03a7dd8f484044d6af3019bcf66c5589?d=mm&s=48"
+          },
+          "displayName": "Tobias Reuter",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:f7a70e48-e7e4-4504-a083-b1a911bb52f5",
+          "accountId": "712020:f7a70e48-e7e4-4504-a083-b1a911bb52f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/624a17b562f74092a4dde1123e38f825?d=mm&s=48"
+          },
+          "displayName": "Paul Schuster",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-05-20T10:00:00.000+0200",
+        "updated": "2026-09-18T16:13:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-18T16:13:00.000+0200",
+        "labels": [
+          "tech-debt"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10115",
+            "id": "10115",
+            "name": "Druck"
+          }
+        ],
+        "fixVersions": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245",
+            "id": "10245",
+            "description": "Herbst-Release, Code-Freeze 09.10.",
+            "name": "26.4",
+            "archived": false,
+            "released": false,
+            "releaseDate": "2026-10-27"
+          }
+        ],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "FreeMarker-Vorlagen durch HTML-Vorlagen mit Platzhaltern ersetzen. Standardbelege müssen pixelgleich bleiben."
+                }
+              ]
+            },
+            {
+              "type": "panel",
+              "attrs": {
+                "panelType": "warning"
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "Kundeneigene Vorlagen: Job zum Konvertieren nötig, Betrieb und Fachberatung informieren."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10760/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [
+          {
+            "id": 812,
+            "name": "MOB Sprint 26.4-1",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Gutschein, Ladevolumen",
+            "startDate": "2026-08-24T07:00:00.000Z",
+            "endDate": "2026-09-04T15:00:00.000Z",
+            "completeDate": "2026-09-04T14:12:00.000Z"
+          },
+          {
+            "id": 813,
+            "name": "MOB Sprint 26.4-2",
+            "state": "closed",
+            "boardId": 37,
+            "goal": "Teillieferung Kern, Partitionierung",
+            "startDate": "2026-09-07T07:00:00.000Z",
+            "endDate": "2026-09-18T15:00:00.000Z",
+            "completeDate": "2026-09-18T14:40:00.000Z"
+          }
+        ],
+        "customfield_10016": 8,
+        "parent": {
+          "id": "10702",
+          "key": "MOB-4702",
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10702",
+          "fields": {
+            "summary": "Technische Erneuerung",
+            "status": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/",
+              "name": "In Arbeit",
+              "id": "3",
+              "statusCategory": {
+                "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Arbeit"
+              }
+            },
+            "priority": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+              "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+              "name": "Mittel",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+              "id": "10000",
+              "description": "",
+              "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+              "name": "Epic",
+              "subtask": false,
+              "avatarId": 10315,
+              "hierarchyLevel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10703",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10703",
+      "key": "MOB-4703",
+      "fields": {
+        "summary": "Performance Tagesabschluss",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+          "id": "10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 1
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/10001",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "Fertig",
+          "id": "10001",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Fertig"
+          }
+        },
+        "statuscategorychangedate": "2026-09-16T11:06:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+          "name": "Hoch",
+          "id": "2"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "accountId": "712020:1ac11c08-abba-427a-a5c8-e49195f291f5",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/5beaca7537b04392a10eda801dfd628d?d=mm&s=48"
+          },
+          "displayName": "Support Musterhaus",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "accountId": "712020:bd5470a1-7f67-40ca-ad6d-0db0edc54dc9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/924948188fc74af2a1d66065d12980f1?d=mm&s=48"
+          },
+          "displayName": "Kai Brenner",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-06-03T11:15:00.000+0200",
+        "updated": "2026-09-16T11:06:00.000+0200",
+        "resolution": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/resolution/10000",
+          "id": "10000",
+          "description": "Die Arbeit an diesem Vorgang ist abgeschlossen.",
+          "name": "Fertig"
+        },
+        "resolutiondate": "2026-09-16T11:06:00.000+0200",
+        "labels": [
+          "performance"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10116",
+            "id": "10116",
+            "name": "Plattform"
+          }
+        ],
+        "fixVersions": [],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Tagesabschluss dauert bei großen Mandanten über 40 Sekunden, die Kasse ist in der Zeit gesperrt."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10703/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10702",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10702",
+      "key": "MOB-4702",
+      "fields": {
+        "summary": "Technische Erneuerung",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+          "id": "10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 1
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "In Arbeit",
+          "id": "3",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Arbeit"
+          }
+        },
+        "statuscategorychangedate": "2026-09-18T16:13:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:700ae56e-db50-406c-a905-d6e328015929",
+          "accountId": "712020:700ae56e-db50-406c-a905-d6e328015929",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/03a7dd8f484044d6af3019bcf66c5589?d=mm&s=48"
+          },
+          "displayName": "Tobias Reuter",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:700ae56e-db50-406c-a905-d6e328015929",
+          "accountId": "712020:700ae56e-db50-406c-a905-d6e328015929",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/03a7dd8f484044d6af3019bcf66c5589?d=mm&s=48"
+          },
+          "displayName": "Tobias Reuter",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:700ae56e-db50-406c-a905-d6e328015929",
+          "accountId": "712020:700ae56e-db50-406c-a905-d6e328015929",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/03a7dd8f484044d6af3019bcf66c5589?d=mm&s=48"
+          },
+          "displayName": "Tobias Reuter",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-03-02T08:30:00.000+0100",
+        "updated": "2026-09-18T16:13:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [
+          "tech-debt"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10116",
+            "id": "10116",
+            "name": "Plattform"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10115",
+            "id": "10115",
+            "name": "Druck"
+          }
+        ],
+        "fixVersions": [],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Abbau technischer Schulden: FreeMarker ablösen, Java 21, Gradle 9."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10702/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10701",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10701",
+      "key": "MOB-4701",
+      "fields": {
+        "summary": "Kasse 2026",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+          "id": "10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 1
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "In Arbeit",
+          "id": "3",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Arbeit"
+          }
+        },
+        "statuscategorychangedate": "2026-09-21T09:41:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/3",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/medium.svg",
+          "name": "Mittel",
+          "id": "3"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "accountId": "712020:6ed069e3-8239-490a-a79d-a98ca9f864c9",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/580165d6a6db4ab4a5bce05f90b01cd1?d=mm&s=48"
+          },
+          "displayName": "Anna Becker",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-04-28T09:00:00.000+0200",
+        "updated": "2026-09-21T09:41:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [
+          "roadmap-2026"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10112",
+            "id": "10112",
+            "name": "Kasse"
+          }
+        ],
+        "fixVersions": [],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Sammel-Epic für Kassenthemen 2026: Gutscheine, neue Zahlarten, Testabdeckung."
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10701/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null
+      }
+    },
+    {
+      "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+      "id": "10700",
+      "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700",
+      "key": "MOB-4700",
+      "fields": {
+        "summary": "Liefertreue erhöhen",
+        "issuetype": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issuetype/10000",
+          "id": "10000",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10315?size=medium",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10315,
+          "hierarchyLevel": 1
+        },
+        "status": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/status/3",
+          "description": "",
+          "iconUrl": "https://musterhaus-software.atlassian.net/",
+          "name": "In Arbeit",
+          "id": "3",
+          "statusCategory": {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Arbeit"
+          }
+        },
+        "statuscategorychangedate": "2026-09-29T15:50:00.000+0200",
+        "priority": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/priority/2",
+          "iconUrl": "https://musterhaus-software.atlassian.net/images/icons/priorities/high.svg",
+          "name": "Hoch",
+          "id": "2"
+        },
+        "project": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/project/10004",
+          "id": "10004",
+          "key": "MOB",
+          "name": "MOBIQ ERP",
+          "projectTypeKey": "software",
+          "simplified": false
+        },
+        "reporter": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "creator": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "assignee": {
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/user?accountId=712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "accountId": "712020:09afbc7a-639a-4dc6-ab61-3bd7ae83880d",
+          "avatarUrls": {
+            "48x48": "https://secure.gravatar.com/avatar/496a1e53e4ea4fc2a47bf95ef51354ad?d=mm&s=48"
+          },
+          "displayName": "Markus Engel",
+          "active": true,
+          "timeZone": "Europe/Berlin",
+          "accountType": "atlassian"
+        },
+        "created": "2026-05-12T10:03:00.000+0200",
+        "updated": "2026-09-29T15:50:00.000+0200",
+        "resolution": null,
+        "resolutiondate": null,
+        "labels": [
+          "roadmap-2026"
+        ],
+        "components": [
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10110",
+            "id": "10110",
+            "name": "Kaufvertrag"
+          },
+          {
+            "self": "https://musterhaus-software.atlassian.net/rest/api/3/component/10111",
+            "id": "10111",
+            "name": "Tourenplanung"
+          }
+        ],
+        "fixVersions": [],
+        "versions": [],
+        "description": {
+          "type": "doc",
+          "version": 1,
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Ziel: Kunden bekommen ihre Ware früher und verlässlicher. Weniger Leerfahrten, weniger Rückfragen in der Disposition."
+                }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Teillieferung im Kaufvertrag"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Ladevolumen je Fahrzeug"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [
+                        {
+                          "type": "text",
+                          "text": "Feiertage je Bundesland im Liefertermin"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "environment": null,
+        "duedate": null,
+        "issuelinks": [],
+        "subtasks": [],
+        "comment": {
+          "comments": [],
+          "self": "https://musterhaus-software.atlassian.net/rest/api/3/issue/10700/comment",
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "customfield_10020": [],
+        "customfield_10016": null
+      }
+    }
+  ],
+  "isLast": true
+}

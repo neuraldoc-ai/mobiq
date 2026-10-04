@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,24 @@\n+package de.musterhaus.mobiq.admin;\n+\n+import de.musterhaus.mobiq.druck.VorlagenQuelle;\n+\n+/** Admin-Job: konvertiert kundeneigene FreeMarker-Vorlagen in das neue HTML-Format. */\n+@AdminJob(name = \"Vorlagen konvertieren\", bereich = \"Administration\")\n+public class VorlagenKonvertieren implements Job {\n+\n+    private final VorlagenQuelle quelle;\n+\n+    public VorlagenKonvertieren(VorlagenQuelle quelle) {\n+        this.quelle = quelle;\n+    }\n+\n+    @Override\n+    public JobErgebnis ausfuehren() {\n+        int n = 0;\n+        for (String datei : quelle.kundeneigeneFtl()) {\n+            quelle.speichere(datei.replace(\".ftl\", \".html\"), FtlNachHtml.konvertiere(quelle.lade(datei)));\n+            n++;\n+        }\n+        return JobErgebnis.ok(n + \" Vorlagen konvertiert\");\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/admin/VorlagenKonvertieren.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/admin/VorlagenKonvertieren.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

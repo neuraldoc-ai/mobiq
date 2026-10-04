@@ -1,0 +1,960 @@
+[
+  {
+    "id": 89287,
+    "iid": 1287,
+    "project_id": 42,
+    "title": "MOB-4812 Teillieferung im Kaufvertrag",
+    "description": "Ein Kaufvertrag kann in mehrere Lieferteile aufgeteilt werden.\n\n- Register Lieferung: Checkbox „Teillieferung erlaubt“ (nur wenn TEILLIEF_ERLAUBT = Ja)\n- Dialog „Lieferung aufteilen“\n- Tour: ein Stopp je Lieferteil\n- Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig\n- Fibu-Export: Belegart TR\n\nBei Finanzkauf vorerst gesperrt (siehe Kommentar in MOB-4812).\n\nCloses MOB-4812, MOB-4829\n\n## Checkliste\n- [x] Tests\n- [x] Review\n- [x] Fachabnahme\n- [ ] Doku angepasst (MOB-4813)",
+    "state": "merged",
+    "created_at": "2026-09-08T11:00:00.000+02:00",
+    "updated_at": "2026-09-29T15:48:00.000+02:00",
+    "merged_by": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merge_user": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merged_at": "2026-09-29T15:48:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4812-teillieferung",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 23,
+      "username": "jalbrecht",
+      "name": "Jonas Albrecht",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/jalbrecht"
+    },
+    "assignees": [
+      {
+        "id": 23,
+        "username": "jalbrecht",
+        "name": "Jonas Albrecht",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/jalbrecht"
+      }
+    ],
+    "assignee": {
+      "id": 23,
+      "username": "jalbrecht",
+      "name": "Jonas Albrecht",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/jalbrecht"
+    },
+    "reviewers": [
+      {
+        "id": 11,
+        "username": "mengel",
+        "name": "Markus Engel",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/mengel"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Kaufvertrag",
+      "Tour",
+      "Faktura",
+      "Fibu",
+      "Feature"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "6977c6cd54f01797f41b0a24e407517d2a402d6d",
+    "merge_commit_sha": "df9f4148183618a3a6eb0de3e202cb7f25ba1663",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1287",
+    "references": {
+      "short": "!1287",
+      "relative": "!1287",
+      "full": "mobiq/erp!1287"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1287",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89293,
+    "iid": 1293,
+    "project_id": 42,
+    "title": "MOB-4841 NPE im Tagesabschluss bei Filiale ohne Belege",
+    "description": "Tagesabschluss ist bei Filialen ohne Bons am Tag mit IndexOutOfBounds abgebrochen (Küchenstudio Brandt, Ruhetag-Filiale).\n\nCloses MOB-4841",
+    "state": "merged",
+    "created_at": "2026-09-26T08:10:00.000+02:00",
+    "updated_at": "2026-09-26T09:02:00.000+02:00",
+    "merged_by": {
+      "id": 40,
+      "username": "twagner",
+      "name": "Tim Wagner",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/twagner"
+    },
+    "merge_user": {
+      "id": 40,
+      "username": "twagner",
+      "name": "Tim Wagner",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/twagner"
+    },
+    "merged_at": "2026-09-26T09:02:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "hotfix/MOB-4841-npe-tagesabschluss",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 35,
+      "username": "abecker",
+      "name": "Anna Becker",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/abecker"
+    },
+    "assignees": [
+      {
+        "id": 35,
+        "username": "abecker",
+        "name": "Anna Becker",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/abecker"
+      }
+    ],
+    "assignee": {
+      "id": 35,
+      "username": "abecker",
+      "name": "Anna Becker",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/abecker"
+    },
+    "reviewers": [
+      {
+        "id": 40,
+        "username": "twagner",
+        "name": "Tim Wagner",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/twagner"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Kasse",
+      "Bug",
+      "Hotfix"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "72303fdfe9aaeed5a268f7b845040bf02185040d",
+    "merge_commit_sha": "f012d1c349c88cded41356780e52db0df7f29936",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1293",
+    "references": {
+      "short": "!1293",
+      "relative": "!1293",
+      "full": "mobiq/erp!1293"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1293",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89290,
+    "iid": 1290,
+    "project_id": 42,
+    "title": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“",
+    "description": "Nur Beschriftung. Kunden verwechseln „Liefersperre“ mit der Zahlungssperre. Interner Feldname bleibt liefersperre.\n\nCloses MOB-4835",
+    "state": "merged",
+    "created_at": "2026-09-24T11:00:00.000+02:00",
+    "updated_at": "2026-09-25T09:15:00.000+02:00",
+    "merged_by": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merge_user": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merged_at": "2026-09-25T09:15:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4835-lieferstopp",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 31,
+      "username": "myilmaz",
+      "name": "Merve Yilmaz",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/myilmaz"
+    },
+    "assignees": [
+      {
+        "id": 31,
+        "username": "myilmaz",
+        "name": "Merve Yilmaz",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/myilmaz"
+      }
+    ],
+    "assignee": {
+      "id": 31,
+      "username": "myilmaz",
+      "name": "Merve Yilmaz",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/myilmaz"
+    },
+    "reviewers": [
+      {
+        "id": 11,
+        "username": "mengel",
+        "name": "Markus Engel",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/mengel"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Kaufvertrag",
+      "UI-Text"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "5dd627cc6475f97e974fcb17193475162d616415",
+    "merge_commit_sha": "133cb1afb53bc214e818012d24d1d2224e0b2f69",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1290",
+    "references": {
+      "short": "!1290",
+      "relative": "!1290",
+      "full": "mobiq/erp!1290"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1290",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89275,
+    "iid": 1275,
+    "project_id": 42,
+    "title": "MOB-4815 Testabdeckung Kasse erhöht",
+    "description": "Nur Tests und Testdaten. Abdeckung Kasse von 41 % auf 68 %.\n\nCloses MOB-4815",
+    "state": "merged",
+    "created_at": "2026-09-17T09:00:00.000+02:00",
+    "updated_at": "2026-09-21T09:40:00.000+02:00",
+    "merged_by": {
+      "id": 40,
+      "username": "twagner",
+      "name": "Tim Wagner",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/twagner"
+    },
+    "merge_user": {
+      "id": 40,
+      "username": "twagner",
+      "name": "Tim Wagner",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/twagner"
+    },
+    "merged_at": "2026-09-21T09:40:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4815-tests-kasse",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 35,
+      "username": "abecker",
+      "name": "Anna Becker",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/abecker"
+    },
+    "assignees": [
+      {
+        "id": 35,
+        "username": "abecker",
+        "name": "Anna Becker",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/abecker"
+      }
+    ],
+    "assignee": {
+      "id": 35,
+      "username": "abecker",
+      "name": "Anna Becker",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/abecker"
+    },
+    "reviewers": [
+      {
+        "id": 40,
+        "username": "twagner",
+        "name": "Tim Wagner",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/twagner"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Kasse",
+      "Tests"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd",
+    "merge_commit_sha": "2e689cff7eda1603bbf73f75524adbb65802910c",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1275",
+    "references": {
+      "short": "!1275",
+      "relative": "!1275",
+      "full": "mobiq/erp!1275"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1275",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89270,
+    "iid": 1270,
+    "project_id": 42,
+    "title": "MOB-4760 Neue Vorlagen-Engine im Druckmanagement",
+    "description": "FreeMarker-Vorlagen durch die neue HTML-Vorlagen-Engine ersetzt. Standardbelege sehen gleich aus.\n\nAchtung: kundeneigene Vorlagen müssen nach dem Update mit dem Job „Vorlagen konvertieren“ umgestellt werden.\n\nCloses MOB-4760",
+    "state": "merged",
+    "created_at": "2026-09-03T09:00:00.000+02:00",
+    "updated_at": "2026-09-18T16:12:00.000+02:00",
+    "merged_by": {
+      "id": 9,
+      "username": "treuter",
+      "name": "Tobias Reuter",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/treuter"
+    },
+    "merge_user": {
+      "id": 9,
+      "username": "treuter",
+      "name": "Tobias Reuter",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/treuter"
+    },
+    "merged_at": "2026-09-18T16:12:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4760-vorlagen-engine",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 27,
+      "username": "pschuster",
+      "name": "Paul Schuster",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/pschuster"
+    },
+    "assignees": [
+      {
+        "id": 27,
+        "username": "pschuster",
+        "name": "Paul Schuster",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/pschuster"
+      }
+    ],
+    "assignee": {
+      "id": 27,
+      "username": "pschuster",
+      "name": "Paul Schuster",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/pschuster"
+    },
+    "reviewers": [
+      {
+        "id": 9,
+        "username": "treuter",
+        "name": "Tobias Reuter",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/treuter"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Druck",
+      "Technische Schuld"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "2e588beb8daaf29f6dfc296c566dbe154ec82e98",
+    "merge_commit_sha": "57ebcbc50d6bf64354fed4b76bd7ab2098c40b41",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1270",
+    "references": {
+      "short": "!1270",
+      "relative": "!1270",
+      "full": "mobiq/erp!1270"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1270",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89262,
+    "iid": 1262,
+    "project_id": 42,
+    "title": "MOB-4790 Kassenbelege nach Jahr partitionieren",
+    "description": "Tagesabschluss bei großen Mandanten zu langsam (> 40 s). kassenbeleg wird nach Belegjahr partitioniert, jahresübergreifende Abfragen über die Sicht kassenbeleg_alle.\n\nMigration auf Kopie Möbel Kessler (4,1 Mio. Belege): 3 min 50 s.\n\nCloses MOB-4790",
+    "state": "merged",
+    "created_at": "2026-09-10T08:30:00.000+02:00",
+    "updated_at": "2026-09-16T11:05:00.000+02:00",
+    "merged_by": {
+      "id": 9,
+      "username": "treuter",
+      "name": "Tobias Reuter",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/treuter"
+    },
+    "merge_user": {
+      "id": 9,
+      "username": "treuter",
+      "name": "Tobias Reuter",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/treuter"
+    },
+    "merged_at": "2026-09-16T11:05:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4790-kassenbeleg-partition",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 14,
+      "username": "kbrenner",
+      "name": "Kai Brenner",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/kbrenner"
+    },
+    "assignees": [
+      {
+        "id": 14,
+        "username": "kbrenner",
+        "name": "Kai Brenner",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/kbrenner"
+      }
+    ],
+    "assignee": {
+      "id": 14,
+      "username": "kbrenner",
+      "name": "Kai Brenner",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/kbrenner"
+    },
+    "reviewers": [
+      {
+        "id": 9,
+        "username": "treuter",
+        "name": "Tobias Reuter",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/treuter"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Kasse",
+      "Datenbank",
+      "Performance"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "b681f37f47ce42aaa389cc0a7756ac2d71386bc7",
+    "merge_commit_sha": "f0efd8d70dc21680f020dd9afe3be31f86616a11",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1262",
+    "references": {
+      "short": "!1262",
+      "relative": "!1262",
+      "full": "mobiq/erp!1262"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1262",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89251,
+    "iid": 1251,
+    "project_id": 42,
+    "title": "MOB-4801 Ladevolumen je Fahrzeug prüfen",
+    "description": "Fahrzeuge bekommen ein Ladevolumen. Überladene Touren werden rot markiert und lassen sich nur mit Bestätigung speichern.\n\nCloses MOB-4801",
+    "state": "merged",
+    "created_at": "2026-09-02T10:00:00.000+02:00",
+    "updated_at": "2026-09-10T14:31:00.000+02:00",
+    "merged_by": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merge_user": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merged_at": "2026-09-10T14:31:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4801-ladevolumen",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 27,
+      "username": "pschuster",
+      "name": "Paul Schuster",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/pschuster"
+    },
+    "assignees": [
+      {
+        "id": 27,
+        "username": "pschuster",
+        "name": "Paul Schuster",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/pschuster"
+      }
+    ],
+    "assignee": {
+      "id": 27,
+      "username": "pschuster",
+      "name": "Paul Schuster",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/pschuster"
+    },
+    "reviewers": [
+      {
+        "id": 11,
+        "username": "mengel",
+        "name": "Markus Engel",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/mengel"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Tour",
+      "Feature"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "c4380f3555d8896e98e38971b2199f4a4a30bb41",
+    "merge_commit_sha": "6480445821353feb8e057aa6e8e4140eb4331cac",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1251",
+    "references": {
+      "short": "!1251",
+      "relative": "!1251",
+      "full": "mobiq/erp!1251"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1251",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  },
+  {
+    "id": 89244,
+    "iid": 1244,
+    "project_id": 42,
+    "title": "MOB-4777 Gutschein teilweise einlösen",
+    "description": "Gutscheine können an der Kasse teilweise eingelöst werden. Das Restguthaben bleibt auf dem Gutschein und steht auf dem Bon.\n\nFibu: Verbindlichkeit wird nur in Höhe des eingelösten Betrags aufgelöst (mit Elif abgestimmt).\n\nCloses MOB-4777\n\n## Checkliste\n- [x] Tests\n- [x] Review\n- [ ] Doku angepasst",
+    "state": "merged",
+    "created_at": "2026-08-27T15:10:00.000+02:00",
+    "updated_at": "2026-09-03T10:22:00.000+02:00",
+    "merged_by": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merge_user": {
+      "id": 11,
+      "username": "mengel",
+      "name": "Markus Engel",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/mengel"
+    },
+    "merged_at": "2026-09-03T10:22:00.000+02:00",
+    "closed_by": null,
+    "closed_at": null,
+    "target_branch": "release/26.4",
+    "source_branch": "feature/MOB-4777-gutschein-teileinloesung",
+    "user_notes_count": 2,
+    "upvotes": 1,
+    "downvotes": 0,
+    "author": {
+      "id": 35,
+      "username": "abecker",
+      "name": "Anna Becker",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/abecker"
+    },
+    "assignees": [
+      {
+        "id": 35,
+        "username": "abecker",
+        "name": "Anna Becker",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/abecker"
+      }
+    ],
+    "assignee": {
+      "id": 35,
+      "username": "abecker",
+      "name": "Anna Becker",
+      "state": "active",
+      "locked": false,
+      "avatar_url": null,
+      "web_url": "https://gitlab.musterhaus-software.de/abecker"
+    },
+    "reviewers": [
+      {
+        "id": 11,
+        "username": "mengel",
+        "name": "Markus Engel",
+        "state": "active",
+        "locked": false,
+        "avatar_url": null,
+        "web_url": "https://gitlab.musterhaus-software.de/mengel"
+      }
+    ],
+    "source_project_id": 42,
+    "target_project_id": 42,
+    "labels": [
+      "Kasse",
+      "Fibu",
+      "Feature"
+    ],
+    "draft": false,
+    "work_in_progress": false,
+    "milestone": {
+      "id": 311,
+      "iid": 14,
+      "project_id": 42,
+      "title": "26.4",
+      "description": "Herbst-Release",
+      "state": "active",
+      "due_date": "2026-10-27",
+      "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/milestones/14"
+    },
+    "merge_when_pipeline_succeeds": false,
+    "detailed_merge_status": "not_open",
+    "sha": "1dfc37d10ed03698d6252a91c29b096a1437760f",
+    "merge_commit_sha": "93acf5425388f27dccecbccffff73268388591dd",
+    "squash_commit_sha": null,
+    "squash": false,
+    "squash_on_merge": false,
+    "discussion_locked": null,
+    "should_remove_source_branch": true,
+    "force_remove_source_branch": true,
+    "reference": "!1244",
+    "references": {
+      "short": "!1244",
+      "relative": "!1244",
+      "full": "mobiq/erp!1244"
+    },
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/merge_requests/1244",
+    "time_stats": {
+      "time_estimate": 0,
+      "total_time_spent": 0,
+      "human_time_estimate": null,
+      "human_total_time_spent": null
+    },
+    "has_conflicts": false,
+    "blocking_discussions_resolved": true
+  }
+]

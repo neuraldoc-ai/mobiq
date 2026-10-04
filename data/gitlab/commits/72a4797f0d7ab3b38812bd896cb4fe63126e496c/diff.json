@@ -1,0 +1,41 @@
+[
+  {
+    "diff": "@@ -6,15 +6,12 @@ import java.math.BigDecimal;\n public class GutscheinService {\n \n     /**\n-     * Löst einen Gutschein ein. Ein Gutschein wird immer vollständig eingelöst;\n-     * ist der Bon günstiger, wird der Rest als neuer Gutschein ausgegeben.\n+     * Löst einen Gutschein ganz oder teilweise ein. Ein Restguthaben bleibt auf demselben\n+     * Gutschein und kann später eingelöst werden.\n      */\n     public Einloesung einloesen(Gutschein g, BigDecimal bonBetrag) {\n-        BigDecimal rest = g.wert().subtract(bonBetrag);\n-        g.entwerten();\n-        if (rest.signum() > 0) {\n-            return Einloesung.mitNeuemGutschein(g.wert(), Gutschein.neu(rest));\n-        }\n-        return Einloesung.voll(g.wert());\n+        BigDecimal eingeloest = g.restwert().min(bonBetrag);\n+        g.belasten(eingeloest);\n+        return Einloesung.teilweise(eingeloest, g.restwert());\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/kasse/GutscheinService.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/kasse/GutscheinService.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -8,6 +8,7 @@\n   \"tour.offen\": \"Offene Lieferungen\",\n   \"tour.volumen\": \"Volumen\",\n   \"kasse.gutschein\": \"Gutschein\",\n+  \"kasse.restguthaben\": \"Restguthaben\",\n   \"stamm.fahrzeug.kennzeichen\": \"Kennzeichen\",\n   \"stamm.fahrzeug.zuladung\": \"Zuladung (kg)\",\n   \"stamm.fahrzeug.filiale\": \"Filiale\"\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/i18n/de.json",
+    "old_path": "web/src/i18n/de.json",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -2,11 +2,12 @@ import { Betrag, Field, Scanner } from '@mobiq/ui'\n import { gutscheinEinloesen } from '../api/kasse'\n import { t } from '../i18n'\n \n-export function GutscheinZahlung({ bon }: { bon: { id: string; offen: number } }) {\n+export function GutscheinZahlung({ bon }: { bon: { id: string; offen: number; restguthaben?: number } }) {\n   return (\n     <Field label={t('kasse.gutschein')}>\n       <Scanner onScan={(code) => gutscheinEinloesen(bon.id, code)} />\n       <Betrag value={bon.offen} readOnly />\n+      <Betrag label={t('kasse.restguthaben')} value={bon.restguthaben} readOnly />\n     </Field>\n   )\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/kasse/Zahlung.tsx",
+    "old_path": "web/src/kasse/Zahlung.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

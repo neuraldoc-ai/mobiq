@@ -1,0 +1,78 @@
+[
+  {
+    "id": "1dfc37d10ed03698d6252a91c29b096a1437760f",
+    "short_id": "1dfc37d10ed",
+    "created_at": "2026-09-02T09:40:00.000+02:00",
+    "parent_ids": [
+      "e4d777213683d3ae6606d293d42b2a2a7af0194d"
+    ],
+    "title": "MOB-4777 Tests Teileinlösung",
+    "message": "MOB-4777 Tests Teileinlösung\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-09-02T09:40:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-09-02T09:40:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/1dfc37d10ed03698d6252a91c29b096a1437760f"
+  },
+  {
+    "id": "e4d777213683d3ae6606d293d42b2a2a7af0194d",
+    "short_id": "e4d77721368",
+    "created_at": "2026-09-01T16:05:00.000+02:00",
+    "parent_ids": [
+      "adb4a4413c692c6e5c17411543d7398d015bc971"
+    ],
+    "title": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen",
+    "message": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen\n\nBisher wurde bei Einlösung immer der volle Gutscheinwert aufgelöst.\nMit Teileinlösung bleibt der Rest als Verbindlichkeit stehen.\n",
+    "author_name": "Lena Hoffmann",
+    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "authored_date": "2026-09-01T16:05:00.000+02:00",
+    "committer_name": "Lena Hoffmann",
+    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committed_date": "2026-09-01T16:05:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e4d777213683d3ae6606d293d42b2a2a7af0194d"
+  },
+  {
+    "id": "adb4a4413c692c6e5c17411543d7398d015bc971",
+    "short_id": "adb4a4413c6",
+    "created_at": "2026-08-29T11:20:00.000+02:00",
+    "parent_ids": [
+      "72a4797f0d7ab3b38812bd896cb4fe63126e496c"
+    ],
+    "title": "MOB-4777 Bon: Restguthaben drucken",
+    "message": "MOB-4777 Bon: Restguthaben drucken\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-08-29T11:20:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-08-29T11:20:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/adb4a4413c692c6e5c17411543d7398d015bc971"
+  },
+  {
+    "id": "72a4797f0d7ab3b38812bd896cb4fe63126e496c",
+    "short_id": "72a4797f0d7",
+    "created_at": "2026-08-27T14:51:00.000+02:00",
+    "parent_ids": [
+      "6b1f8c8e029cd07647f5bdc3d7c19d6758c1b359"
+    ],
+    "title": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern",
+    "message": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-08-27T14:51:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-08-27T14:51:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/72a4797f0d7ab3b38812bd896cb4fe63126e496c"
+  }
+]

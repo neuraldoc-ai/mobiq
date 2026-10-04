@@ -1,0 +1,82 @@
+[
+  {
+    "name": "main",
+    "merged": false,
+    "protected": true,
+    "commit": {
+      "id": "495e311682cf5838c0ec51a450d975be36e287dd"
+    }
+  },
+  {
+    "name": "release/26.4",
+    "merged": false,
+    "protected": true,
+    "commit": {
+      "id": "df9f4148183618a3a6eb0de3e202cb7f25ba1663"
+    }
+  },
+  {
+    "name": "feature/MOB-4777-gutschein-teileinloesung",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "1dfc37d10ed03698d6252a91c29b096a1437760f"
+    }
+  },
+  {
+    "name": "feature/MOB-4801-ladevolumen",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "c4380f3555d8896e98e38971b2199f4a4a30bb41"
+    }
+  },
+  {
+    "name": "feature/MOB-4790-kassenbeleg-partition",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "b681f37f47ce42aaa389cc0a7756ac2d71386bc7"
+    }
+  },
+  {
+    "name": "feature/MOB-4760-vorlagen-engine",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "2e588beb8daaf29f6dfc296c566dbe154ec82e98"
+    }
+  },
+  {
+    "name": "feature/MOB-4815-tests-kasse",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd"
+    }
+  },
+  {
+    "name": "feature/MOB-4835-lieferstopp",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "5dd627cc6475f97e974fcb17193475162d616415"
+    }
+  },
+  {
+    "name": "hotfix/MOB-4841-npe-tagesabschluss",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "72303fdfe9aaeed5a268f7b845040bf02185040d"
+    }
+  },
+  {
+    "name": "feature/MOB-4812-teillieferung",
+    "merged": true,
+    "protected": false,
+    "commit": {
+      "id": "6977c6cd54f01797f41b0a24e407517d2a402d6d"
+    }
+  }
+]

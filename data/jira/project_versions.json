@@ -1,0 +1,35 @@
+[
+  {
+    "id": "10231",
+    "name": "26.3",
+    "description": "Sommer-Release",
+    "archived": false,
+    "released": true,
+    "startDate": "2026-05-04",
+    "releaseDate": "2026-07-21",
+    "projectId": 10004,
+    "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10231"
+  },
+  {
+    "id": "10245",
+    "name": "26.4",
+    "description": "Herbst-Release, Code-Freeze 09.10.",
+    "archived": false,
+    "released": false,
+    "startDate": "2026-08-24",
+    "releaseDate": "2026-10-27",
+    "projectId": 10004,
+    "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10245"
+  },
+  {
+    "id": "10252",
+    "name": "26.5",
+    "description": "",
+    "archived": false,
+    "released": false,
+    "startDate": "2026-11-02",
+    "releaseDate": "2027-01-26",
+    "projectId": 10004,
+    "self": "https://musterhaus-software.atlassian.net/rest/api/3/version/10252"
+  }
+]

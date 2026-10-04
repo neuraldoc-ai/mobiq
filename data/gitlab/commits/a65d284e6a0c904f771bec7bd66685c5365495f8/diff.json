@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,17 @@\n+package de.musterhaus.mobiq.druck;\n+\n+import java.util.Map;\n+\n+/** Druckausgabe über HTML-Vorlagen mit Platzhaltern {{feld}}. Ersetzt LegacyDruck. */\n+public class VorlagenEngine {\n+\n+    private final VorlagenQuelle quelle;\n+\n+    public VorlagenEngine(VorlagenQuelle quelle) {\n+        this.quelle = quelle;\n+    }\n+\n+    public byte[] drucke(String vorlage, Map<String, Object> daten) {\n+        return PdfRenderer.render(quelle.lade(vorlage + \".html\"), daten);\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/druck/VorlagenEngine.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/druck/VorlagenEngine.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

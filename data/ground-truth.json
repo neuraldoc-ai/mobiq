@@ -1,0 +1,1306 @@
+{
+  "release": "26.4",
+  "note": "Was eine sorgfältige Redaktion für Release 26.4 in Confluence und in der Dateiablage ändern würde. \"must\" = Doku ist ohne die Änderung falsch oder unvollständig; \"should\" = gute Praxis.",
+  "changes": [
+    {
+      "id": "teillieferung",
+      "title": "Teillieferung im Kaufvertrag",
+      "tickets": [
+        "MOB-4812",
+        "MOB-4829"
+      ],
+      "nature": "fachlich",
+      "kinds": [
+        "prozess",
+        "feld",
+        "parameter",
+        "schnittstelle",
+        "datenbank"
+      ],
+      "path": [
+        "Auftragsabwicklung",
+        "Kaufvertrag",
+        "Lieferung und Montage",
+        "Teillieferung"
+      ],
+      "summary": "Kaufvertrag in 2–5 Lieferteile aufteilen (Standard 3, je Teil mind. 20 % Warenwert, nur wenn TEILLIEF_ERLAUBT). Je Teil eigener Stopp, eigene Teilrechnung (Belegart TR), Anzahlung anteilig, Rest mit dem letzten Teil. Bei Finanzkauf gesperrt.",
+      "linking": [
+        "Commit \"MOB-4829 Rundungsdifferenz …\" gehört dazu: MOB-4829 ist mit MOB-4812 verknüpft und im selben Merge-Request geschlossen.",
+        "Commit \"MOB4812 Tooltip …\" hat einen Tippfehler im Ticket-Schlüssel, liegt aber auf dem Feature-Branch.",
+        "Commit \"… (1 bis 10)\" ist ein überholter Zwischenstand: gültig sind 2–5, Standard 3.",
+        "Die Finanzkauf-Sperre steht nur im Code und in einem Jira-Kommentar (22.09., M. Engel: \"Im Handbuch bitte erstmal so beschreiben\")."
+      ],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "393281702",
+          "space": "MOBIQHB",
+          "title": "3 Lieferung und Montage",
+          "docType": "anwenderhandbuch",
+          "section": "3.2 Lieferbereitschaft",
+          "kind": "replace",
+          "level": "must",
+          "what": "„Ein Kaufvertrag wird immer vollständig ausgeliefert“ ist falsch, Ausnahme Teillieferung."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281702",
+          "space": "MOBIQHB",
+          "title": "3 Lieferung und Montage",
+          "docType": "anwenderhandbuch",
+          "section": "nach 3.3",
+          "kind": "new-section",
+          "level": "must",
+          "what": "Neues Kapitel „Teillieferung vereinbaren“: Haken setzen, Lieferung aufteilen, je Teil Wunschtermin; max. 3 Teile (Standard), je Teil mind. 20 %; Teilrechnung je Teil."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281702",
+          "space": "MOBIQHB",
+          "title": "3 Lieferung und Montage",
+          "docType": "anwenderhandbuch",
+          "section": "neues Kapitel",
+          "kind": "insert",
+          "level": "must",
+          "what": "Bei Finanzkauf ist keine Teillieferung möglich (Quelle: Code + Jira-Kommentar)."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281733",
+          "space": "MOBIQHB",
+          "title": "4 Anzahlung und Restzahlung",
+          "docType": "anwenderhandbuch",
+          "section": "4",
+          "kind": "replace",
+          "level": "must",
+          "what": "Anzahlung wird bei Teillieferung anteilig je Teilrechnung verrechnet; Restzahlung je Teil."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282049",
+          "space": "MOBIQHB",
+          "title": "2 Touren planen",
+          "docType": "anwenderhandbuch",
+          "section": "2",
+          "kind": "replace",
+          "level": "must",
+          "what": "„Ein Kaufvertrag ist immer genau ein Stopp“: bei Teillieferung ein Stopp je Teil (T1, T2 …)."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282049",
+          "space": "MOBIQHB",
+          "title": "2 Touren planen",
+          "docType": "anwenderhandbuch",
+          "section": "2.3 Montage einplanen",
+          "kind": "insert",
+          "level": "must",
+          "what": "Montage nur beim Teil mit Montageposition."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282080",
+          "space": "MOBIQHB",
+          "title": "3 Lieferschein und Auslieferung",
+          "docType": "anwenderhandbuch",
+          "section": "3",
+          "kind": "insert",
+          "level": "should",
+          "what": "Fahrer kassiert bei Teillieferung nur den Anteil des gelieferten Teils."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282371",
+          "space": "MOBIQHB",
+          "title": "7 Restzahlung bei Lieferung",
+          "docType": "anwenderhandbuch",
+          "section": "7",
+          "kind": "insert",
+          "level": "should",
+          "what": "Restzahlung je Teil (Fahrer-App zeigt Betrag der Teilrechnung)."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282611",
+          "space": "MOBIQHB",
+          "title": "5 Finanzbuchhaltung: Übergabe aus dem ERP",
+          "docType": "anwenderhandbuch",
+          "section": "5.2 Anzahlungen",
+          "kind": "replace",
+          "level": "must",
+          "what": "Anzahlung nicht nur mit der Schlussrechnung: anteilig je Teilrechnung, Rest mit dem letzten Teil."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282611",
+          "space": "MOBIQHB",
+          "title": "5 Finanzbuchhaltung: Übergabe aus dem ERP",
+          "docType": "anwenderhandbuch",
+          "section": "5.3 Erlöse",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Belegart TR = Teilrechnung ergänzen; Erlös mit Datum der Teilrechnung, OP über KV-Nummer."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282707",
+          "space": "MOBIQHB",
+          "title": "Glossar",
+          "docType": "anwenderhandbuch",
+          "section": "Stopp",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "„Stopp … entspricht einem Kaufvertrag“ stimmt nicht mehr; Begriffe Teillieferung/Lieferteil ergänzen."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115141",
+          "space": "MOBIQFB",
+          "title": "Kaufvertrag – Register Lieferung",
+          "docType": "dialogbeschreibung",
+          "section": "Feldtabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Checkbox „Teillieferung erlaubt“ (nur wenn TEILLIEF_ERLAUBT, nicht bei Finanzkauf), Schaltfläche „Lieferung aufteilen“."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115141",
+          "space": "MOBIQFB",
+          "title": "Kaufvertrag – Register Lieferung",
+          "docType": "dialogbeschreibung",
+          "section": "neu",
+          "kind": "new-section",
+          "level": "must",
+          "what": "Dialog „Lieferung aufteilen“: Teil, Positionen (Drag & Drop), Warenwert-Anteil mit Warnung, Wunschtermin je Teil."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115141",
+          "space": "MOBIQFB",
+          "title": "Kaufvertrag – Register Lieferung",
+          "docType": "dialogbeschreibung",
+          "section": "Screenshot",
+          "kind": "image",
+          "level": "should",
+          "what": "register-lieferung.png zeigt die neuen Felder nicht."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115233",
+          "space": "MOBIQFB",
+          "title": "Parameter Auftrag und Lieferung",
+          "docType": "parametertabelle",
+          "section": "Tabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "TEILLIEF_ERLAUBT (Nein), TEILLIEF_MAX_ANZAHL (3; 2–5), TEILLIEF_MIN_WARENWERT_PROZ (20; 10–90). Nicht 1–10."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115295",
+          "space": "MOBIQFB",
+          "title": "Parameter Finanzbuchhaltung",
+          "docType": "parametertabelle",
+          "section": "Tabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "FIBU_BELEGART_TEILRECHNUNG (TR)."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752069",
+          "space": "MOBIQDEV",
+          "title": "Schnittstelle ERP → Finanzbuchhaltung",
+          "docType": "technische-doku",
+          "section": "2",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "belegart: TR = Teilrechnung."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752069",
+          "space": "MOBIQDEV",
+          "title": "Schnittstelle ERP → Finanzbuchhaltung",
+          "docType": "technische-doku",
+          "section": "2",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Felder teillieferung_nr, az_verrechnet."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752069",
+          "space": "MOBIQDEV",
+          "title": "Schnittstelle ERP → Finanzbuchhaltung",
+          "docType": "technische-doku",
+          "section": "3",
+          "kind": "replace",
+          "level": "must",
+          "what": "Anzahlung anteilig nach Warenwert, Rundungsrest mit dem letzten Teil."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752101",
+          "space": "MOBIQDEV",
+          "title": "Datenmodell Auftragsabwicklung",
+          "docType": "technische-doku",
+          "section": "Tabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Tabelle lieferteil; Spalte lt_id in kv_position und tour_stopp."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752133",
+          "space": "MOBIQDEV",
+          "title": "Migrationen 26.x",
+          "docType": "technische-doku",
+          "section": "Tabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "V26_4_012 lieferteil."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752033",
+          "space": "MOBIQDEV",
+          "title": "Architektur Gesamtsystem",
+          "docType": "architektur",
+          "section": "Bild",
+          "kind": "task",
+          "level": "should",
+          "what": "Datenfluss Lieferteil → Teilrechnung → fibu-export im draw.io ergänzen (Bild selbst kann kein Modell zeichnen)."
+        },
+        {
+          "source": "datei",
+          "fileId": "parameterliste",
+          "folder": "Fachberatung",
+          "title": "MOBIQ_Parameterliste_26.3.xlsx",
+          "docType": "parametertabelle",
+          "section": "Blatt Auftrag",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Zeilen TEILLIEF_ERLAUBT (Nein), TEILLIEF_MAX_ANZAHL (3; 2–5), TEILLIEF_MIN_WARENWERT_PROZ (20; 10–90), Seit Version 26.4."
+        },
+        {
+          "source": "datei",
+          "fileId": "parameterliste",
+          "folder": "Fachberatung",
+          "title": "MOBIQ_Parameterliste_26.3.xlsx",
+          "docType": "parametertabelle",
+          "section": "Blatt Fibu",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Zeile FIBU_BELEGART_TEILRECHNUNG (TR)."
+        },
+        {
+          "source": "datei",
+          "fileId": "parameterliste",
+          "folder": "Fachberatung",
+          "title": "MOBIQ_Parameterliste_26.3.xlsx",
+          "docType": "parametertabelle",
+          "section": "Blatt Änderungshistorie",
+          "kind": "table-rows",
+          "level": "should",
+          "what": "Eintrag 26.4 mit den neuen Parametern."
+        },
+        {
+          "source": "datei",
+          "fileId": "dlg-kaufvertrag-docx",
+          "folder": "Fachberatung",
+          "title": "Dialogbeschreibung_Kaufvertrag_v7.docx",
+          "docType": "dialogbeschreibung",
+          "section": "2 Register „Lieferung“",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Felder „Teillieferung erlaubt“ und „Lieferung aufteilen“."
+        },
+        {
+          "source": "datei",
+          "fileId": "dlg-kaufvertrag-docx",
+          "folder": "Fachberatung",
+          "title": "Dialogbeschreibung_Kaufvertrag_v7.docx",
+          "docType": "dialogbeschreibung",
+          "section": "neu nach 2",
+          "kind": "new-section",
+          "level": "must",
+          "what": "Abschnitt „Dialog Lieferung aufteilen“ mit Feldtabelle."
+        },
+        {
+          "source": "datei",
+          "fileId": "schulung-verkauf",
+          "folder": "Schulung",
+          "title": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+          "docType": "schulung",
+          "section": "Folie 2 „Lieferung vereinbaren“",
+          "kind": "replace",
+          "level": "must",
+          "what": "„Ein Kaufvertrag wird immer komplett geliefert“ ist falsch."
+        },
+        {
+          "source": "datei",
+          "fileId": "schulung-verkauf",
+          "folder": "Schulung",
+          "title": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+          "docType": "schulung",
+          "section": "neue Folie",
+          "kind": "new-section",
+          "level": "should",
+          "what": "Folie „Teillieferung vereinbaren“."
+        },
+        {
+          "source": "datei",
+          "fileId": "leistungsbeschreibung",
+          "folder": "Vertrieb",
+          "title": "Leistungsbeschreibung_MOBIQ_ERP_2026.docx",
+          "docType": "leistungsbeschreibung",
+          "section": "1 Kaufvertrag und Auftrag",
+          "kind": "replace",
+          "level": "must",
+          "what": "„Komplettlieferung je Kaufvertrag“: Teillieferung ergänzen (Vertragsgrundlage beim Kunden)."
+        },
+        {
+          "source": "datei",
+          "fileId": "leistungsbeschreibung",
+          "folder": "Vertrieb",
+          "title": "Leistungsbeschreibung_MOBIQ_ERP_2026.docx",
+          "docType": "leistungsbeschreibung",
+          "section": "4 Finanzbuchhaltung",
+          "kind": "replace",
+          "level": "must",
+          "what": "Belegart TR ergänzen."
+        },
+        {
+          "source": "datei",
+          "fileId": "datenmodell-xlsx",
+          "folder": "Entwicklung/Datenmodell",
+          "title": "Datenmodell_Auftragsabwicklung_26.3.xlsx",
+          "docType": "technische-doku",
+          "section": "Blatt Tabellen und Spalten",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Tabelle lieferteil; Spalten lt_id in kv_position und tour_stopp."
+        },
+        {
+          "source": "datei",
+          "fileId": "architekturbild",
+          "folder": "Entwicklung/Architektur",
+          "title": "MOBIQ_Architektur_Gesamtsystem.pdf",
+          "docType": "architektur",
+          "section": "Seite 1",
+          "kind": "task",
+          "level": "should",
+          "what": "Datenfluss Lieferteil → Teilrechnung → fibu-export einzeichnen (PDF neu aus draw.io exportieren)."
+        }
+      ],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "491520033",
+          "space": "MOBIQOPS",
+          "title": "Installations- und Updatehandbuch",
+          "docType": "installation",
+          "why": "Migration läuft automatisch, kein Schritt für Administratoren."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281644",
+          "space": "MOBIQHB",
+          "title": "2 Kaufvertrag erfassen",
+          "docType": "anwenderhandbuch",
+          "why": "Erfassen und Finanzkauf-Antrag unverändert."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282337",
+          "space": "MOBIQHB",
+          "title": "6 Gutscheine",
+          "docType": "anwenderhandbuch",
+          "why": "Kein Bezug."
+        },
+        {
+          "source": "datei",
+          "fileId": "installationshandbuch",
+          "folder": "Auslieferung/26.3",
+          "title": "MOBIQ_Installationshandbuch_26.3.pdf",
+          "docType": "installation",
+          "why": "Kein Schritt für Administratoren."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1287,
+        "mergeCommit": "df9f4148183618a3a6eb0de3e202cb7f25ba1663"
+      },
+      "commits": [
+        {
+          "sha": "724a0a7769f973a5384c5173964fc819fdd5afc6",
+          "title": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id"
+        },
+        {
+          "sha": "b104402c270a95c4cd1642246c9975b8c16613db",
+          "title": "MOB-4812 Parameter TEILLIEF_ERLAUBT und TEILLIEF_MAX_ANZAHL (1 bis 10)"
+        },
+        {
+          "sha": "22474846ee9ca3b1a634a44090001c79e6259a5a",
+          "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“"
+        },
+        {
+          "sha": "bd9c5601f0a31ccfca24fa00e2f865a84d844dac",
+          "title": "MOB-4812 WIP Dialog Lieferung aufteilen"
+        },
+        {
+          "sha": "9222fc79b258f306967bd5d27f2696757aacfe4f",
+          "title": "MOB-4812 Dialog „Lieferung aufteilen“, gesperrt bei Finanzkauf"
+        },
+        {
+          "sha": "4e4f64a2c551825aae123ab8432ba36fce61ae23",
+          "title": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3"
+        },
+        {
+          "sha": "d633e6756cbab3a4760745cbcd8dd69972ca243c",
+          "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)"
+        },
+        {
+          "sha": "e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae",
+          "title": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig"
+        },
+        {
+          "sha": "b1a3aeebcfd1ee3847949f44ca6b4027d923ae19",
+          "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet"
+        },
+        {
+          "sha": "bce67ee918b392058d8c0fcc3db772596e699bd4",
+          "title": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen"
+        },
+        {
+          "sha": "6977c6cd54f01797f41b0a24e407517d2a402d6d",
+          "title": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog"
+        }
+      ]
+    },
+    {
+      "id": "gutschein",
+      "title": "Gutschein teilweise einlösen",
+      "tickets": [
+        "MOB-4777"
+      ],
+      "nature": "fachlich",
+      "kinds": [
+        "prozess",
+        "feld"
+      ],
+      "path": [
+        "Kasse",
+        "Gutscheine",
+        "Einlösung"
+      ],
+      "summary": "Gutschein ganz oder teilweise einlösen; Restguthaben bleibt auf demselben Gutschein und steht auf dem Bon. Fibu löst die Verbindlichkeit nur in Höhe des eingelösten Betrags auf.",
+      "linking": [
+        "Jira-Kommentar von E. Demir verlangt ausdrücklich die Anpassung des Fibu-Handbuchs."
+      ],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "393282337",
+          "space": "MOBIQHB",
+          "title": "6 Gutscheine",
+          "docType": "anwenderhandbuch",
+          "section": "6",
+          "kind": "replace",
+          "level": "must",
+          "what": "Teileinlösung statt „nur vollständig, Rest als neuer Gutschein“."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282402",
+          "space": "MOBIQHB",
+          "title": "FAQ Kasse",
+          "docType": "anwenderhandbuch",
+          "section": "Kann ich einen Gutschein teilweise einlösen?",
+          "kind": "replace",
+          "level": "must",
+          "what": "Antwort „Nein“ ist falsch. Zweite Fundstelle derselben Aussage — leicht zu übersehen."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282611",
+          "space": "MOBIQHB",
+          "title": "5 Finanzbuchhaltung: Übergabe aus dem ERP",
+          "docType": "anwenderhandbuch",
+          "section": "5.4 Gutscheine",
+          "kind": "replace",
+          "level": "must",
+          "what": "Verbindlichkeit nur in Höhe des eingelösten Betrags auflösen."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115176",
+          "space": "MOBIQFB",
+          "title": "Kasse – Zahlung",
+          "docType": "dialogbeschreibung",
+          "section": "Feldtabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "Anzeige „Restguthaben“."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282337",
+          "space": "MOBIQHB",
+          "title": "6 Gutscheine",
+          "docType": "anwenderhandbuch",
+          "section": "Screenshot",
+          "kind": "image",
+          "level": "should",
+          "what": "kasse-gutschein.png ohne Restguthaben."
+        },
+        {
+          "source": "datei",
+          "fileId": "schulung-verkauf",
+          "folder": "Schulung",
+          "title": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+          "docType": "schulung",
+          "section": "Folie 3 „Gutscheine an der Kasse“",
+          "kind": "replace",
+          "level": "must",
+          "what": "„immer vollständig eingelöst“ und „neuer Gutschein“ sind falsch."
+        },
+        {
+          "source": "datei",
+          "fileId": "leistungsbeschreibung",
+          "folder": "Vertrieb",
+          "title": "Leistungsbeschreibung_MOBIQ_ERP_2026.docx",
+          "docType": "leistungsbeschreibung",
+          "section": "3 Kasse",
+          "kind": "replace",
+          "level": "must",
+          "what": "„vollständige Einlösung“ → Teileinlösung mit Restguthaben."
+        }
+      ],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "458752165",
+          "space": "MOBIQDEV",
+          "title": "Kasse: Belegdaten und Tagesabschluss",
+          "docType": "technische-doku",
+          "why": "Tabellen unverändert."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1244,
+        "mergeCommit": "93acf5425388f27dccecbccffff73268388591dd"
+      },
+      "commits": [
+        {
+          "sha": "72a4797f0d7ab3b38812bd896cb4fe63126e496c",
+          "title": "MOB-4777 Kasse: Gutschein teilweise einlösen, Restguthaben speichern"
+        },
+        {
+          "sha": "adb4a4413c692c6e5c17411543d7398d015bc971",
+          "title": "MOB-4777 Bon: Restguthaben drucken"
+        },
+        {
+          "sha": "e4d777213683d3ae6606d293d42b2a2a7af0194d",
+          "title": "MOB-4777 Fibu: Gutscheinverbindlichkeit nur in Höhe des Einlösebetrags auflösen"
+        },
+        {
+          "sha": "1dfc37d10ed03698d6252a91c29b096a1437760f",
+          "title": "MOB-4777 Tests Teileinlösung"
+        }
+      ]
+    },
+    {
+      "id": "ladevolumen",
+      "title": "Ladevolumen je Fahrzeug prüfen",
+      "tickets": [
+        "MOB-4801"
+      ],
+      "nature": "fachlich",
+      "kinds": [
+        "prozess",
+        "feld",
+        "parameter"
+      ],
+      "path": [
+        "Auslieferung",
+        "Tourenplanung",
+        "Ladevolumen"
+      ],
+      "summary": "Fahrzeug hat Pflichtfeld Ladevolumen (m³). Überladene Tour wird rot markiert; Speichern nur mit Bestätigung, wenn TOUR_UEBERLADUNG_ERLAUBT.",
+      "linking": [],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "393282049",
+          "space": "MOBIQHB",
+          "title": "2 Touren planen",
+          "docType": "anwenderhandbuch",
+          "section": "2.4 Ladevolumen",
+          "kind": "insert",
+          "level": "must",
+          "what": "Rote Markierung bei Überladung, Speichern mit Bestätigung."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115264",
+          "space": "MOBIQFB",
+          "title": "Parameter Tourenplanung",
+          "docType": "parametertabelle",
+          "section": "Tabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "TOUR_MAX_LADEVOLUMEN_M3 (38; 5–60 m³), TOUR_UEBERLADUNG_ERLAUBT (Ja)."
+        },
+        {
+          "source": "neu",
+          "title": "Stammdaten – Fahrzeug",
+          "docType": "dialogbeschreibung",
+          "newPage": {
+            "space": "MOBIQFB",
+            "parent": "fb-dialoge",
+            "title": "Stammdaten – Fahrzeug",
+            "parentId": "426115109"
+          },
+          "kind": "new-page",
+          "level": "should",
+          "what": "Es gibt keine Dialogbeschreibung für den Fahrzeugstamm; neues Pflichtfeld Ladevolumen."
+        },
+        {
+          "source": "datei",
+          "fileId": "parameterliste",
+          "folder": "Fachberatung",
+          "title": "MOBIQ_Parameterliste_26.3.xlsx",
+          "docType": "parametertabelle",
+          "section": "Blatt Tour",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "TOUR_MAX_LADEVOLUMEN_M3 (38; 5–60 m³), TOUR_UEBERLADUNG_ERLAUBT (Ja)."
+        }
+      ],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "458752101",
+          "space": "MOBIQDEV",
+          "title": "Datenmodell Auftragsabwicklung",
+          "docType": "technische-doku",
+          "why": "Fahrzeugtabelle ist dort nicht beschrieben."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1251,
+        "mergeCommit": "6480445821353feb8e057aa6e8e4140eb4331cac"
+      },
+      "commits": [
+        {
+          "sha": "8394bba1d33a9bdf43719f5bd191a5f961c2a364",
+          "title": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)"
+        },
+        {
+          "sha": "33716b04d51afb1679557446987243d8a4c88e25",
+          "title": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT"
+        },
+        {
+          "sha": "4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d",
+          "title": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung"
+        },
+        {
+          "sha": "c4380f3555d8896e98e38971b2199f4a4a30bb41",
+          "title": "MOB-4801 Tests Volumenberechnung"
+        }
+      ]
+    },
+    {
+      "id": "lieferstopp",
+      "title": "„Liefersperre“ heißt jetzt „Lieferstopp“",
+      "tickets": [
+        "MOB-4835"
+      ],
+      "nature": "umbenennung",
+      "kinds": [
+        "label"
+      ],
+      "path": [
+        "Auftragsabwicklung",
+        "Kaufvertrag",
+        "Lieferung und Montage"
+      ],
+      "summary": "Nur die Beschriftung ändert sich (de, nl, fr). Interner Feldname bleibt liefersperre.",
+      "linking": [],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "393281702",
+          "space": "MOBIQHB",
+          "title": "3 Lieferung und Montage",
+          "docType": "anwenderhandbuch",
+          "section": "Einleitung",
+          "kind": "replace",
+          "level": "must",
+          "what": "„keine Liefersperre gesetzt ist“ → „kein Lieferstopp gesetzt ist“ (Artikel!)."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281702",
+          "space": "MOBIQHB",
+          "title": "3 Lieferung und Montage",
+          "docType": "anwenderhandbuch",
+          "section": "3.2 Hinweis",
+          "kind": "replace",
+          "level": "must",
+          "what": "„setzen Sie die Liefersperre … Sie heben sie“ → „setzen Sie den Lieferstopp … Sie heben ihn“ (Genus!)."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282049",
+          "space": "MOBIQHB",
+          "title": "2 Touren planen",
+          "docType": "anwenderhandbuch",
+          "section": "2",
+          "kind": "replace",
+          "level": "must",
+          "what": "„mit gesetzter Liefersperre“ → „mit gesetztem Lieferstopp“."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282707",
+          "space": "MOBIQHB",
+          "title": "Glossar",
+          "docType": "anwenderhandbuch",
+          "section": "Liefersperre",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "Begriff umbenennen, alphabetisch einsortieren."
+        },
+        {
+          "source": "confluence",
+          "pageId": "426115141",
+          "space": "MOBIQFB",
+          "title": "Kaufvertrag – Register Lieferung",
+          "docType": "dialogbeschreibung",
+          "section": "Feldtabelle",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "Feld „Lieferstopp“."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281702",
+          "space": "MOBIQHB",
+          "title": "3 Lieferung und Montage",
+          "docType": "anwenderhandbuch",
+          "section": "Screenshot",
+          "kind": "image",
+          "level": "should",
+          "what": "register-lieferung.png zeigt alte Beschriftung."
+        },
+        {
+          "source": "datei",
+          "fileId": "dlg-kaufvertrag-docx",
+          "folder": "Fachberatung",
+          "title": "Dialogbeschreibung_Kaufvertrag_v7.docx",
+          "docType": "dialogbeschreibung",
+          "section": "2 Register „Lieferung“ und Hinweis",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "Feld und Hinweis: „Lieferstopp“."
+        },
+        {
+          "source": "datei",
+          "fileId": "schulung-verkauf",
+          "folder": "Schulung",
+          "title": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+          "docType": "schulung",
+          "section": "Folie 2",
+          "kind": "replace",
+          "level": "must",
+          "what": "„Liefersperre setzen“ → „Lieferstopp setzen“."
+        }
+      ],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "458752101",
+          "space": "MOBIQDEV",
+          "title": "Datenmodell Auftragsabwicklung",
+          "docType": "technische-doku",
+          "why": "Spalte heißt weiter liefersperre — Code-Bezeichner nicht umbenennen."
+        },
+        {
+          "source": "datei",
+          "fileId": "datenmodell-xlsx",
+          "folder": "Entwicklung/Datenmodell",
+          "title": "Datenmodell_Auftragsabwicklung_26.3.xlsx",
+          "docType": "technische-doku",
+          "why": "Spalte heißt weiter liefersperre — Code-Bezeichner nicht umbenennen."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1290,
+        "mergeCommit": "133cb1afb53bc214e818012d24d1d2224e0b2f69"
+      },
+      "commits": [
+        {
+          "sha": "34db438813c69e897384f77f9553171c49aec447",
+          "title": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“ (Web und Desktop)"
+        },
+        {
+          "sha": "5dd627cc6475f97e974fcb17193475162d616415",
+          "title": "MOB-4835 Übersetzungen nachgezogen (nl, fr)"
+        }
+      ]
+    },
+    {
+      "id": "kassenbelege",
+      "title": "Kassenbelege nach Jahr partitionieren",
+      "tickets": [
+        "MOB-4790"
+      ],
+      "nature": "technisch",
+      "kinds": [
+        "datenbank"
+      ],
+      "path": [
+        "Kasse",
+        "Tagesabschluss und Belege",
+        "Datenhaltung"
+      ],
+      "summary": "kassenbeleg nach Belegjahr partitioniert, Sicht kassenbeleg_alle für jahresübergreifende Abfragen. Für Anwender unsichtbar.",
+      "linking": [],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "458752165",
+          "space": "MOBIQDEV",
+          "title": "Kasse: Belegdaten und Tagesabschluss",
+          "docType": "technische-doku",
+          "section": "3 Tabelle kassenbeleg",
+          "kind": "insert",
+          "level": "must",
+          "what": "Partitionierung nach Belegjahr, Sicht kassenbeleg_alle."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752165",
+          "space": "MOBIQDEV",
+          "title": "Kasse: Belegdaten und Tagesabschluss",
+          "docType": "technische-doku",
+          "section": "4 Aufbewahrung",
+          "kind": "replace",
+          "level": "should",
+          "what": "Alte Jahrgänge als Partition auslagern, ohne die Kasse zu sperren."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752133",
+          "space": "MOBIQDEV",
+          "title": "Migrationen 26.x",
+          "docType": "technische-doku",
+          "section": "Tabelle",
+          "kind": "table-rows",
+          "level": "must",
+          "what": "V26_4_015 (ca. 4 min bei 4 Mio. Belegen), V26_4_016."
+        }
+      ],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "393282337",
+          "space": "MOBIQHB",
+          "title": "6 Gutscheine",
+          "docType": "anwenderhandbuch",
+          "why": "Nur Datenbank — Anwenderhandbuch gar nicht erst prüfen."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282402",
+          "space": "MOBIQHB",
+          "title": "FAQ Kasse",
+          "docType": "anwenderhandbuch",
+          "why": "„Tagesabschluss dauert einige Sekunden“ bleibt richtig."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282371",
+          "space": "MOBIQHB",
+          "title": "7 Restzahlung bei Lieferung",
+          "docType": "anwenderhandbuch",
+          "why": "Nur Datenbank."
+        },
+        {
+          "source": "datei",
+          "fileId": "schulung-verkauf",
+          "folder": "Schulung",
+          "title": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+          "docType": "schulung",
+          "why": "„Tagesabschluss dauert einige Sekunden“ bleibt richtig."
+        },
+        {
+          "source": "datei",
+          "fileId": "installationshandbuch",
+          "folder": "Auslieferung/26.3",
+          "title": "MOBIQ_Installationshandbuch_26.3.pdf",
+          "docType": "installation",
+          "why": "Migration läuft automatisch."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1262,
+        "mergeCommit": "f0efd8d70dc21680f020dd9afe3be31f86616a11"
+      },
+      "commits": [
+        {
+          "sha": "33e60afb111bab563c0237251879c6ff3e990a64",
+          "title": "MOB-4790 kassenbeleg nach Belegjahr partitionieren"
+        },
+        {
+          "sha": "b37b560a99d45ead81d643172524682ee4c84bf1",
+          "title": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen"
+        },
+        {
+          "sha": "b681f37f47ce42aaa389cc0a7756ac2d71386bc7",
+          "title": "MOB-4790 Lasttest Tagesabschluss"
+        }
+      ]
+    },
+    {
+      "id": "druckvorlagen",
+      "title": "Neue Vorlagen-Engine im Druckmanagement",
+      "tickets": [
+        "MOB-4760"
+      ],
+      "nature": "technisch",
+      "kinds": [
+        "intern",
+        "betrieb"
+      ],
+      "path": [
+        "Druck und Belege",
+        "Belegvorlagen"
+      ],
+      "summary": "FreeMarker (.ftl, LegacyDruck) ersetzt durch HTML-Vorlagen mit {{platzhaltern}} (VorlagenEngine). Kundeneigene Vorlagen nach dem Update per Job „Vorlagen konvertieren“ umstellen, sonst Standardlayout.",
+      "linking": [
+        "Sechs von sieben Commits sind reiner Umbau; die Betriebswirkung steht nur in einer Commit-Nachricht und in der Ticket-Warnung."
+      ],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "491520033",
+          "space": "MOBIQOPS",
+          "title": "Installations- und Updatehandbuch",
+          "docType": "installation",
+          "section": "4.2 Nach dem Update",
+          "kind": "insert",
+          "level": "must",
+          "what": "Ab 26.4: kundeneigene Vorlagen unter Administration › Vorlagen konvertieren umstellen."
+        },
+        {
+          "source": "confluence",
+          "pageId": "491520065",
+          "space": "MOBIQOPS",
+          "title": "Kundeneigene Druckvorlagen",
+          "docType": "installation",
+          "section": "ganze Seite",
+          "kind": "replace",
+          "level": "must",
+          "what": "Vorlagen sind jetzt HTML mit {{platzhaltern}}, nicht mehr .ftl."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752197",
+          "space": "MOBIQDEV",
+          "title": "Druckmanagement",
+          "docType": "technische-doku",
+          "section": "ganze Seite",
+          "kind": "replace",
+          "level": "must",
+          "what": "VorlagenEngine statt LegacyDruck/FreeMarker."
+        },
+        {
+          "source": "datei",
+          "fileId": "installationshandbuch",
+          "folder": "Auslieferung/26.3",
+          "title": "MOBIQ_Installationshandbuch_26.3.pdf",
+          "docType": "installation",
+          "section": "Seite 2, 4.2 Nach dem Update",
+          "kind": "replace",
+          "level": "must",
+          "what": "„.ftl-Vorlagen bleiben erhalten“ ist falsch: eigene Vorlagen mit „Vorlagen konvertieren“ umstellen."
+        }
+      ],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "393282611",
+          "space": "MOBIQHB",
+          "title": "5 Finanzbuchhaltung: Übergabe aus dem ERP",
+          "docType": "anwenderhandbuch",
+          "why": "Rechnungsinhalt unverändert, obwohl „Rechnung“ in Commits vorkommt."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393281733",
+          "space": "MOBIQHB",
+          "title": "4 Anzahlung und Restzahlung",
+          "docType": "anwenderhandbuch",
+          "why": "Kein fachlicher Unterschied."
+        },
+        {
+          "source": "datei",
+          "fileId": "leistungsbeschreibung",
+          "folder": "Vertrieb",
+          "title": "Leistungsbeschreibung_MOBIQ_ERP_2026.docx",
+          "docType": "leistungsbeschreibung",
+          "why": "Belege sehen gleich aus."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1270,
+        "mergeCommit": "57ebcbc50d6bf64354fed4b76bd7ab2098c40b41"
+      },
+      "commits": [
+        {
+          "sha": "a65d284e6a0c904f771bec7bd66685c5365495f8",
+          "title": "MOB-4760 Druckausgabe über neue Vorlagen-Schicht"
+        },
+        {
+          "sha": "62750fa586b121b41c2a02be21ac396e2ac9091b",
+          "title": "MOB-4760 Rechnungsvorlage umgestellt"
+        },
+        {
+          "sha": "99fae0cf02cb9e7c07217dadac0e05a2a418363a",
+          "title": "MOB-4760 Lieferscheinvorlage umgestellt"
+        },
+        {
+          "sha": "ce1994cf2be3f6c569391484f5c19b3a9bbb6752",
+          "title": "MOB-4760 Kaufvertragsvorlage umgestellt"
+        },
+        {
+          "sha": "6016fc7f1cab617b826963652a7537d31827f1e6",
+          "title": "MOB-4760 Job „Vorlagen konvertieren“ für kundeneigene Vorlagen"
+        },
+        {
+          "sha": "0b5afd0b5eb176a8014960fbc5664ce0619d0a81",
+          "title": "MOB-4760 Alte Druck-Engine entfernt"
+        },
+        {
+          "sha": "2e588beb8daaf29f6dfc296c566dbe154ec82e98",
+          "title": "MOB-4760 Tests Druckausgabe"
+        }
+      ]
+    },
+    {
+      "id": "avis-standard",
+      "title": "Avisierung standardmäßig 24 statt 48 Stunden",
+      "tickets": [],
+      "nature": "fachlich",
+      "kinds": [
+        "parameter"
+      ],
+      "path": [
+        "Auslieferung",
+        "Lieferschein und Auslieferung",
+        "Avisierung"
+      ],
+      "summary": "Standardwert LIEF_AVIS_STUNDEN von 48 auf 24 Stunden geändert. Kein Ticket, kein Merge-Request, direkt auf release/26.4.",
+      "linking": [
+        "Kein Ticket-Schlüssel. Nur über den Diff in config/parameter/auftrag.yaml erkennbar."
+      ],
+      "expected": [
+        {
+          "source": "confluence",
+          "pageId": "426115233",
+          "space": "MOBIQFB",
+          "title": "Parameter Auftrag und Lieferung",
+          "docType": "parametertabelle",
+          "section": "LIEF_AVIS_STUNDEN",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "Standard 48 → 24."
+        },
+        {
+          "source": "confluence",
+          "pageId": "393282080",
+          "space": "MOBIQHB",
+          "title": "3 Lieferschein und Auslieferung",
+          "docType": "anwenderhandbuch",
+          "section": "3",
+          "kind": "replace",
+          "level": "must",
+          "what": "„48 Stunden vor der Lieferung“ → standardmäßig 24 Stunden."
+        },
+        {
+          "source": "datei",
+          "fileId": "parameterliste",
+          "folder": "Fachberatung",
+          "title": "MOBIQ_Parameterliste_26.3.xlsx",
+          "docType": "parametertabelle",
+          "section": "Blatt Auftrag, LIEF_AVIS_STUNDEN",
+          "kind": "table-cell",
+          "level": "must",
+          "what": "Standard 48 → 24."
+        },
+        {
+          "source": "datei",
+          "fileId": "leistungsbeschreibung",
+          "folder": "Vertrieb",
+          "title": "Leistungsbeschreibung_MOBIQ_ERP_2026.docx",
+          "docType": "leistungsbeschreibung",
+          "section": "2 Auslieferung",
+          "kind": "replace",
+          "level": "must",
+          "what": "„standardmäßig 48 Stunden“ → 24 Stunden."
+        }
+      ],
+      "notAffected": [],
+      "mergeRequest": null,
+      "commits": [
+        {
+          "sha": "5692e31ffc34711e92bf13e69ff73c2c41beda69",
+          "title": "Avis-Vorlauf Standard 48h -> 24h"
+        }
+      ]
+    },
+    {
+      "id": "kasse-tests",
+      "title": "Testabdeckung Kasse erhöht",
+      "tickets": [
+        "MOB-4815"
+      ],
+      "nature": "intern",
+      "kinds": [
+        "intern"
+      ],
+      "summary": "Nur Tests, Testdaten, Pipeline.",
+      "linking": [],
+      "expected": [],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "393282337",
+          "space": "MOBIQHB",
+          "title": "6 Gutscheine",
+          "docType": "anwenderhandbuch",
+          "why": "Nur Tests."
+        },
+        {
+          "source": "confluence",
+          "pageId": "458752165",
+          "space": "MOBIQDEV",
+          "title": "Kasse: Belegdaten und Tagesabschluss",
+          "docType": "technische-doku",
+          "why": "Nur Tests."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1275,
+        "mergeCommit": "2e689cff7eda1603bbf73f75524adbb65802910c"
+      },
+      "commits": [
+        {
+          "sha": "08c95fd5e53eec4ae0d5fb00da976423dd0014e7",
+          "title": "MOB-4815 Tests Tagesabschluss"
+        },
+        {
+          "sha": "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3",
+          "title": "MOB-4815 Tests Storno"
+        },
+        {
+          "sha": "d4bee0eef0181169b21e271a3c67ca1872a15c3b",
+          "title": "MOB-4815 Tests Kartenzahlung"
+        },
+        {
+          "sha": "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf",
+          "title": "MOB-4815 Testdaten aufgeräumt"
+        },
+        {
+          "sha": "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd",
+          "title": "MOB-4815 Testlauf Kasse in der Pipeline"
+        }
+      ]
+    },
+    {
+      "id": "hotfix-tagesabschluss",
+      "title": "Tagesabschluss bei Filiale ohne Belege",
+      "tickets": [
+        "MOB-4841"
+      ],
+      "nature": "intern",
+      "kinds": [
+        "intern"
+      ],
+      "summary": "Fehlerbehebung: Abbruch bei Filiale ohne Bons. Stellt das dokumentierte Verhalten wieder her.",
+      "linking": [],
+      "expected": [],
+      "notAffected": [
+        {
+          "source": "confluence",
+          "pageId": "393282402",
+          "space": "MOBIQHB",
+          "title": "FAQ Kasse",
+          "docType": "anwenderhandbuch",
+          "why": "Verhalten war nie anders dokumentiert."
+        }
+      ],
+      "mergeRequest": {
+        "iid": 1293,
+        "mergeCommit": "f012d1c349c88cded41356780e52db0df7f29936"
+      },
+      "commits": [
+        {
+          "sha": "72303fdfe9aaeed5a268f7b845040bf02185040d",
+          "title": "MOB-4841 Tagesabschluss: Filiale ohne Belege nicht mehr abbrechen"
+        }
+      ]
+    }
+  ],
+  "release_wide": {
+    "expected": [
+      {
+        "source": "neu",
+        "title": "Neuerungen in 26.4",
+        "docType": "anwenderhandbuch",
+        "newPage": {
+          "space": "MOBIQHB",
+          "parent": "hb-home",
+          "title": "Neuerungen in 26.4",
+          "parentId": "393281537"
+        },
+        "kind": "new-page",
+        "level": "should",
+        "what": "Teillieferung, Gutschein teilweise einlösen, Ladevolumen, Lieferstopp (Umbenennung), Avisierung 24 h, Vorlagen konvertieren (Administratoren)."
+      }
+    ],
+    "notInRelease": [
+      {
+        "ticket": "MOB-4826",
+        "why": "Status „In Review“, kein Code gemergt — trotz fixVersion 26.4 nicht dokumentieren."
+      },
+      {
+        "ticket": "MOB-4819",
+        "why": "Beim Kunden gelöst, keine Produktänderung."
+      },
+      {
+        "ticket": "MOB-4844",
+        "why": "Folge-Story für 26.5."
+      },
+      {
+        "ticket": "MOB-4850",
+        "why": "Idee im Backlog."
+      },
+      {
+        "ticket": "MOB-4822",
+        "why": "In Arbeit, 26.5."
+      }
+    ]
+  },
+  "ignore": [
+    {
+      "sha": "6b1f8c8e029cd07647f5bdc3d7c19d6758c1b359",
+      "why": "Versionsnummer gesetzt, keine Doku-Wirkung."
+    }
+  ]
+}

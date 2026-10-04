@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -2,7 +2,7 @@ STRINGTABLE\n BEGIN\n   1201, \"Wunschtermin\"\n   1202, \"Lieferadresse\"\n-  1203, \"Liefersperre\"\n+  1203, \"Lieferstopp\"\n   1204, \"Montage\"\n   1301, \"Kennzeichen\"\n   1302, \"Zuladung (kg)\"\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "desktop/res/texte_de.rc",
+    "old_path": "desktop/res/texte_de.rc",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -3,7 +3,7 @@\n   \"kv.lieferung.wunschtermin\": \"Wunschtermin\",\n   \"kv.lieferung.adresse\": \"Lieferadresse\",\n   \"kv.lieferung.etage\": \"Etage / Aufzug\",\n-  \"kv.lieferung.liefersperre\": \"Liefersperre\",\n+  \"kv.lieferung.liefersperre\": \"Lieferstopp\",\n   \"kv.lieferung.montage\": \"Montage\",\n   \"tour.offen\": \"Offene Lieferungen\",\n   \"tour.volumen\": \"Volumen\",\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/i18n/de.json",
+    "old_path": "web/src/i18n/de.json",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

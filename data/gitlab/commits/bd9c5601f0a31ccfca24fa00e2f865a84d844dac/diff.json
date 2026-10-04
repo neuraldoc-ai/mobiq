@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,11 @@\n+import { Dialog } from '@mobiq/ui'\n+import type { Kaufvertrag } from '../api/types'\n+\n+// TODO Positionen per Drag & Drop, Prüfung Mindestwert\n+export function LieferungAufteilen({ kv }: { kv: Kaufvertrag }) {\n+  return <Dialog titel='Lieferung aufteilen'>{kv.kvNr}</Dialog>\n+}\n+\n+export function oeffneAufteilen(kv: Kaufvertrag) {\n+  Dialog.oeffne(<LieferungAufteilen kv={kv} />)\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/kaufvertrag/LieferungAufteilen.tsx",
+    "old_path": "web/src/kaufvertrag/LieferungAufteilen.tsx",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

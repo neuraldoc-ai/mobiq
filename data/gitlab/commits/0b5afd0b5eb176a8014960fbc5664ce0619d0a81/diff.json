@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -1,11 +0,0 @@\n-package de.musterhaus.mobiq.druck;\n-\n-import java.util.Map;\n-\n-/** Druckausgabe über FreeMarker-Vorlagen in druck/vorlagen. */\n-public class LegacyDruck {\n-\n-    public byte[] drucke(String vorlage, Map<String, Object> daten) {\n-        return FreemarkerRenderer.render(\"druck/vorlagen/\" + vorlage + \".ftl\", daten);\n-    }\n-}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/druck/LegacyDruck.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/druck/LegacyDruck.java",
+    "a_mode": "100644",
+    "b_mode": "0",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": true,
+    "generated_file": false
+  }
+]

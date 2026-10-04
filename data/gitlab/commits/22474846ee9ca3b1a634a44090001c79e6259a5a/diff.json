@@ -1,0 +1,54 @@
+[
+  {
+    "diff": "@@ -12,6 +12,8 @@ type\n     cbxEtage: TComboBox;\n     chkLiefersperre: TCheckBox;\n     chkMontage: TCheckBox;\n+    chkTeillieferung: TCheckBox;\n+    btnAufteilen: TButton;\n     procedure FormShow(Sender: TObject);\n   private\n     FKv: TKaufvertrag;\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "desktop/kaufvertrag/FrmLieferung.pas",
+    "old_path": "desktop/kaufvertrag/FrmLieferung.pas",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -4,6 +4,8 @@ BEGIN\n   1202, \"Lieferadresse\"\n   1203, \"Lieferstopp\"\n   1204, \"Montage\"\n+  1205, \"Teillieferung erlaubt\"\n+  1206, \"Lieferung aufteilen\"\n   1301, \"Kennzeichen\"\n   1302, \"Zuladung (kg)\"\n   1303, \"Filiale\"\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "desktop/res/texte_de.rc",
+    "old_path": "desktop/res/texte_de.rc",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -5,6 +5,8 @@\n   \"kv.lieferung.etage\": \"Etage / Aufzug\",\n   \"kv.lieferung.liefersperre\": \"Lieferstopp\",\n   \"kv.lieferung.montage\": \"Montage\",\n+  \"kv.lieferung.teillieferung\": \"Teillieferung erlaubt\",\n+  \"kv.lieferung.aufteilen\": \"Lieferung aufteilen\",\n   \"tour.offen\": \"Offene Lieferungen\",\n   \"tour.volumen\": \"Volumen\",\n   \"kasse.gutschein\": \"Gutschein\",\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/i18n/de.json",
+    "old_path": "web/src/i18n/de.json",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -1,8 +1,11 @@\n-import { AdressFeld, Auswahl, Checkbox, Field, KwAuswahl } from '@mobiq/ui'\n+import { AdressFeld, Auswahl, Button, Checkbox, Field, KwAuswahl } from '@mobiq/ui'\n+import { useParameter } from '../api/parameter'\n+import { oeffneAufteilen } from './LieferungAufteilen'\n import type { Kaufvertrag } from '../api/types'\n import { t } from '../i18n'\n \n export function RegisterLieferung({ kv, onChange }: { kv: Kaufvertrag; onChange: (kv: Kaufvertrag) => void }) {\n+  const param = useParameter()\n   return (\n     <section aria-label={t('kv.lieferung.titel')}>\n       <Field label={t('kv.lieferung.wunschtermin')} required>\n@@ -16,6 +19,12 @@ export function RegisterLieferung({ kv, onChange }: { kv: Kaufvertrag; onChange:\n       </Field>\n       <Checkbox label={t('kv.lieferung.liefersperre')} checked={kv.liefersperre} onChange={(liefersperre) => onChange({ ...kv, liefersperre })} />\n       <Checkbox label={t('kv.lieferung.montage')} checked={kv.montage} onChange={(montage) => onChange({ ...kv, montage })} />\n+      {param.TEILLIEF_ERLAUBT && !kv.finanzkauf && (\n+        <>\n+          <Checkbox label={t('kv.lieferung.teillieferung')} checked={kv.teillieferungErlaubt} onChange={(teillieferungErlaubt) => onChange({ ...kv, teillieferungErlaubt })} />\n+          <Button disabled={!kv.teillieferungErlaubt} onClick={() => oeffneAufteilen(kv)}>{t('kv.lieferung.aufteilen')}</Button>\n+        </>\n+      )}\n     </section>\n   )\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/kaufvertrag/RegisterLieferung.tsx",
+    "old_path": "web/src/kaufvertrag/RegisterLieferung.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

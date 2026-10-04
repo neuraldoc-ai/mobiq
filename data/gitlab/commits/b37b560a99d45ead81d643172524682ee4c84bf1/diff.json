@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,3 @@\n+-- Sicht für Auswertungen über mehrere Jahre (MOB-4790)\n+CREATE VIEW kassenbeleg_alle AS\n+SELECT * FROM kassenbeleg;\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "db/migration/V26_4_016__kassenbeleg_alle.sql",
+    "old_path": "db/migration/V26_4_016__kassenbeleg_alle.sql",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

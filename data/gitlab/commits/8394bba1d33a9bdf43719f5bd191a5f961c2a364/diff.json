@@ -1,0 +1,54 @@
+[
+  {
+    "diff": "@@ -7,4 +7,5 @@ BEGIN\n   1301, \"Kennzeichen\"\n   1302, \"Zuladung (kg)\"\n   1303, \"Filiale\"\n+  1304, \"Ladevolumen (m³)\"\n END\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "desktop/res/texte_de.rc",
+    "old_path": "desktop/res/texte_de.rc",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -8,6 +8,7 @@ uses\n type\n   TFrmFahrzeug = class(TForm)\n     edtKennzeichen: TEdit;\n+    edtLadevolumen: TEdit;\n     edtZuladung: TEdit;\n     cbxFiliale: TComboBox;\n   end;\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "desktop/stamm/FrmFahrzeug.pas",
+    "old_path": "desktop/stamm/FrmFahrzeug.pas",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -10,6 +10,7 @@\n   \"kasse.gutschein\": \"Gutschein\",\n   \"kasse.restguthaben\": \"Restguthaben\",\n   \"stamm.fahrzeug.kennzeichen\": \"Kennzeichen\",\n+  \"stamm.fahrzeug.ladevolumen\": \"Ladevolumen (m³)\",\n   \"stamm.fahrzeug.zuladung\": \"Zuladung (kg)\",\n   \"stamm.fahrzeug.filiale\": \"Filiale\"\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/i18n/de.json",
+    "old_path": "web/src/i18n/de.json",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -8,6 +8,9 @@ export function FahrzeugMaske({ fz, onChange }: { fz: Fahrzeug; onChange: (fz: F\n       <Field label={t('stamm.fahrzeug.kennzeichen')} required>\n         <Text value={fz.kennzeichen} onChange={(kennzeichen) => onChange({ ...fz, kennzeichen })} />\n       </Field>\n+      <Field label={t('stamm.fahrzeug.ladevolumen')} required>\n+        <Zahl value={fz.ladevolumenM3} einheit='m³' onChange={(ladevolumenM3) => onChange({ ...fz, ladevolumenM3 })} />\n+      </Field>\n       <Field label={t('stamm.fahrzeug.zuladung')}>\n         <Zahl value={fz.zuladungKg} onChange={(zuladungKg) => onChange({ ...fz, zuladungKg })} />\n       </Field>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/stamm/Fahrzeug.tsx",
+    "old_path": "web/src/stamm/Fahrzeug.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

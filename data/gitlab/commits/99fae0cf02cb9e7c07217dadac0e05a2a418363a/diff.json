@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -1,3 +0,0 @@\n-<#-- Lieferschein -->\n-<h1>Lieferschein ${kv.nr}</h1>\n-<#list positionen as p><tr><td>${p.menge}</td><td>${p.text}</td></tr></#list>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "druck/vorlagen/lieferschein.ftl",
+    "old_path": "druck/vorlagen/lieferschein.ftl",
+    "a_mode": "100644",
+    "b_mode": "0",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": true,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -0,0 +1,2 @@\n+<h1>Lieferschein {{kv.nr}}</h1>\n+{{#positionen}}<tr><td>{{menge}}</td><td>{{text}}</td></tr>{{/positionen}}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "druck/vorlagen/lieferschein.html",
+    "old_path": "druck/vorlagen/lieferschein.html",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

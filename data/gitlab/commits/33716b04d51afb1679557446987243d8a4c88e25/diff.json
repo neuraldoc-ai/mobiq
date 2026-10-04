@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -12,3 +12,14 @@ TOUR_START_ZEIT:\n   min: \"05:00\"\n   max: \"10:00\"\n   beschreibung: Frühester Tourstart\n+TOUR_MAX_LADEVOLUMEN_M3:\n+  typ: int\n+  standard: 38\n+  min: 5\n+  max: 60\n+  einheit: m³\n+  beschreibung: Ladevolumen für neu angelegte Fahrzeuge\n+TOUR_UEBERLADUNG_ERLAUBT:\n+  typ: bool\n+  standard: true\n+  beschreibung: Tour trotz Überladung speichern (mit Bestätigung)\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "config/parameter/tour.yaml",
+    "old_path": "config/parameter/tour.yaml",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

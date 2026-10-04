@@ -1,0 +1,54 @@
+[
+  {
+    "diff": "@@ -9,3 +9,7 @@ FIBU_EXPORT_ZEIT:\n   min: \"00:00\"\n   max: \"05:00\"\n   beschreibung: Uhrzeit der nächtlichen Übergabe\n+FIBU_BELEGART_TEILRECHNUNG:\n+  typ: text\n+  standard: \"TR\"\n+  beschreibung: Belegart für Teilrechnungen im Export\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "config/parameter/fibu.yaml",
+    "old_path": "config/parameter/fibu.yaml",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -4,7 +4,8 @@ package de.musterhaus.mobiq.faktura;\n public enum Belegart {\n     RE(\"Rechnung\"),\n     GS(\"Gutschrift\"),\n-    AZ(\"Anzahlung\");\n+    AZ(\"Anzahlung\"),\n+    TR(\"Teilrechnung\");\n \n     private final String text;\n \n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/faktura/Belegart.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/faktura/Belegart.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -9,7 +9,7 @@ public class TeilrechnungService {\n     private final AnzahlungVerrechnung verrechnung = new AnzahlungVerrechnung();\n \n     public Rechnung teilrechnung(Kaufvertrag kv, Lieferteil teil, boolean letzterTeil) {\n-        Rechnung r = Rechnung.neu(Belegart.RE, kv);\n+        Rechnung r = Rechnung.neu(Belegart.TR, kv);\n         r.setPositionen(teil.positionen());\n         r.setTeilNr(teil.teilNr());\n         r.setAnzahlungVerrechnet(verrechnung.anteilig(kv, teil));\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -9,5 +9,7 @@ public record Buchungssatz(\n         String belegnr,\n         String kvNr,\n         BigDecimal betragBrutto,\n-        short steuerschluessel) {\n+        short steuerschluessel,\n+        Short teillieferungNr,\n+        BigDecimal azVerrechnet) {\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/fibu/export/Buchungssatz.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/fibu/export/Buchungssatz.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

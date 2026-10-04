@@ -1,0 +1,211 @@
+[
+  {
+    "id": "6977c6cd54f01797f41b0a24e407517d2a402d6d",
+    "short_id": "6977c6cd54f",
+    "created_at": "2026-09-26T11:30:00.000+02:00",
+    "parent_ids": [
+      "bce67ee918b392058d8c0fcc3db772596e699bd4"
+    ],
+    "title": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog",
+    "message": "MOB4812 Tooltip und Tab-Reihenfolge im Dialog\n",
+    "author_name": "Merve Yilmaz",
+    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "authored_date": "2026-09-26T11:30:00.000+02:00",
+    "committer_name": "Merve Yilmaz",
+    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committed_date": "2026-09-26T11:30:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/6977c6cd54f01797f41b0a24e407517d2a402d6d"
+  },
+  {
+    "id": "bce67ee918b392058d8c0fcc3db772596e699bd4",
+    "short_id": "bce67ee918b",
+    "created_at": "2026-09-24T15:12:00.000+02:00",
+    "parent_ids": [
+      "b1a3aeebcfd1ee3847949f44ca6b4027d923ae19"
+    ],
+    "title": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen",
+    "message": "MOB-4829 Rundungsdifferenz der Anzahlung mit dem letzten Teil ausgleichen\n\nBei 3 Teilen à 33,33 % blieb 1 Cent Anzahlung offen. Der letzte Teil\nverrechnet jetzt den Rest der Anzahlung.\n",
+    "author_name": "Lena Hoffmann",
+    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "authored_date": "2026-09-24T15:12:00.000+02:00",
+    "committer_name": "Lena Hoffmann",
+    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committed_date": "2026-09-24T15:12:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bce67ee918b392058d8c0fcc3db772596e699bd4"
+  },
+  {
+    "id": "b1a3aeebcfd1ee3847949f44ca6b4027d923ae19",
+    "short_id": "b1a3aeebcfd",
+    "created_at": "2026-09-23T10:21:00.000+02:00",
+    "parent_ids": [
+      "e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae"
+    ],
+    "title": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet",
+    "message": "MOB-4812 Fibu-Export: Belegart TR, Felder teillieferung_nr und az_verrechnet\n",
+    "author_name": "Lena Hoffmann",
+    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "authored_date": "2026-09-23T10:21:00.000+02:00",
+    "committer_name": "Lena Hoffmann",
+    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committed_date": "2026-09-23T10:21:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b1a3aeebcfd1ee3847949f44ca6b4027d923ae19"
+  },
+  {
+    "id": "e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae",
+    "short_id": "e8910c219cf",
+    "created_at": "2026-09-22T13:57:00.000+02:00",
+    "parent_ids": [
+      "d633e6756cbab3a4760745cbcd8dd69972ca243c"
+    ],
+    "title": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig",
+    "message": "MOB-4812 Faktura: Teilrechnung je Lieferteil, Anzahlung anteilig\n",
+    "author_name": "Lena Hoffmann",
+    "author_email": "lena.hoffmann@musterhaus-software.de",
+    "authored_date": "2026-09-22T13:57:00.000+02:00",
+    "committer_name": "Lena Hoffmann",
+    "committer_email": "lena.hoffmann@musterhaus-software.de",
+    "committed_date": "2026-09-22T13:57:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/e8910c219cfeb748f8e4b6a73b3e9cebd852b6ae"
+  },
+  {
+    "id": "d633e6756cbab3a4760745cbcd8dd69972ca243c",
+    "short_id": "d633e6756cb",
+    "created_at": "2026-09-19T09:44:00.000+02:00",
+    "parent_ids": [
+      "4e4f64a2c551825aae123ab8432ba36fce61ae23"
+    ],
+    "title": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)",
+    "message": "MOB-4812 Tourenplanung: Lieferteil als eigener Stopp (T1, T2 …)\n",
+    "author_name": "Paul Schuster",
+    "author_email": "paul.schuster@musterhaus-software.de",
+    "authored_date": "2026-09-19T09:44:00.000+02:00",
+    "committer_name": "Paul Schuster",
+    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committed_date": "2026-09-19T09:44:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d633e6756cbab3a4760745cbcd8dd69972ca243c"
+  },
+  {
+    "id": "4e4f64a2c551825aae123ab8432ba36fce61ae23",
+    "short_id": "4e4f64a2c55",
+    "created_at": "2026-09-17T11:09:00.000+02:00",
+    "parent_ids": [
+      "9222fc79b258f306967bd5d27f2696757aacfe4f"
+    ],
+    "title": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3",
+    "message": "MOB-4812 Mindestwarenwert je Teil prüfen; MAX_ANZAHL 2 bis 5, Standard 3\n\nNach Abstimmung mit Markus: mehr als 5 Teile will kein Kunde, 1 Teil ist keine Teillieferung.\n",
+    "author_name": "Jonas Albrecht",
+    "author_email": "jonas.albrecht@musterhaus-software.de",
+    "authored_date": "2026-09-17T11:09:00.000+02:00",
+    "committer_name": "Jonas Albrecht",
+    "committer_email": "jonas.albrecht@musterhaus-software.de",
+    "committed_date": "2026-09-17T11:09:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4e4f64a2c551825aae123ab8432ba36fce61ae23"
+  },
+  {
+    "id": "9222fc79b258f306967bd5d27f2696757aacfe4f",
+    "short_id": "9222fc79b25",
+    "created_at": "2026-09-15T17:36:00.000+02:00",
+    "parent_ids": [
+      "bd9c5601f0a31ccfca24fa00e2f865a84d844dac"
+    ],
+    "title": "MOB-4812 Dialog „Lieferung aufteilen“, gesperrt bei Finanzkauf",
+    "message": "MOB-4812 Dialog „Lieferung aufteilen“, gesperrt bei Finanzkauf\n",
+    "author_name": "Merve Yilmaz",
+    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "authored_date": "2026-09-15T17:36:00.000+02:00",
+    "committer_name": "Merve Yilmaz",
+    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committed_date": "2026-09-15T17:36:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/9222fc79b258f306967bd5d27f2696757aacfe4f"
+  },
+  {
+    "id": "bd9c5601f0a31ccfca24fa00e2f865a84d844dac",
+    "short_id": "bd9c5601f0a",
+    "created_at": "2026-09-12T18:03:00.000+02:00",
+    "parent_ids": [
+      "22474846ee9ca3b1a634a44090001c79e6259a5a"
+    ],
+    "title": "MOB-4812 WIP Dialog Lieferung aufteilen",
+    "message": "MOB-4812 WIP Dialog Lieferung aufteilen\n",
+    "author_name": "Merve Yilmaz",
+    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "authored_date": "2026-09-12T18:03:00.000+02:00",
+    "committer_name": "Merve Yilmaz",
+    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committed_date": "2026-09-12T18:03:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bd9c5601f0a31ccfca24fa00e2f865a84d844dac"
+  },
+  {
+    "id": "22474846ee9ca3b1a634a44090001c79e6259a5a",
+    "short_id": "22474846ee9",
+    "created_at": "2026-09-11T16:18:00.000+02:00",
+    "parent_ids": [
+      "b104402c270a95c4cd1642246c9975b8c16613db"
+    ],
+    "title": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“",
+    "message": "MOB-4812 Register Lieferung: Checkbox „Teillieferung erlaubt“\n",
+    "author_name": "Merve Yilmaz",
+    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "authored_date": "2026-09-11T16:18:00.000+02:00",
+    "committer_name": "Merve Yilmaz",
+    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committed_date": "2026-09-11T16:18:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/22474846ee9ca3b1a634a44090001c79e6259a5a"
+  },
+  {
+    "id": "b104402c270a95c4cd1642246c9975b8c16613db",
+    "short_id": "b104402c270",
+    "created_at": "2026-09-09T14:26:00.000+02:00",
+    "parent_ids": [
+      "724a0a7769f973a5384c5173964fc819fdd5afc6"
+    ],
+    "title": "MOB-4812 Parameter TEILLIEF_ERLAUBT und TEILLIEF_MAX_ANZAHL (1 bis 10)",
+    "message": "MOB-4812 Parameter TEILLIEF_ERLAUBT und TEILLIEF_MAX_ANZAHL (1 bis 10)\n",
+    "author_name": "Jonas Albrecht",
+    "author_email": "jonas.albrecht@musterhaus-software.de",
+    "authored_date": "2026-09-09T14:26:00.000+02:00",
+    "committer_name": "Jonas Albrecht",
+    "committer_email": "jonas.albrecht@musterhaus-software.de",
+    "committed_date": "2026-09-09T14:26:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b104402c270a95c4cd1642246c9975b8c16613db"
+  },
+  {
+    "id": "724a0a7769f973a5384c5173964fc819fdd5afc6",
+    "short_id": "724a0a7769f",
+    "created_at": "2026-09-08T10:52:00.000+02:00",
+    "parent_ids": [
+      "f012d1c349c88cded41356780e52db0df7f29936"
+    ],
+    "title": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id",
+    "message": "MOB-4812 Datenmodell: Tabelle lieferteil, Spalte tour_stopp.lt_id\n",
+    "author_name": "Jonas Albrecht",
+    "author_email": "jonas.albrecht@musterhaus-software.de",
+    "authored_date": "2026-09-08T10:52:00.000+02:00",
+    "committer_name": "Jonas Albrecht",
+    "committer_email": "jonas.albrecht@musterhaus-software.de",
+    "committed_date": "2026-09-08T10:52:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/724a0a7769f973a5384c5173964fc819fdd5afc6"
+  }
+]

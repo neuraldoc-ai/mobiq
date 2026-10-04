@@ -1,0 +1,59 @@
+[
+  {
+    "id": "b681f37f47ce42aaa389cc0a7756ac2d71386bc7",
+    "short_id": "b681f37f47c",
+    "created_at": "2026-09-14T19:02:00.000+02:00",
+    "parent_ids": [
+      "b37b560a99d45ead81d643172524682ee4c84bf1"
+    ],
+    "title": "MOB-4790 Lasttest Tagesabschluss",
+    "message": "MOB-4790 Lasttest Tagesabschluss\n",
+    "author_name": "Kai Brenner",
+    "author_email": "kai.brenner@musterhaus-software.de",
+    "authored_date": "2026-09-14T19:02:00.000+02:00",
+    "committer_name": "Kai Brenner",
+    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committed_date": "2026-09-14T19:02:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b681f37f47ce42aaa389cc0a7756ac2d71386bc7"
+  },
+  {
+    "id": "b37b560a99d45ead81d643172524682ee4c84bf1",
+    "short_id": "b37b560a99d",
+    "created_at": "2026-09-12T15:47:00.000+02:00",
+    "parent_ids": [
+      "33e60afb111bab563c0237251879c6ff3e990a64"
+    ],
+    "title": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen",
+    "message": "MOB-4790 Sicht kassenbeleg_alle für jahresübergreifende Abfragen\n",
+    "author_name": "Kai Brenner",
+    "author_email": "kai.brenner@musterhaus-software.de",
+    "authored_date": "2026-09-12T15:47:00.000+02:00",
+    "committer_name": "Kai Brenner",
+    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committed_date": "2026-09-12T15:47:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/b37b560a99d45ead81d643172524682ee4c84bf1"
+  },
+  {
+    "id": "33e60afb111bab563c0237251879c6ff3e990a64",
+    "short_id": "33e60afb111",
+    "created_at": "2026-09-10T08:24:00.000+02:00",
+    "parent_ids": [
+      "6480445821353feb8e057aa6e8e4140eb4331cac"
+    ],
+    "title": "MOB-4790 kassenbeleg nach Belegjahr partitionieren",
+    "message": "MOB-4790 kassenbeleg nach Belegjahr partitionieren\n",
+    "author_name": "Kai Brenner",
+    "author_email": "kai.brenner@musterhaus-software.de",
+    "authored_date": "2026-09-10T08:24:00.000+02:00",
+    "committer_name": "Kai Brenner",
+    "committer_email": "kai.brenner@musterhaus-software.de",
+    "committed_date": "2026-09-10T08:24:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/33e60afb111bab563c0237251879c6ff3e990a64"
+  }
+]

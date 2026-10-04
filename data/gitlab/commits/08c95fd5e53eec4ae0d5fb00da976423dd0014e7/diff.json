@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,5 @@\n+package de.musterhaus.mobiq.kasse;\n+\n+class TagesabschlussTest {\n+    // Summen je Zahlart, Storno am selben Tag, Filiale mit mehreren Kassen\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/test/java/de/musterhaus/mobiq/kasse/TagesabschlussTest.java",
+    "old_path": "server/src/test/java/de/musterhaus/mobiq/kasse/TagesabschlussTest.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

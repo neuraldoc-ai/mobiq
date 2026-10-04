@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -8,7 +8,7 @@ LIEF_VORLAUF_TAGE:\n   beschreibung: Vorlauf zwischen Wareneingang und frühestem Liefertermin\n LIEF_AVIS_STUNDEN:\n   typ: int\n-  standard: 48\n+  standard: 24\n   min: 12\n   max: 96\n   einheit: Stunden\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "config/parameter/auftrag.yaml",
+    "old_path": "config/parameter/auftrag.yaml",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -0,0 +1,28 @@\n+package de.musterhaus.mobiq.auftrag;\n+\n+import de.musterhaus.mobiq.param.Parameter;\n+import java.util.List;\n+\n+/** Teilt einen Kaufvertrag in Lieferteile auf. */\n+public class TeillieferungService {\n+\n+    private final Parameter param;\n+\n+    public TeillieferungService(Parameter param) {\n+        this.param = param;\n+    }\n+\n+    public List<Lieferteil> aufteilen(Kaufvertrag kv, List<List<KvPosition>> teile) {\n+        if (!param.getBool(\"TEILLIEF_ERLAUBT\")) {\n+            throw new FachlicherFehler(\"Teillieferung ist im Mandanten nicht erlaubt\");\n+        }\n+        if (kv.finanzkauf()) {\n+            // Mit der Partnerbank noch nicht geklärt, siehe MOB-4808\n+            throw new FachlicherFehler(\"Teillieferung ist bei Finanzkauf nicht möglich\");\n+        }\n+        if (teile.size() > param.getInt(\"TEILLIEF_MAX_ANZAHL\")) {\n+            throw new FachlicherFehler(\"Zu viele Lieferteile\");\n+        }\n+        return Lieferteile.aus(kv, teile);\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/auftrag/TeillieferungService.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/auftrag/TeillieferungService.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -1,11 +1,30 @@\n-import { Dialog } from '@mobiq/ui'\n-import type { Kaufvertrag } from '../api/types'\n+import { Dialog, DragListe, Field, KwAuswahl, Warnung } from '@mobiq/ui'\n+import { useParameter } from '../api/parameter'\n+import type { Kaufvertrag, KvPosition } from '../api/types'\n+import { t } from '../i18n'\n+import { useAufteilung } from './useAufteilung'\n \n-// TODO Positionen per Drag & Drop, Prüfung Mindestwert\n export function LieferungAufteilen({ kv }: { kv: Kaufvertrag }) {\n-  return <Dialog titel='Lieferung aufteilen'>{kv.kvNr}</Dialog>\n+  const param = useParameter()\n+  const a = useAufteilung(kv, param.TEILLIEF_MAX_ANZAHL)\n+  return (\n+    <Dialog titel={t('kv.aufteilen.titel')} speichernErlaubt={a.gueltig} onSpeichern={a.speichern}>\n+      {a.teile.map((teil) => (\n+        <fieldset key={teil.nr}>\n+          <legend>{t('kv.aufteilen.teil')} {teil.nr}</legend>\n+          <DragListe<KvPosition> items={teil.positionen} gruppe='positionen' onDrop={(p) => a.verschiebe(p, teil.nr)} />\n+          <Field label={t('kv.aufteilen.warenwert')}>{teil.anteilProzent} %</Field>\n+          <Field label={t('kv.lieferung.wunschtermin')} required>\n+            <KwAuswahl value={teil.wunschKw} onChange={(kw) => a.setzeTermin(teil.nr, kw)} />\n+          </Field>\n+        </fieldset>\n+      ))}\n+      {a.warnung && <Warnung>{a.warnung}</Warnung>}\n+    </Dialog>\n+  )\n }\n \n export function oeffneAufteilen(kv: Kaufvertrag) {\n+  if (kv.finanzkauf) return // Teillieferung bei Finanzkauf gesperrt, siehe MOB-4812\n   Dialog.oeffne(<LieferungAufteilen kv={kv} />)\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/kaufvertrag/LieferungAufteilen.tsx",
+    "old_path": "web/src/kaufvertrag/LieferungAufteilen.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

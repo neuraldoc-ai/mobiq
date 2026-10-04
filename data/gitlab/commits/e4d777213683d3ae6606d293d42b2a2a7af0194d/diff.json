@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -1,6 +1,7 @@\n package de.musterhaus.mobiq.fibu.export;\n \n import de.musterhaus.mobiq.kasse.Gutschein;\n+import java.math.BigDecimal;\n \n /** Buchungen zu Gutscheinen für die Finanzbuchhaltung. */\n public class GutscheinBuchung {\n@@ -10,8 +11,8 @@ public class GutscheinBuchung {\n         return Buchung.verbindlichkeit(Konten.GUTSCHEIN, g.wert());\n     }\n \n-    /** Einlösung: die Verbindlichkeit wird vollständig aufgelöst. */\n-    public Buchung einloesung(Gutschein g) {\n-        return Buchung.aufloesen(Konten.GUTSCHEIN, g.wert());\n+    /** Einlösung: die Verbindlichkeit wird in Höhe des eingelösten Betrags aufgelöst, der Rest bleibt stehen. */\n+    public Buchung einloesung(Gutschein g, BigDecimal eingeloest) {\n+        return Buchung.aufloesen(Konten.GUTSCHEIN, eingeloest);\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/fibu/export/GutscheinBuchung.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/fibu/export/GutscheinBuchung.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

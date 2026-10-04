@@ -1,0 +1,41 @@
+[
+  {
+    "diff": "@@ -5,9 +5,10 @@ import java.math.BigDecimal\n /** Zeigt dem Fahrer die offene Restzahlung beim Kunden. */\n class Restzahlung(private val api: FahrerApi) {\n \n-    /** Offener Betrag des Kaufvertrags: Warenwert minus Anzahlung. */\n+    /** Offener Betrag: bei Teillieferung nur für den gelieferten Teil, sonst Warenwert minus Anzahlung. */\n     fun offenerBetrag(stopp: Stopp): BigDecimal {\n         val kv = api.kaufvertrag(stopp.kvNr)\n-        return kv.warenwert - kv.anzahlung\n+        val teil = stopp.teilNr ?: return kv.warenwert - kv.anzahlung\n+        return api.teilrechnung(stopp.kvNr, teil).offen\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "app/fahrer/src/main/kotlin/de/musterhaus/mobiq/fahrer/Restzahlung.kt",
+    "old_path": "app/fahrer/src/main/kotlin/de/musterhaus/mobiq/fahrer/Restzahlung.kt",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -1,13 +1,23 @@\n package de.musterhaus.mobiq.faktura;\n \n import de.musterhaus.mobiq.auftrag.Kaufvertrag;\n+import de.musterhaus.mobiq.auftrag.KvPosition;\n+import de.musterhaus.mobiq.auftrag.Lieferteil;\n import java.math.BigDecimal;\n+import java.math.RoundingMode;\n \n /** Verrechnet die Anzahlung eines Kaufvertrags mit Rechnungen. */\n public class AnzahlungVerrechnung {\n \n-    /** Die gesamte Anzahlung wird mit der Schlussrechnung verrechnet. */\n+    /** Ohne Teillieferung: die gesamte Anzahlung wird mit der Schlussrechnung verrechnet. */\n     public BigDecimal voll(Kaufvertrag kv) {\n         return kv.anzahlung();\n     }\n+\n+    /** Teillieferung: Anzahlung anteilig nach Warenwert des Lieferteils. */\n+    public BigDecimal anteilig(Kaufvertrag kv, Lieferteil teil) {\n+        BigDecimal anteil = teil.positionen().stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add)\n+                .divide(kv.warenwert(), 6, RoundingMode.HALF_UP);\n+        return kv.anzahlung().multiply(anteil).setScale(2, RoundingMode.HALF_UP);\n+    }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/faktura/AnzahlungVerrechnung.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/faktura/AnzahlungVerrechnung.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -0,0 +1,18 @@\n+package de.musterhaus.mobiq.faktura;\n+\n+import de.musterhaus.mobiq.auftrag.Kaufvertrag;\n+import de.musterhaus.mobiq.auftrag.Lieferteil;\n+\n+/** Erstellt je ausgeliefertem Lieferteil eine Teilrechnung. */\n+public class TeilrechnungService {\n+\n+    private final AnzahlungVerrechnung verrechnung = new AnzahlungVerrechnung();\n+\n+    public Rechnung teilrechnung(Kaufvertrag kv, Lieferteil teil, boolean letzterTeil) {\n+        Rechnung r = Rechnung.neu(Belegart.RE, kv);\n+        r.setPositionen(teil.positionen());\n+        r.setTeilNr(teil.teilNr());\n+        r.setAnzahlungVerrechnet(verrechnung.anteilig(kv, teil));\n+        return r;\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/faktura/TeilrechnungService.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

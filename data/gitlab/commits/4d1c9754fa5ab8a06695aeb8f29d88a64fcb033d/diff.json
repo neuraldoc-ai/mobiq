@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -15,6 +15,13 @@ public class TourPruefung {\n         if (tour.stopps().size() > param.getInt(\"TOUR_MAX_STOPPS\")) {\n             return PruefErgebnis.fehler(\"Zu viele Stopps auf der Tour\");\n         }\n+        double volumen = tour.stopps().stream().mapToDouble(TourStopp::volumenM3).sum();\n+        if (volumen > tour.fahrzeug().ladevolumenM3()) {\n+            if (!param.getBool(\"TOUR_UEBERLADUNG_ERLAUBT\")) {\n+                return PruefErgebnis.fehler(\"Ladevolumen des Fahrzeugs überschritten\");\n+            }\n+            return PruefErgebnis.bestaetigen(\"Ladevolumen überschritten. Trotzdem speichern?\");\n+        }\n         return PruefErgebnis.ok();\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/tour/TourPruefung.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/tour/TourPruefung.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -6,7 +6,9 @@ export function TourKopf({ tour }: { tour: Tour }) {\n   return (\n     <header className='tour-kopf'>\n       <h2>{tour.name}</h2>\n-      <span>{t('tour.volumen')}: {volumen.toFixed(1)} m³</span>\n+      <span className={volumen > tour.fahrzeug.ladevolumenM3 ? 'ueberladen' : undefined}>\n+        {t('tour.volumen')}: {volumen.toFixed(1)} / {tour.fahrzeug.ladevolumenM3} m³\n+      </span>\n     </header>\n   )\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/tour/TourKopf.tsx",
+    "old_path": "web/src/tour/TourKopf.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

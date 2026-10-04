@@ -1,0 +1,41 @@
+[
+  {
+    "diff": "@@ -1,18 +1,27 @@\n package de.musterhaus.mobiq.tour;\n \n import de.musterhaus.mobiq.auftrag.Kaufvertrag;\n+import de.musterhaus.mobiq.auftrag.KvPosition;\n+import de.musterhaus.mobiq.auftrag.Lieferteil;\n import java.util.List;\n \n /** Baut die Stopps einer Tour aus lieferbereiten Kaufverträgen. */\n public class StoppBuilder {\n \n-    /** Ein Kaufvertrag ergibt genau einen Stopp. */\n-    public List<TourStopp> baue(Kaufvertrag kv) {\n-        boolean montage = kv.positionen().stream().anyMatch(p -> p.montage());\n-        return List.of(new TourStopp(kv.kvNr(), montage, volumen(kv)));\n+    /** Ein Kaufvertrag ergibt einen Stopp, bei Teillieferung einen Stopp je lieferbereitem Teil. */\n+    public List<TourStopp> baue(Kaufvertrag kv, List<Lieferteil> teile) {\n+        if (teile.isEmpty()) {\n+            boolean montage = kv.positionen().stream().anyMatch(p -> p.montage());\n+            return List.of(new TourStopp(kv.kvNr(), null, montage, volumen(kv.positionen())));\n+        }\n+        return teile.stream()\n+                .filter(Lieferteil::istLieferbereit)\n+                // Montage nur für den Teil, der die Montageposition enthält\n+                .map(t -> new TourStopp(kv.kvNr(), t.teilNr(), t.positionen().stream().anyMatch(p -> p.montage()), volumen(t.positionen())))\n+                .toList();\n     }\n \n-    private double volumen(Kaufvertrag kv) {\n-        return kv.positionen().stream().mapToDouble(p -> p.volumenM3().doubleValue()).sum();\n+    private double volumen(List<KvPosition> positionen) {\n+        return positionen.stream().mapToDouble(p -> p.volumenM3().doubleValue()).sum();\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/tour/StoppBuilder.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/tour/StoppBuilder.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -1,5 +1,10 @@\n package de.musterhaus.mobiq.tour;\n \n /** Ein Stopp auf einer Tour. */\n-public record TourStopp(String kvNr, boolean montage, double volumenM3) {\n+public record TourStopp(String kvNr, Integer teilNr, boolean montage, double volumenM3) {\n+\n+    /** Anzeige auf Karte und Lieferschein: KV-Nummer, bei Teillieferung mit T1, T2 … */\n+    public String bezeichnung() {\n+        return teilNr == null ? kvNr : kvNr + \" T\" + teilNr;\n+    }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/tour/TourStopp.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/tour/TourStopp.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -5,7 +5,7 @@ export function StoppKarte({ stopps }: { stopps: TourStopp[] }) {\n   return (\n     <Karte>\n       {stopps.map((s, i) => (\n-        <Pin key={s.kvNr} nummer={i + 1} titel={s.kvNr} montage={s.montage} />\n+        <Pin key={s.kvNr + (s.teilNr ?? '')} nummer={i + 1} titel={s.teilNr ? s.kvNr + ' T' + s.teilNr : s.kvNr} montage={s.montage} />\n       ))}\n     </Karte>\n   )\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/tour/StoppKarte.tsx",
+    "old_path": "web/src/tour/StoppKarte.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

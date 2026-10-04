@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,4 @@\n+<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n+<jmeterTestPlan version=\"1.2\">\n+  <hashTree><!-- 500 Bons je Filiale, 30 Filialen --></hashTree>\n+</jmeterTestPlan>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "test/last/Tagesabschluss.jmx",
+    "old_path": "test/last/Tagesabschluss.jmx",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-10-02T16:08:39.514Z",
+  "git": {
+    "commits": 47,
+    "merges": 8,
+    "changes": 9,
+    "branches": 10
+  },
+  "jira": {
+    "issues": 21
+  },
+  "confluence": {
+    "spaces": 4,
+    "pages": 33
+  },
+  "dokumente": {
+    "files": 7
+  },
+  "groundTruth": {
+    "must": 52,
+    "should": 12,
+    "notAffected": 19
+  },
+  "diffs": 39
+}

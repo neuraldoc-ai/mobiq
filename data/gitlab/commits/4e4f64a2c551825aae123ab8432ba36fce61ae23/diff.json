@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -33,8 +33,15 @@ TEILLIEF_ERLAUBT:\n   beschreibung: Teillieferungen im Mandanten erlauben\n TEILLIEF_MAX_ANZAHL:\n   typ: int\n-  standard: 2\n-  min: 1\n-  max: 10\n+  standard: 3\n+  min: 2\n+  max: 5\n   einheit: Teile\n   beschreibung: Höchstzahl Lieferteile je Kaufvertrag\n+TEILLIEF_MIN_WARENWERT_PROZ:\n+  typ: int\n+  standard: 20\n+  min: 10\n+  max: 90\n+  einheit: Prozent\n+  beschreibung: Mindestanteil am Warenwert je Lieferteil\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "config/parameter/auftrag.yaml",
+    "old_path": "config/parameter/auftrag.yaml",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -1,6 +1,7 @@\n package de.musterhaus.mobiq.auftrag;\n \n import de.musterhaus.mobiq.param.Parameter;\n+import java.math.BigDecimal;\n import java.util.List;\n \n /** Teilt einen Kaufvertrag in Lieferteile auf. */\n@@ -23,6 +24,13 @@ public class TeillieferungService {\n         if (teile.size() > param.getInt(\"TEILLIEF_MAX_ANZAHL\")) {\n             throw new FachlicherFehler(\"Zu viele Lieferteile\");\n         }\n+        BigDecimal min = kv.warenwert().multiply(BigDecimal.valueOf(param.getInt(\"TEILLIEF_MIN_WARENWERT_PROZ\"))).movePointLeft(2);\n+        for (List<KvPosition> teil : teile) {\n+            BigDecimal wert = teil.stream().map(KvPosition::betrag).reduce(BigDecimal.ZERO, BigDecimal::add);\n+            if (wert.compareTo(min) < 0) {\n+                throw new FachlicherFehler(\"Ein Lieferteil unterschreitet den Mindestwarenwert\");\n+            }\n+        }\n         return Lieferteile.aus(kv, teile);\n     }\n }\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/auftrag/TeillieferungService.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/auftrag/TeillieferungService.java",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

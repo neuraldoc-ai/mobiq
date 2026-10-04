@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,17 @@\n+package de.musterhaus.mobiq.kasse;\n+\n+import static org.assertj.core.api.Assertions.assertThat;\n+\n+import java.math.BigDecimal;\n+import org.junit.jupiter.api.Test;\n+\n+class GutscheinServiceTest {\n+\n+    @Test\n+    void teileinloesungLaesstRestAufDemGutschein() {\n+        Gutschein g = Gutschein.neu(new BigDecimal(\"100.00\"));\n+        Einloesung e = new GutscheinService().einloesen(g, new BigDecimal(\"30.00\"));\n+        assertThat(e.eingeloest()).isEqualByComparingTo(\"30.00\");\n+        assertThat(g.restwert()).isEqualByComparingTo(\"70.00\");\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/test/java/de/musterhaus/mobiq/kasse/GutscheinServiceTest.java",
+    "old_path": "server/src/test/java/de/musterhaus/mobiq/kasse/GutscheinServiceTest.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

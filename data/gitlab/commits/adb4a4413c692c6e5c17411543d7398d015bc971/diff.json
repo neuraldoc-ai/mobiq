@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -2,5 +2,6 @@\n   <kopf filiale=\"{filiale}\" kasse=\"{kasse}\" datum=\"{datum}\"/>\n   <positionen/>\n   <zahlungen/>\n+  <gutschein wenn=\"{gutschein.restwert} > 0\" text=\"Restguthaben Gutschein {gutschein.nr}: {gutschein.restwert}\"/>\n   <fuss text=\"Vielen Dank für Ihren Einkauf\"/>\n </bon>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "druck/vorlagen/bon.xml",
+    "old_path": "druck/vorlagen/bon.xml",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

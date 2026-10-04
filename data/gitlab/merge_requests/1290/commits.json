@@ -1,0 +1,40 @@
+[
+  {
+    "id": "5dd627cc6475f97e974fcb17193475162d616415",
+    "short_id": "5dd627cc647",
+    "created_at": "2026-09-24T10:58:00.000+02:00",
+    "parent_ids": [
+      "34db438813c69e897384f77f9553171c49aec447"
+    ],
+    "title": "MOB-4835 Übersetzungen nachgezogen (nl, fr)",
+    "message": "MOB-4835 Übersetzungen nachgezogen (nl, fr)\n",
+    "author_name": "Merve Yilmaz",
+    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "authored_date": "2026-09-24T10:58:00.000+02:00",
+    "committer_name": "Merve Yilmaz",
+    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committed_date": "2026-09-24T10:58:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/5dd627cc6475f97e974fcb17193475162d616415"
+  },
+  {
+    "id": "34db438813c69e897384f77f9553171c49aec447",
+    "short_id": "34db438813c",
+    "created_at": "2026-09-24T10:41:00.000+02:00",
+    "parent_ids": [
+      "2e689cff7eda1603bbf73f75524adbb65802910c"
+    ],
+    "title": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“ (Web und Desktop)",
+    "message": "MOB-4835 „Liefersperre“ heißt jetzt „Lieferstopp“ (Web und Desktop)\n",
+    "author_name": "Merve Yilmaz",
+    "author_email": "merve.yilmaz@musterhaus-software.de",
+    "authored_date": "2026-09-24T10:41:00.000+02:00",
+    "committer_name": "Merve Yilmaz",
+    "committer_email": "merve.yilmaz@musterhaus-software.de",
+    "committed_date": "2026-09-24T10:41:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/34db438813c69e897384f77f9553171c49aec447"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -13,7 +13,7 @@ export function LieferungAufteilen({ kv }: { kv: Kaufvertrag }) {\n         <fieldset key={teil.nr}>\n           <legend>{t('kv.aufteilen.teil')} {teil.nr}</legend>\n           <DragListe<KvPosition> items={teil.positionen} gruppe='positionen' onDrop={(p) => a.verschiebe(p, teil.nr)} />\n-          <Field label={t('kv.aufteilen.warenwert')}>{teil.anteilProzent} %</Field>\n+          <Field label={t('kv.aufteilen.warenwert')} hinweis={t('kv.aufteilen.warenwert.hinweis')}>{teil.anteilProzent} %</Field>\n           <Field label={t('kv.lieferung.wunschtermin')} required>\n             <KwAuswahl value={teil.wunschKw} onChange={(kw) => a.setzeTermin(teil.nr, kw)} />\n           </Field>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "web/src/kaufvertrag/LieferungAufteilen.tsx",
+    "old_path": "web/src/kaufvertrag/LieferungAufteilen.tsx",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

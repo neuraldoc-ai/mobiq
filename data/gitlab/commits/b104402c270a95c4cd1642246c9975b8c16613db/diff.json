@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -27,3 +27,14 @@ MONT_ZEIT_PUFFER:\n   max: 120\n   einheit: Minuten\n   beschreibung: Zeitpuffer je Montage\n+TEILLIEF_ERLAUBT:\n+  typ: bool\n+  standard: false\n+  beschreibung: Teillieferungen im Mandanten erlauben\n+TEILLIEF_MAX_ANZAHL:\n+  typ: int\n+  standard: 2\n+  min: 1\n+  max: 10\n+  einheit: Teile\n+  beschreibung: Höchstzahl Lieferteile je Kaufvertrag\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "config/parameter/auftrag.yaml",
+    "old_path": "config/parameter/auftrag.yaml",
+    "a_mode": "100644",
+    "b_mode": "100644",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

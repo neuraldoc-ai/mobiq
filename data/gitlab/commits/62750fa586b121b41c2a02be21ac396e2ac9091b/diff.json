@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -1,5 +0,0 @@\n-<#-- Rechnung -->\n-<h1>Rechnung ${beleg.nr}</h1>\n-<p>Kaufvertrag ${kv.nr} vom ${kv.datum}</p>\n-<#list positionen as p><tr><td>${p.text}</td><td>${p.betrag}</td></tr></#list>\n-<p>Abzüglich Anzahlung: ${beleg.anzahlungVerrechnet}</p>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "druck/vorlagen/rechnung.ftl",
+    "old_path": "druck/vorlagen/rechnung.ftl",
+    "a_mode": "100644",
+    "b_mode": "0",
+    "new_file": false,
+    "renamed_file": false,
+    "deleted_file": true,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -0,0 +1,4 @@\n+<h1>Rechnung {{beleg.nr}}</h1>\n+<p>Kaufvertrag {{kv.nr}} vom {{kv.datum}}</p>\n+{{#positionen}}<tr><td>{{text}}</td><td>{{betrag}}</td></tr>{{/positionen}}\n+<p>Abzüglich Anzahlung: {{beleg.anzahlungVerrechnet}}</p>\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "druck/vorlagen/rechnung.html",
+    "old_path": "druck/vorlagen/rechnung.html",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

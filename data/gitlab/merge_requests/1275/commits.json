@@ -1,0 +1,97 @@
+[
+  {
+    "id": "8b55cef67c9ab04bbe198c49d32d9af4665fc1dd",
+    "short_id": "8b55cef67c9",
+    "created_at": "2026-09-19T08:20:00.000+02:00",
+    "parent_ids": [
+      "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf"
+    ],
+    "title": "MOB-4815 Testlauf Kasse in der Pipeline",
+    "message": "MOB-4815 Testlauf Kasse in der Pipeline\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-09-19T08:20:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-09-19T08:20:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/8b55cef67c9ab04bbe198c49d32d9af4665fc1dd"
+  },
+  {
+    "id": "81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf",
+    "short_id": "81e2f37c95e",
+    "created_at": "2026-09-18T16:44:00.000+02:00",
+    "parent_ids": [
+      "d4bee0eef0181169b21e271a3c67ca1872a15c3b"
+    ],
+    "title": "MOB-4815 Testdaten aufgeräumt",
+    "message": "MOB-4815 Testdaten aufgeräumt\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-09-18T16:44:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-09-18T16:44:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/81e2f37c95e0ca68c0e14b8fb0fea839c946d0cf"
+  },
+  {
+    "id": "d4bee0eef0181169b21e271a3c67ca1872a15c3b",
+    "short_id": "d4bee0eef01",
+    "created_at": "2026-09-18T10:05:00.000+02:00",
+    "parent_ids": [
+      "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3"
+    ],
+    "title": "MOB-4815 Tests Kartenzahlung",
+    "message": "MOB-4815 Tests Kartenzahlung\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-09-18T10:05:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-09-18T10:05:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/d4bee0eef0181169b21e271a3c67ca1872a15c3b"
+  },
+  {
+    "id": "bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3",
+    "short_id": "bce9e86dd5d",
+    "created_at": "2026-09-17T15:30:00.000+02:00",
+    "parent_ids": [
+      "08c95fd5e53eec4ae0d5fb00da976423dd0014e7"
+    ],
+    "title": "MOB-4815 Tests Storno",
+    "message": "MOB-4815 Tests Storno\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-09-17T15:30:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-09-17T15:30:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/bce9e86dd5d8d3fcc59c7b19e844cd0614ff20a3"
+  },
+  {
+    "id": "08c95fd5e53eec4ae0d5fb00da976423dd0014e7",
+    "short_id": "08c95fd5e53",
+    "created_at": "2026-09-17T09:12:00.000+02:00",
+    "parent_ids": [
+      "5692e31ffc34711e92bf13e69ff73c2c41beda69"
+    ],
+    "title": "MOB-4815 Tests Tagesabschluss",
+    "message": "MOB-4815 Tests Tagesabschluss\n",
+    "author_name": "Anna Becker",
+    "author_email": "anna.becker@musterhaus-software.de",
+    "authored_date": "2026-09-17T09:12:00.000+02:00",
+    "committer_name": "Anna Becker",
+    "committer_email": "anna.becker@musterhaus-software.de",
+    "committed_date": "2026-09-17T09:12:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/08c95fd5e53eec4ae0d5fb00da976423dd0014e7"
+  }
+]

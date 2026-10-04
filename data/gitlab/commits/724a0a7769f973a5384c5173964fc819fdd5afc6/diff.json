@@ -1,0 +1,28 @@
+[
+  {
+    "diff": "@@ -0,0 +1,12 @@\n+-- Teillieferung (MOB-4812)\n+CREATE TABLE lieferteil (\n+  lt_id        bigserial PRIMARY KEY,\n+  kv_id        bigint    NOT NULL REFERENCES kaufvertrag (kv_id),\n+  teil_nr      smallint  NOT NULL,\n+  wunsch_kw    char(7),\n+  status       varchar(20) NOT NULL DEFAULT 'ERFASST',\n+  UNIQUE (kv_id, teil_nr)\n+);\n+\n+ALTER TABLE kv_position ADD COLUMN lt_id bigint REFERENCES lieferteil (lt_id);\n+ALTER TABLE tour_stopp  ADD COLUMN lt_id bigint REFERENCES lieferteil (lt_id);\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "db/migration/V26_4_012__lieferteil.sql",
+    "old_path": "db/migration/V26_4_012__lieferteil.sql",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  },
+  {
+    "diff": "@@ -0,0 +1,11 @@\n+package de.musterhaus.mobiq.auftrag;\n+\n+import java.util.List;\n+\n+/** Ein Teil einer Teillieferung: eigene Positionen, eigener Wunschtermin, eigene Tour. */\n+public record Lieferteil(long ltId, String kvNr, int teilNr, String wunschKw, List<KvPosition> positionen) {\n+\n+    public boolean istLieferbereit() {\n+        return positionen.stream().allMatch(KvPosition::imLager);\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/main/java/de/musterhaus/mobiq/auftrag/Lieferteil.java",
+    "old_path": "server/src/main/java/de/musterhaus/mobiq/auftrag/Lieferteil.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

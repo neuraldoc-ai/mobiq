@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,16 @@\n+-- Kassenbelege nach Belegjahr partitionieren (MOB-4790)\n+ALTER TABLE kassenbeleg RENAME TO kassenbeleg_alt;\n+\n+CREATE TABLE kassenbeleg (LIKE kassenbeleg_alt INCLUDING ALL) PARTITION BY RANGE (belegdatum);\n+\n+DO $$\n+DECLARE jahr int;\n+BEGIN\n+  FOR jahr IN 2014..2027 LOOP\n+    EXECUTE format('CREATE TABLE kassenbeleg_%s PARTITION OF kassenbeleg FOR VALUES FROM (%L) TO (%L)',\n+                   jahr, make_date(jahr, 1, 1), make_date(jahr + 1, 1, 1));\n+  END LOOP;\n+END $$;\n+\n+INSERT INTO kassenbeleg SELECT * FROM kassenbeleg_alt;\n+DROP TABLE kassenbeleg_alt;\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "db/migration/V26_4_015__kassenbeleg_partition.sql",
+    "old_path": "db/migration/V26_4_015__kassenbeleg_partition.sql",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

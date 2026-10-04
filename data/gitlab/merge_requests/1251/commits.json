@@ -1,0 +1,78 @@
+[
+  {
+    "id": "c4380f3555d8896e98e38971b2199f4a4a30bb41",
+    "short_id": "c4380f3555d",
+    "created_at": "2026-09-09T10:30:00.000+02:00",
+    "parent_ids": [
+      "4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d"
+    ],
+    "title": "MOB-4801 Tests Volumenberechnung",
+    "message": "MOB-4801 Tests Volumenberechnung\n",
+    "author_name": "Paul Schuster",
+    "author_email": "paul.schuster@musterhaus-software.de",
+    "authored_date": "2026-09-09T10:30:00.000+02:00",
+    "committer_name": "Paul Schuster",
+    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committed_date": "2026-09-09T10:30:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/c4380f3555d8896e98e38971b2199f4a4a30bb41"
+  },
+  {
+    "id": "4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d",
+    "short_id": "4d1c9754fa5",
+    "created_at": "2026-09-08T17:03:00.000+02:00",
+    "parent_ids": [
+      "33716b04d51afb1679557446987243d8a4c88e25"
+    ],
+    "title": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung",
+    "message": "MOB-4801 Tour rot markieren bei Überladung, Speichern mit Bestätigung\n",
+    "author_name": "Paul Schuster",
+    "author_email": "paul.schuster@musterhaus-software.de",
+    "authored_date": "2026-09-08T17:03:00.000+02:00",
+    "committer_name": "Paul Schuster",
+    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committed_date": "2026-09-08T17:03:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/4d1c9754fa5ab8a06695aeb8f29d88a64fcb033d"
+  },
+  {
+    "id": "33716b04d51afb1679557446987243d8a4c88e25",
+    "short_id": "33716b04d51",
+    "created_at": "2026-09-04T13:12:00.000+02:00",
+    "parent_ids": [
+      "8394bba1d33a9bdf43719f5bd191a5f961c2a364"
+    ],
+    "title": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT",
+    "message": "MOB-4801 Parameter TOUR_MAX_LADEVOLUMEN_M3 und TOUR_UEBERLADUNG_ERLAUBT\n",
+    "author_name": "Paul Schuster",
+    "author_email": "paul.schuster@musterhaus-software.de",
+    "authored_date": "2026-09-04T13:12:00.000+02:00",
+    "committer_name": "Paul Schuster",
+    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committed_date": "2026-09-04T13:12:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/33716b04d51afb1679557446987243d8a4c88e25"
+  },
+  {
+    "id": "8394bba1d33a9bdf43719f5bd191a5f961c2a364",
+    "short_id": "8394bba1d33",
+    "created_at": "2026-09-02T09:58:00.000+02:00",
+    "parent_ids": [
+      "93acf5425388f27dccecbccffff73268388591dd"
+    ],
+    "title": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)",
+    "message": "MOB-4801 Fahrzeugstamm: Feld Ladevolumen (m³)\n",
+    "author_name": "Paul Schuster",
+    "author_email": "paul.schuster@musterhaus-software.de",
+    "authored_date": "2026-09-02T09:58:00.000+02:00",
+    "committer_name": "Paul Schuster",
+    "committer_email": "paul.schuster@musterhaus-software.de",
+    "committed_date": "2026-09-02T09:58:00.000+02:00",
+    "trailers": {},
+    "extended_trailers": {},
+    "web_url": "https://gitlab.musterhaus-software.de/mobiq/erp/-/commit/8394bba1d33a9bdf43719f5bd191a5f961c2a364"
+  }
+]

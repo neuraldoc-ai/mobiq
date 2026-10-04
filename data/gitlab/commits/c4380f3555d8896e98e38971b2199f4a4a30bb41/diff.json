@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,14 @@\n+package de.musterhaus.mobiq.tour;\n+\n+import static org.assertj.core.api.Assertions.assertThat;\n+\n+import org.junit.jupiter.api.Test;\n+\n+class TourPruefungTest {\n+\n+    @Test\n+    void ueberladeneTourBrauchtBestaetigung() {\n+        Tour tour = Testdaten.tourMitVolumen(41.5, 38);\n+        assertThat(new TourPruefung(Testdaten.parameter()).pruefe(tour).brauchtBestaetigung()).isTrue();\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/test/java/de/musterhaus/mobiq/tour/TourPruefungTest.java",
+    "old_path": "server/src/test/java/de/musterhaus/mobiq/tour/TourPruefungTest.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]

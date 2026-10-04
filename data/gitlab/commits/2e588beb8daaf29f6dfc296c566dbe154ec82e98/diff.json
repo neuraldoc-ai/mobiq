@@ -1,0 +1,15 @@
+[
+  {
+    "diff": "@@ -0,0 +1,15 @@\n+package de.musterhaus.mobiq.druck;\n+\n+import static org.assertj.core.api.Assertions.assertThat;\n+\n+import java.util.Map;\n+import org.junit.jupiter.api.Test;\n+\n+class VorlagenEngineTest {\n+\n+    @Test\n+    void rechnungWirdGedruckt() {\n+        byte[] pdf = new VorlagenEngine(Testdaten.vorlagen()).drucke(\"rechnung\", Map.of(\"beleg\", Testdaten.rechnung()));\n+        assertThat(pdf).isNotEmpty();\n+    }\n+}\n",
+    "collapsed": false,
+    "too_large": false,
+    "new_path": "server/src/test/java/de/musterhaus/mobiq/druck/VorlagenEngineTest.java",
+    "old_path": "server/src/test/java/de/musterhaus/mobiq/druck/VorlagenEngineTest.java",
+    "a_mode": "0",
+    "b_mode": "100644",
+    "new_file": true,
+    "renamed_file": false,
+    "deleted_file": false,
+    "generated_file": false
+  }
+]
