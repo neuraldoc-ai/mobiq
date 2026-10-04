@@ -1,79 +1,79 @@
-# MOBIQ-Testdatensatz (Release 26.4)
+# MOBIQ test dataset (release 26.4)
 
-Ein erfundener, aber praxisnaher Datensatz eines ERP-Herstellers für den Möbel- und Küchenhandel (MOBIQ, Musterhaus Software GmbH). Er enthält, was neuraldoc beim Kunden aus GitLab, Jira und Confluence lesen würde. Die Formate entsprechen den echten API-Antworten. neuraldoc nutzt ihn als Showcase und als eigenen Evaluationsdatensatz.
+A fictional but realistic dataset of an ERP vendor for furniture and kitchen retail (MOBIQ, Musterhaus Software GmbH). It contains what neuraldoc would read at a customer from GitLab, Jira and Confluence. The formats match the real API responses. neuraldoc uses it as its showcase and as its own evaluation dataset. The content of the dataset itself (code, tickets, documentation) is in German.
 
-## Vier Repositories
+## Four repositories
 
-| Repository | Inhalt | Beim Kunden wäre das |
+| Repository | Contents | At a customer this would be |
 |---|---|---|
-| `mobiq` (dieses) | Generator, `data/`: GitLab- und Jira-API-Antworten, Lösung (`ground-truth.json`) | GitLab-Plattform, Jira, Auswertung |
-| `mobiq-code` | Das Git-Repository mit allen Branches, Merge-Commits und Tag | Das Code-Repository |
-| `mobiq-docs` | Confluence-Seiten und SharePoint-Dateien | Die Dokumentation |
-| `mobiq-db` | PostgreSQL-Schema, Migrationen und Daten, `docker compose` | Die Unternehmensdatenbank |
+| `mobiq` (this one) | Generator, `data/`: GitLab and Jira API responses, solution (`ground-truth.json`) | GitLab platform, Jira, evaluation |
+| [`mobiq-code`](https://github.com/neuraldoc-ai/mobiq-code) | The Git repository with all branches, merge commits and a tag | The code repository |
+| [`mobiq-docs`](https://github.com/neuraldoc-ai/mobiq-docs) | Confluence pages and SharePoint files | The documentation |
+| [`mobiq-db`](https://github.com/neuraldoc-ai/mobiq-db) | PostgreSQL schema, migrations and data, `docker compose` | The company database |
 
-Das neuraldoc-Dashboard bindet alle vier als Git-Submodule unter `datasets/` ein.
+The [neuraldoc dashboard](https://github.com/neuraldoc-ai/neuraldoc-dashboard) includes all four as Git submodules under `datasets/`.
 
-## Neu erzeugen
+## Regenerating
 
-Die vier Repositories im selben Ordner auschecken, dann hier:
+Check out the four repositories in the same folder, then run here:
 
 ```
-node generate.mjs        # erzeugt ./out neu (deterministisch, gleiche Commit-Hashes bei jedem Lauf)
-node publish.mjs         # verteilt ./out nach data/, ../mobiq-code, ../mobiq-docs, ../mobiq-db
+node generate.mjs        # rebuilds ./out (deterministic, same commit hashes on every run)
+node publish.mjs         # distributes ./out to data/, ../mobiq-code, ../mobiq-docs, ../mobiq-db
 ```
 
-`publish.mjs` ersetzt nur die Datenordner. Das Code-Repository wird aus dem Bundle aktualisiert (gleiche Commits) und nur, wenn es keine lokalen Änderungen hat. Andere Zielordner: `--code`, `--docs`, `--db`.
+`publish.mjs` replaces only the data folders. The code repository is updated from the bundle (same commits), and only if it has no local changes. Other target folders: `--code`, `--docs`, `--db`.
 
-## Inhalt von `out/`
+## Contents of `out/`
 
-Nach `publish.mjs` liegen `repo/` in `mobiq-code`, `confluence/` und `dokumente/` in `mobiq-docs`, `postgres/` in `mobiq-db` und alles andere unter `data/`.
+After `publish.mjs`, `repo/` lives in `mobiq-code`, `confluence/` and `dokumente/` in `mobiq-docs`, `postgres/` in `mobiq-db`, and everything else under `data/`.
 
-| Datei | Entspricht | Inhalt |
+| File | Corresponds to | Contents |
 |---|---|---|
-| `repo/`, `mobiq-erp.bundle` | `git clone` | Echtes Repository: `main` mit Tag `v26.3.2`, `release/26.4`, 8 Feature- und Hotfix-Branches, Merge-Commits im GitLab-Format. Java, TypeScript, Delphi, Kotlin, SQL, YAML |
-| `gitlab/commits.json` | `GET /projects/42/repository/commits?ref_name=release/26.4&with_stats=true` | 47 Commits (39 eigene, 8 Merges) |
-| `gitlab/commits/<sha>/diff.json` | `GET …/repository/commits/:sha/diff` | Echte Diffs je Datei |
-| `gitlab/merge_requests.json` | `GET /projects/42/merge_requests?state=merged` | 8 MRs mit Beschreibung, Labels, Checkliste, Milestone |
-| `gitlab/merge_requests/<iid>/commits.json` | `GET …/merge_requests/:iid/commits` | Commits je MR |
-| `jira/search_jql.json` | `POST /rest/api/3/search/jql` (`fields=*all`) | 21 Issues: Epics, Stories, Bugs, Unteraufgaben; Beschreibungen und Kommentare in ADF, Links, Sprints (`customfield_10020`), Story Points (`customfield_10016`) |
+| `repo/`, `mobiq-erp.bundle` | `git clone` | Real repository: `main` with tag `v26.3.2`, `release/26.4`, 8 feature and hotfix branches, merge commits in GitLab format. Java, TypeScript, Delphi, Kotlin, SQL, YAML |
+| `gitlab/commits.json` | `GET /projects/42/repository/commits?ref_name=release/26.4&with_stats=true` | 47 commits (39 own, 8 merges) |
+| `gitlab/commits/<sha>/diff.json` | `GET …/repository/commits/:sha/diff` | Real diffs per file |
+| `gitlab/merge_requests.json` | `GET /projects/42/merge_requests?state=merged` | 8 MRs with description, labels, checklist, milestone |
+| `gitlab/merge_requests/<iid>/commits.json` | `GET …/merge_requests/:iid/commits` | Commits per MR |
+| `jira/search_jql.json` | `POST /rest/api/3/search/jql` (`fields=*all`) | 21 issues: epics, stories, bugs, sub-tasks; descriptions and comments in ADF, links, sprints (`customfield_10020`), story points (`customfield_10016`) |
 | `jira/project_versions.json` | `GET /rest/api/3/project/MOB/versions` | 26.3, 26.4, 26.5 |
-| `confluence/spaces.json` | `GET /wiki/api/v2/spaces` | 4 Bereiche: Anwenderhandbuch, Fachberatung, Entwicklung, Betrieb |
-| `confluence/pages.json` | `GET /wiki/api/v2/pages?body-format=storage` | 33 Seiten im Storage-Format (XHTML mit `ac:`-Makros: info, note, expand, children, toc, drawio, jira, Bilder) |
-| `confluence/pages/<id>/labels.json`, `attachments.json` | `GET …/pages/{id}/labels`, `/attachments` | Doku-Art steckt in den Labels (`anwenderhandbuch`, `dialogbeschreibung`, `parametertabelle`, `technische-doku`, `installation`, `architektur`) |
-| `confluence/storage/*.xml` | – | Seiteninhalt lesbar formatiert |
-| `ground-truth.json` | – | Lösung: was die Redaktion für 26.4 ändern muss |
-| `postgres/` | `docker compose up -d` | Die Unternehmensdatenbank (PostgreSQL 18, 14 Tabellen, rund 3.300 Zeilen): Schema Stand 26.2, Beispieldaten, die Flyway-Migrationen aus `repo/db/migration` und die Daten nach 26.4 (Finanzkauf, Teillieferungen, Teilrechnungen). `initdb/` wird vom Postgres-Image beim ersten Start in Namensreihenfolge ausgeführt, das Dashboard spielt dieselben Dateien im Browser ein (PGlite) |
+| `confluence/spaces.json` | `GET /wiki/api/v2/spaces` | 4 spaces: user manual, consulting, development, operations |
+| `confluence/pages.json` | `GET /wiki/api/v2/pages?body-format=storage` | 33 pages in storage format (XHTML with `ac:` macros: info, note, expand, children, toc, drawio, jira, images) |
+| `confluence/pages/<id>/labels.json`, `attachments.json` | `GET …/pages/{id}/labels`, `/attachments` | The document type is in the labels (`anwenderhandbuch`, `dialogbeschreibung`, `parametertabelle`, `technische-doku`, `installation`, `architektur`) |
+| `confluence/storage/*.xml` | – | Page content, readably formatted |
+| `ground-truth.json` | – | Solution: what the documentation team has to change for 26.4 |
+| `postgres/` | `docker compose up -d` | The company database (PostgreSQL 18, 14 tables, about 3,300 rows): schema as of 26.2, sample data, the Flyway migrations from `repo/db/migration` and the data after 26.4 (financing, partial deliveries, partial invoices). The Postgres image runs `initdb/` in name order on first start; the dashboard loads the same files in the browser (PGlite) |
 
-Die Confluence-Seiten zeigen den Stand **vor** 26.4. Die Doku ist also so veraltet, wie sie es nach dem Release ohne neuraldoc wäre.
+The Confluence pages show the state **before** 26.4. The documentation is therefore as outdated as it would be after the release without neuraldoc.
 
-## Änderungen im Release und die eingebauten Fallen
+## Changes in the release and the built-in traps
 
-| Änderung | Art | Was es schwer macht |
+| Change | Type | What makes it hard |
 |---|---|---|
-| Teillieferung (MOB-4812, 11 Commits) | fachlich, mit Finance | Überholter Zwischenstand (1–10 → 2–5); Bugfix unter anderem Ticket (MOB-4829); Tippfehler im Schlüssel (`MOB4812`); Finanzkauf-Sperre steht nur im Code und in einem Jira-Kommentar; Doku-Unteraufgabe liegt seit Wochen offen |
-| Gutschein teilweise einlösen (MOB-4777) | fachlich | Dieselbe Aussage steht doppelt (Handbuch und FAQ) |
-| Ladevolumen (MOB-4801) | fachlich, Parameter | Für den Fahrzeugstamm gibt es keine Dialogbeschreibung, also eine neue Seite |
-| Liefersperre → Lieferstopp (MOB-4835) | Umbenennung | Artikel und Genus ändern sich („die Sperre“ → „der Stopp“); Code-Bezeichner bleiben |
-| Kassenbelege partitionieren (MOB-4790) | nur Datenbank | Nur technische Doku; das Kassen-Handbuch darf keinen Vorschlag bekommen |
-| Vorlagen-Engine (MOB-4760, 7 Commits) | intern + Betrieb | 6 Commits sind reiner Umbau; einer bringt einen Pflichtschritt fürs Update |
-| Avisierung 48 h → 24 h | Parameter | Kein Ticket, kein Merge-Request, ein Commit direkt auf dem Release-Branch |
-| Testabdeckung Kasse (MOB-4815), Hotfix (MOB-4841) | intern | Keine Doku-Wirkung |
-| MOB-4826, MOB-4819, MOB-4844, … | Rauschen | fixVersion 26.4, aber nicht gemergt, beim Kunden gelöst oder erst 26.5 |
+| Partial delivery (MOB-4812, 11 commits) | business, with finance | Superseded intermediate state (1–10 → 2–5); bug fix under another ticket (MOB-4829); typo in the key (`MOB4812`); the financing lock exists only in the code and a Jira comment; the documentation sub-task has been open for weeks |
+| Partially redeeming vouchers (MOB-4777) | business | The same statement appears twice (manual and FAQ) |
+| Load volume (MOB-4801) | business, parameter | There is no dialog description for the vehicle master data, so a new page is needed |
+| "Liefersperre" → "Lieferstopp" (MOB-4835) | renaming | Article and grammatical gender change ("die Sperre" → "der Stopp"); code identifiers stay |
+| Partitioning cash receipts (MOB-4790) | database only | Technical documentation only; the cash register manual must not get a proposal |
+| Template engine (MOB-4760, 7 commits) | internal + operations | 6 commits are pure refactoring; one adds a mandatory update step |
+| Delivery notice 48 h → 24 h | parameter | No ticket, no merge request, a single commit directly on the release branch |
+| Test coverage cash register (MOB-4815), hotfix (MOB-4841) | internal | No documentation impact |
+| MOB-4826, MOB-4819, MOB-4844, … | noise | fixVersion 26.4, but not merged, solved at the customer or only in 26.5 |
 
-Die Ground Truth enthält 36 Pflicht-Änderungen (`must`), 9 Empfehlungen (`should`) und 14 Seiten, die ausdrücklich *nicht* betroffen sind. Damit lassen sich messen:
-- **Gefunden:** Anteil der `must`-Einträge, die ein Vorschlag trifft.
-- **Fehlalarme:** Vorschläge auf `notAffected`-Seiten oder auf Seiten, die keine Ground Truth nennt.
+The ground truth contains 36 required changes (`must`), 9 recommendations (`should`) and 14 pages that are explicitly *not* affected. This allows measuring:
+- **Found:** share of `must` entries hit by a proposal.
+- **False alarms:** proposals on `notAffected` pages or on pages the ground truth does not mention.
 
-## Quellen für die Formate
+## Format references
 
-- Jira Cloud REST v3, Issue-Suche (`/search/jql`, `nextPageToken`/`isLast`): https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/
-- Confluence Cloud REST v2, Seiten: https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/
-- Confluence Storage-Format und Makros: https://confluence.atlassian.com/doc/confluence-storage-format-790796544.html
+- Jira Cloud REST v3, issue search (`/search/jql`, `nextPageToken`/`isLast`): https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-search/
+- Confluence Cloud REST v2, pages: https://developer.atlassian.com/cloud/confluence/rest/v2/api-group-page/
+- Confluence storage format and macros: https://confluence.atlassian.com/doc/confluence-storage-format-790796544.html
 - GitLab Commits API: https://docs.gitlab.com/api/commits/
 - GitLab Merge Requests API: https://docs.gitlab.com/api/merge_requests/
 
-Alle Firmen, Personen, Kunden und Inhalte sind erfunden.
+All companies, people, customers and contents are fictional.
 
-## Lizenz
+## License
 
-MIT, siehe [LICENSE](LICENSE). Die Lizenz gilt für den gesamten MOBIQ-Datensatz, also auch für `mobiq-code`, `mobiq-docs` und `mobiq-db`. `mobiq-code` enthält bewusst keine eigene Lizenzdatei, damit seine Commit-Historie unverändert bleibt.
+MIT, see [LICENSE](LICENSE). The license covers the whole MOBIQ dataset, including `mobiq-code`, `mobiq-docs` and `mobiq-db`. `mobiq-code` deliberately contains no license file of its own so that its commit history stays unchanged.
