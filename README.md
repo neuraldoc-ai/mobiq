@@ -73,3 +73,7 @@ Die Ground Truth enthält 36 Pflicht-Änderungen (`must`), 9 Empfehlungen (`shou
 - GitLab Merge Requests API: https://docs.gitlab.com/api/merge_requests/
 
 Alle Firmen, Personen, Kunden und Inhalte sind erfunden.
+
+## Lizenz
+
+MIT, siehe [LICENSE](LICENSE). Die Lizenz gilt für den gesamten MOBIQ-Datensatz, also auch für `mobiq-code`, `mobiq-docs` und `mobiq-db`. `mobiq-code` enthält bewusst keine eigene Lizenzdatei, damit seine Commit-Historie unverändert bleibt.
