@@ -11,7 +11,7 @@ A fictional but realistic dataset of an ERP vendor for furniture and kitchen ret
 | [`mobiq-docs`](https://github.com/neuraldoc-ai/mobiq-docs) | Confluence pages and SharePoint files | The documentation |
 | [`mobiq-db`](https://github.com/neuraldoc-ai/mobiq-db) | PostgreSQL schema, migrations and data, `docker compose` | The company database |
 
-The [neuraldoc dashboard](https://github.com/neuraldoc-ai/neuraldoc-dashboard) includes all four as Git submodules under `datasets/`.
+The [neuraldoc app](https://github.com/neuraldoc-ai/neuraldoc-app) includes all four as Git submodules under `datasets/`.
 
 ## Regenerating
 
