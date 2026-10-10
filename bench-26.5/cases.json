@@ -1,0 +1,503 @@
+{
+  "base": "0df813944e67671a19b668cff60d39b7d3f8b2a5",
+  "branch": "bench/26.5",
+  "head": "fbd55acf2cafa2e8f8f36a1134c26462a2286ea2",
+  "docs": "stand-26.4 (mobiq/stand-26.4)",
+  "note": "Erwartet ist je Commit, welche Dokumente des sauberen Stands 26.4 nach diesem Commit nicht mehr stimmen (Doku jeweils im Stand 26.4, nicht nachgezogen). must = falsch oder unvollständig, should = gute Praxis.",
+  "cases": [
+    {
+      "id": "default-wert",
+      "commits": [
+        {
+          "sha": "d41ba66f89c15c8b12d8ad6983d41e2a1035e8dd",
+          "title": "MOB-4901 Liefervorlauf Standard 5 Tage",
+          "kind": "Standardwert geändert",
+          "expected": [
+            {
+              "doc": "426115233",
+              "level": "must",
+              "what": "LIEF_VORLAUF_TAGE: Standard 3 → 5"
+            },
+            {
+              "doc": "MOBIQ_Parameterliste_26.4.xlsx",
+              "level": "must",
+              "what": "Blatt Auftrag: LIEF_VORLAUF_TAGE Standard 3 → 5"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "wertebereich",
+      "commits": [
+        {
+          "sha": "30c6b5fb576dde238e959598ac579760c5c2269d",
+          "title": "MOB-4903 Bis zu 8 Lieferteile erlauben",
+          "kind": "Wertebereich geändert",
+          "expected": [
+            {
+              "doc": "426115233",
+              "level": "must",
+              "what": "TEILLIEF_MAX_ANZAHL: Max 5 → 8"
+            },
+            {
+              "doc": "MOBIQ_Parameterliste_26.4.xlsx",
+              "level": "must",
+              "what": "TEILLIEF_MAX_ANZAHL: Max 5 → 8"
+            },
+            {
+              "doc": "393281702",
+              "level": "must",
+              "what": "3.4: „einstellbar von 2 bis 5“ → 2 bis 8"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "label-umbenannt",
+      "commits": [
+        {
+          "sha": "929e20e4134e05af0b8acc8f5c5b5086b342e3c8",
+          "title": "MOB-4905 Feld heißt jetzt Stockwerk / Aufzug",
+          "kind": "Oberflächentext umbenannt (i18n)",
+          "expected": [
+            {
+              "doc": "426115141",
+              "level": "must",
+              "what": "Feldtabelle: „Etage / Aufzug“ → „Stockwerk / Aufzug“"
+            },
+            {
+              "doc": "Dialogbeschreibung_Kaufvertrag_v8.docx",
+              "level": "must",
+              "what": "Register Lieferung: Feld „Stockwerk / Aufzug“"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "regel-ohne-kommentar",
+      "commits": [
+        {
+          "sha": "78e46d0b59094519a46b59f42fe43da1ed9d3fab",
+          "title": "MOB-4907 Lieferbereit erst nach Anzahlung",
+          "kind": "Geschäftsregel geändert, Kommentar veraltet",
+          "expected": [
+            {
+              "doc": "393281702",
+              "level": "must",
+              "what": "3.2 (und Einleitung): lieferbereit erst, wenn eine Anzahlung eingegangen ist"
+            },
+            {
+              "doc": "393281733",
+              "level": "should",
+              "what": "Ohne Anzahlung wird der Kaufvertrag nicht lieferbereit"
+            }
+          ],
+          "notAffected": [
+            "426115233",
+            "393282049"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kommentar-luegt",
+      "commits": [
+        {
+          "sha": "b8ddf73fc4af01b252b8ef78453c4862e01c57aa",
+          "title": "MOB-4909 Tagesabschluss ohne stornierte Bons",
+          "kind": "Verhalten geändert, Kommentar sagt das Gegenteil",
+          "expected": [
+            {
+              "doc": "458752165",
+              "level": "must",
+              "what": "3: Der Tagesabschluss liest nicht alle Belege, stornierte zählen nicht"
+            }
+          ],
+          "notAffected": [
+            "393282337",
+            "426115176"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neue-regel",
+      "commits": [
+        {
+          "sha": "75baae0ac6e2583d814b54073147fdcd66e7b512",
+          "title": "MOB-4911 Abgelaufene Gutscheine ablehnen",
+          "kind": "neue Regel, die nirgends steht",
+          "expected": [
+            {
+              "doc": "393282337",
+              "level": "must",
+              "what": "Abgelaufene Gutscheine werden abgelehnt"
+            },
+            {
+              "doc": "393282402",
+              "level": "should",
+              "what": "FAQ: abgelaufener Gutschein"
+            },
+            {
+              "doc": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+              "level": "should",
+              "what": "Folie Gutscheine: Gültigkeit"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "refactoring",
+      "commits": [
+        {
+          "sha": "64c57a7961743fab5c1e6cb5619ac7084dd35c36",
+          "title": "MOB-4913 StoppBuilder aufgeräumt",
+          "kind": "reines Refactoring",
+          "expected": [],
+          "notAffected": [
+            "393282049",
+            "426115264",
+            "458752033"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nur-tests",
+      "commits": [
+        {
+          "sha": "2c2d40d0766aa8254bebc19b870a922c6cc60324",
+          "title": "MOB-4915 Tests Tourprüfung",
+          "kind": "nur Tests",
+          "expected": [],
+          "notAffected": [
+            "426115264",
+            "393282049"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bug-und-fix",
+      "commits": [
+        {
+          "sha": "3decbca1be0e82d20a9608b3780f20d0393e5c2b",
+          "title": "MOB-4917 Tourprüfung vereinfacht",
+          "kind": "Bug: eine Tour darf einen Stopp weniger haben, als dokumentiert",
+          "expected": [
+            {
+              "doc": "426115264",
+              "level": "should",
+              "what": "TOUR_MAX_STOPPS: es sind nur noch 11 statt 12 Stopps möglich (eigentlich ein Code-Fehler)"
+            }
+          ],
+          "notAffected": []
+        },
+        {
+          "sha": "ef58c20c45ab3678d7d23f956dc6593d3e3f45a7",
+          "title": "MOB-4918 Fix: 12 Stopps je Tour wieder möglich",
+          "kind": "Fix stellt das dokumentierte Verhalten wieder her",
+          "expected": [],
+          "notAffected": [
+            "426115264"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nur-technik",
+      "commits": [
+        {
+          "sha": "991a3bd04d37c42d12a2c599b3d0453018abf85a",
+          "title": "MOB-4920 Spalte kassenbeleg.storno_grund",
+          "kind": "Datenbank, nur technische Doku",
+          "expected": [
+            {
+              "doc": "458752133",
+              "level": "must",
+              "what": "Migration V26_5_001: Spalte kassenbeleg.storno_grund"
+            },
+            {
+              "doc": "458752165",
+              "level": "should",
+              "what": "kassenbeleg hat einen Stornogrund"
+            }
+          ],
+          "notAffected": [
+            "393282337",
+            "393282402",
+            "426115176"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feature-3-commits",
+      "commits": [
+        {
+          "sha": "d4106cf87d05a61024be2c67ade338c3681ae917",
+          "title": "MOB-4922 WIP Montage-Zeitfenster",
+          "kind": "Feature über drei Commits, erst Parameter",
+          "expected": [
+            {
+              "doc": "426115233",
+              "level": "must",
+              "what": "neuer Parameter MONT_ZEITFENSTER_STD"
+            },
+            {
+              "doc": "MOBIQ_Parameterliste_26.4.xlsx",
+              "level": "must",
+              "what": "neuer Parameter MONT_ZEITFENSTER_STD"
+            }
+          ],
+          "notAffected": []
+        },
+        {
+          "sha": "2dc7e2d8f7766c9d2679c661669006c248990ded",
+          "title": "MOB-4922 Zeitfenster am Stopp anzeigen",
+          "kind": "Feature über drei Commits, dann Oberfläche",
+          "expected": [
+            {
+              "doc": "393282049",
+              "level": "should",
+              "what": "2.3: Stopps mit Montage zeigen das Zeitfenster"
+            }
+          ],
+          "notAffected": []
+        },
+        {
+          "sha": "718869fbb829875e8605828d7fc3596d3c656fe0",
+          "title": "MOB-4922 Zeitfenster Standard 3 Stunden",
+          "kind": "Feature über drei Commits, Zwischenwert überholt",
+          "expected": [
+            {
+              "doc": "426115233",
+              "level": "must",
+              "what": "MONT_ZEITFENSTER_STD: Standard 3, Min 1"
+            },
+            {
+              "doc": "MOBIQ_Parameterliste_26.4.xlsx",
+              "level": "must",
+              "what": "MONT_ZEITFENSTER_STD: Standard 3, Min 1"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "revert",
+      "commits": [
+        {
+          "sha": "cff24fb63ec6205775268510e3a00cddea90c999",
+          "title": "MOB-4925 Avisierung 36 Stunden vorher",
+          "kind": "Änderung, gleich danach zurückgenommen",
+          "expected": [
+            {
+              "doc": "426115233",
+              "level": "must",
+              "what": "LIEF_AVIS_STUNDEN 24 → 36"
+            },
+            {
+              "doc": "MOBIQ_Parameterliste_26.4.xlsx",
+              "level": "must",
+              "what": "LIEF_AVIS_STUNDEN 24 → 36"
+            },
+            {
+              "doc": "393282080",
+              "level": "must",
+              "what": "„standardmäßig 24 Stunden“ → 36"
+            },
+            {
+              "doc": "Leistungsbeschreibung_MOBIQ_ERP_2026.docx",
+              "level": "must",
+              "what": "„standardmäßig 24 Stunden“ → 36"
+            }
+          ],
+          "notAffected": []
+        },
+        {
+          "sha": "a60d0168cc008aebddb62be7bb46b22162a49563",
+          "title": "Revert \"MOB-4925 Avisierung 36 Stunden vorher\"",
+          "kind": "Revert: wieder der dokumentierte Stand",
+          "expected": [],
+          "notAffected": [
+            "426115233",
+            "393282080"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kotlin-app",
+      "commits": [
+        {
+          "sha": "0f5f23f68c6bd163d04089c71264e8184805f788",
+          "title": "MOB-4927 Fahrer kassiert bar nur bis 1.000 €",
+          "kind": "Regel in der Fahrer-App (Kotlin)",
+          "expected": [
+            {
+              "doc": "393282080",
+              "level": "must",
+              "what": "Bar nur bis 1.000 €, darüber nur Karte"
+            },
+            {
+              "doc": "393282371",
+              "level": "should",
+              "what": "Restzahlung: Grenze für Barzahlung"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "delphi-desktop",
+      "commits": [
+        {
+          "sha": "8a6e81480cd233cffbd9d2935a4c1e091eacf8df",
+          "title": "MOB-4929 Desktop: Checkbox Expresslieferung",
+          "kind": "Feld nur im Delphi-Desktop",
+          "expected": [
+            {
+              "doc": "426115141",
+              "level": "must",
+              "what": "Feldtabelle: Checkbox „Expresslieferung“ (Desktop)"
+            },
+            {
+              "doc": "Dialogbeschreibung_Kaufvertrag_v8.docx",
+              "level": "must",
+              "what": "Register Lieferung: Feld „Expresslieferung“"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "druckvorlage",
+      "commits": [
+        {
+          "sha": "a26604939399895cc131c373abbf115922abce15",
+          "title": "MOB-4931 Lieferschein mit Unterschrift",
+          "kind": "nur Druckvorlage",
+          "expected": [
+            {
+              "doc": "393282080",
+              "level": "should",
+              "what": "Der Kunde bestätigt den Empfang auf dem Lieferschein mit Unterschrift"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "schnittstelle",
+      "commits": [
+        {
+          "sha": "5332734715f1259db0d54c9754be225d82371cbc",
+          "title": "MOB-4933 Fibu-Export: Feld anzahlung_verrechnet",
+          "kind": "Feld der Schnittstelle umbenannt, mit Migration",
+          "expected": [
+            {
+              "doc": "458752069",
+              "level": "must",
+              "what": "az_verrechnet → anzahlung_verrechnet (Tabelle und Text)"
+            },
+            {
+              "doc": "458752133",
+              "level": "must",
+              "what": "Migration V26_5_002"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "irrefuehrende-nachricht",
+      "commits": [
+        {
+          "sha": "0a1e2bd0993f9f2ef718dae620e67b8d4bbfcf16",
+          "title": "chore: cleanup",
+          "kind": "Nachricht sagt nichts, Wert in sechs Dokumenten ändert sich",
+          "expected": [
+            {
+              "doc": "426115233",
+              "level": "must",
+              "what": "TEILLIEF_MIN_WARENWERT_PROZ 20 → 25"
+            },
+            {
+              "doc": "MOBIQ_Parameterliste_26.4.xlsx",
+              "level": "must",
+              "what": "TEILLIEF_MIN_WARENWERT_PROZ 20 → 25"
+            },
+            {
+              "doc": "393281702",
+              "level": "must",
+              "what": "3.4: „mindestens 20 %“ → 25 %"
+            },
+            {
+              "doc": "426115141",
+              "level": "must",
+              "what": "Dialog: „Standard 20 %“ → 25 %"
+            },
+            {
+              "doc": "Dialogbeschreibung_Kaufvertrag_v8.docx",
+              "level": "must",
+              "what": "„Standard 20 %“ → 25 %"
+            },
+            {
+              "doc": "Schulung_Verkauf_Kaufvertrag_Kasse.pdf",
+              "level": "must",
+              "what": "„mindestens 20 % des Warenwerts“ → 25 %"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    },
+    {
+      "id": "toter-code",
+      "commits": [
+        {
+          "sha": "592737361b252eb2cd3e80d37faa8fcdb7685e30",
+          "title": "feat: Avisierung auch per WhatsApp",
+          "kind": "Nachricht verspricht ein Feature, der Code nutzt es nirgends",
+          "expected": [],
+          "notAffected": [
+            "393282080",
+            "Leistungsbeschreibung_MOBIQ_ERP_2026.docx"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neues-feld",
+      "commits": [
+        {
+          "sha": "fbd55acf2cafa2e8f8f36a1134c26462a2286ea2",
+          "title": "MOB-4935 Fahrzeugstamm: Kühlfahrzeug",
+          "kind": "neues Feld in der Oberfläche (Web und Desktop)",
+          "expected": [
+            {
+              "doc": "new:Stammdaten – Fahrzeug",
+              "level": "must",
+              "what": "Feldtabelle: Checkbox „Kühlfahrzeug“"
+            }
+          ],
+          "notAffected": []
+        }
+      ]
+    }
+  ]
+}
