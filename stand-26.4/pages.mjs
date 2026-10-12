@@ -16,8 +16,8 @@ export const pages = {
   393281702: p('Im Register <strong>Lieferung</strong> legen Sie fest, wann und wie die Ware zum Kunden kommt. Die Disposition sieht den Kaufvertrag erst, wenn er auf „Lieferbereit“ steht und kein Lieferstopp gesetzt ist.')
     + image('register-lieferung.png')
     + '<h2>3.1 Liefertermin vereinbaren</h2>' + p('Wählen Sie im Feld „Wunschtermin“ eine Kalenderwoche. MOBIQ prüft, ob alle Positionen bis dahin im Lager sein können, und zeigt den frühesten möglichen Termin an.')
-    + '<h2>3.2 Lieferbereitschaft</h2>' + p('Ein Kaufvertrag wird vollständig ausgeliefert, außer Sie vereinbaren eine Teillieferung (siehe 3.4). Er steht erst auf „Lieferbereit“, wenn alle Positionen im Lager eingegangen sind. Bei einer Teillieferung gilt das für jeden Teil einzeln.')
-    + macro('note', p('Soll ein lieferbereiter Kaufvertrag noch nicht disponiert werden, setzen Sie den <strong>Lieferstopp</strong>. Sie heben ihn im selben Register wieder auf.'))
+    + '<h2>3.2 Lieferbereitschaft</h2>' + p('Ein Kaufvertrag wird vollständig ausgeliefert, außer Sie vereinbaren eine Teillieferung (siehe 3.4). Er steht erst auf „Lieferbereit“, wenn alle Positionen im Lager eingegangen sind und kein Lieferstopp gesetzt ist. Bei einer Teillieferung gilt das für jeden Teil einzeln.')
+    + macro('note', p('Soll ein Kaufvertrag noch nicht disponiert werden, setzen Sie den <strong>Lieferstopp</strong>. Solange er gesetzt ist, steht der Vertrag nicht auf „Lieferbereit“. Sie heben ihn im selben Register wieder auf.'))
     + '<h2>3.3 Montage beauftragen</h2>' + p('Positionen mit Montageleistung werden automatisch an die Montageplanung übergeben. Die Monteure sehen den Auftrag in der Montage-App.')
     + '<h2>3.4 Teillieferung vereinbaren</h2>' + p('Ist ein Teil der Ware früher verfügbar oder möchte der Kunde gestaffelt beliefert werden, teilen Sie die Lieferung auf. Das geht, wenn Ihr Administrator Teillieferungen erlaubt hat (Parameter TEILLIEF_ERLAUBT).')
     + '<ol><li>Setzen Sie im Register „Lieferung“ den Haken „Teillieferung erlaubt“.</li><li>Klicken Sie auf „Lieferung aufteilen“.</li><li>Ziehen Sie die Positionen per Drag &amp; Drop auf die Teile und wählen Sie je Teil einen Wunschtermin.</li><li>Speichern Sie. Jeder Teil wird als eigener Stopp disponiert.</li></ol>'
@@ -154,7 +154,7 @@ export const pages = {
       ['V26_4_016', 'Sicht kassenbeleg_alle', 'unter 1 min'],
     ]),
 
-  458752165: '<h2>3 Tabelle kassenbeleg</h2>' + p('Jeder Bon ist ein Satz in <code>kassenbeleg</code> mit seinen Zahlungen in <code>kassenzahlung</code>. Seit 26.4 ist <code>kassenbeleg</code> nach Belegjahr partitioniert (eine Partition <code>kassenbeleg_&lt;jahr&gt;</code> je Jahr, Bereich über <code>belegdatum</code>). Der Tagesabschluss liest alle Belege des Tages je Filiale und damit nur die Partition des laufenden Jahres.',
+  458752165: '<h2>3 Tabelle kassenbeleg</h2>' + p('Jeder Bon ist ein Satz in <code>kassenbeleg</code> mit seinen Zahlungen in <code>kassenzahlung</code>. Seit 26.4 ist <code>kassenbeleg</code> nach Belegjahr partitioniert (eine Partition <code>kassenbeleg_&lt;jahr&gt;</code> je Jahr, Bereich über <code>belegdatum</code>). Der Tagesabschluss liest alle Belege des Tages je Filiale und damit nur die Partition des Jahres, in das dieser Tag fällt.',
       'Für Auswertungen über mehrere Jahre gibt es die Sicht <code>kassenbeleg_alle</code>.')
     + '<h2>4 Aufbewahrung</h2>' + p('Kassenbelege werden nicht gelöscht. Ältere Jahrgänge lassen sich als eigene Partition auslagern, ohne die Kasse zu sperren.'),
 

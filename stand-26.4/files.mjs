@@ -13,6 +13,8 @@ const modified = '2026-10-12T10:00:00Z'
   Object.assign(f, { name: 'MOBIQ_Parameterliste_26.4.xlsx', title: 'MOBIQ Parameterliste 26.4', modified })
   const auftrag = sheet(f, 'Auftrag').rows
   auftrag.find((r) => r[0] === 'LIEF_AVIS_STUNDEN')[3] = 24
+  // KV_STORNO_TAGE was never a parameter in the code (config/parameter/auftrag.yaml), found by neuraldoc's initial check.
+  auftrag.splice(auftrag.findIndex((r) => r[0] === 'KV_STORNO_TAGE'), 1)
   auftrag.push(
     ['TEILLIEF_ERLAUBT', 'Lieferung', 'Teillieferungen im Mandanten erlauben', 'Nein', '', '', 'Ja/Nein', '26.4', 'ja'],
     ['TEILLIEF_MAX_ANZAHL', 'Lieferung', 'Höchstzahl Lieferteile je Kaufvertrag', 3, 2, 5, 'Teile', '26.4', 'ja'],
